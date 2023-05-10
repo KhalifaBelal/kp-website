@@ -22,7 +22,7 @@ jobs:
         npm run build
     
     - name: List output files Staging
-      run: find .next/ -print
+      run: find out/ -print
       
     - name: 📂 Sync files Staging
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
@@ -31,5 +31,5 @@ jobs:
         username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: "ftps"
-        local-dir: .next/
+        local-dir: out/
         server-dir: "./staging/"
