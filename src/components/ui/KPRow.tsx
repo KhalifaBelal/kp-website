@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import { FC, HTMLAttributes } from "react";
 
-export const kpRowVariants = cva("relative flex", {
+export const kpRowVariants = cva("relative flex mx-auto max-w-6xl", {
   variants: {
-    variant: { default: "gap-5", intro:"gap-10" },
+    variant: { default: "gap-5", intro: "gap-10 max-w-2xl text-center" },
     flexDirection: {
       default: "flex-col lg:flex-row",
       col: "flex-col",
@@ -19,12 +19,14 @@ export const kpRowVariants = cva("relative flex", {
       start: "justify-start",
       end: "justify-end",
     },
+    container: { default: "container", disable: "" },
   },
   defaultVariants: {
     variant: "default",
     flexDirection: "default",
     alignItems: "default",
     justifyContent: "default",
+    container: "default"
   },
 });
 
@@ -39,6 +41,7 @@ const KPRow: FC<KPRowProps> = ({
   flexDirection,
   alignItems,
   justifyContent,
+  container,
   ...props
 }) => {
   return (
@@ -49,6 +52,7 @@ const KPRow: FC<KPRowProps> = ({
           flexDirection,
           alignItems,
           justifyContent,
+          container,
           className,
         })
       )}

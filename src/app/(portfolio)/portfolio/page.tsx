@@ -11,12 +11,7 @@ export const metadata: Metadata = {
 
 const page: FC = () => {
   return (
-    <div className="container max-w-7xl mx-auto">
-      <div className="flex flex-col items-center gap-6">
-        <KPHeading>Portfolio</KPHeading>
-        <Paragraph>api/v1/similarity</Paragraph>
-      </div>
-    </div>
+    <div></div>
   );
 };
 

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Canvas } from "@react-three/fiber";
 import {
@@ -9,7 +9,11 @@ import {
 import React, { Suspense } from "react";
 
 function Model({ model }) {
-  const models = ["sparring-model_dark.glb", "strategic-model_dark.glb", "offer-model_dark.glb"];
+  const models = [
+    "/glb-assets/sparring-model_dark.glb",
+    "/glb-assets/strategicplan-model_dark.glb",
+    "/glb-assets/offer-model_dark.glb",
+  ];
   let { scene } = useGLTF(models[model]);
   return (
     <primitive
