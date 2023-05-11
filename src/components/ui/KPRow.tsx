@@ -2,10 +2,11 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import { FC, HTMLAttributes } from "react";
 
-export const kpRowVariants = cva("relative flex gap-5", {
+export const kpRowVariants = cva("relative flex", {
   variants: {
+    variant: { default: "gap-5", intro:"gap-10" },
     flexDirection: {
-      default: "flex-row",
+      default: "flex-col lg:flex-row",
       col: "flex-col",
     },
     alignItems: {
@@ -20,6 +21,7 @@ export const kpRowVariants = cva("relative flex gap-5", {
     },
   },
   defaultVariants: {
+    variant: "default",
     flexDirection: "default",
     alignItems: "default",
     justifyContent: "default",
@@ -28,23 +30,22 @@ export const kpRowVariants = cva("relative flex gap-5", {
 
 export interface KPRowProps
   extends HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof kpRowVariants> {
-  withTitle?: boolean;
-}
+    VariantProps<typeof kpRowVariants> {}
 
 const KPRow: FC<KPRowProps> = ({
   className,
   children,
+  variant,
   flexDirection,
   alignItems,
   justifyContent,
-  withTitle = false,
   ...props
 }) => {
   return (
     <div
       className={cn(
         kpRowVariants({
+          variant,
           flexDirection,
           alignItems,
           justifyContent,

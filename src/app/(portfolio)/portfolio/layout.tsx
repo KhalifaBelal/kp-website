@@ -1,12 +1,16 @@
-import Navbar from '@/components/Navbar'
-import '@/styles/globals.css'
+import Navbar from "@/components/Navbar";
+import "@/styles/globals.css";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   // offset navbar height
-  return <section className='pt-20'>
-  <Navbar />{children}</section>
+  return (
+    <section>
+      <Navbar showLink />
+      {children}
+    </section>
+  );
 }

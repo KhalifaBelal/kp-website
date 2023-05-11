@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 
 const kpHeadingVariants = cva(
-  "text-black dark:text-white text-center lg:text-left font-extrabold leading-tight tracking-tighter",
+  "text-black dark:text-white leading-tight tracking-tighter",
   {
     variants: {
       size: {
@@ -12,9 +12,14 @@ const kpHeadingVariants = cva(
         lg: "text-5xl md:text-6xl lg:text-7xl",
         sm: "text-2xl md:text-3xl lg:text-4xl",
       },
+      fontWeight: {
+        default: "font-semibold",
+        heavy: "font-extrabold",
+      },
     },
     defaultVariants: {
       size: "default",
+      fontWeight: "default",
     },
   }
 );
@@ -27,10 +32,14 @@ const KPHeading: FC<KPHeadingProps> = ({
   children,
   className,
   size,
+  fontWeight,
   ...props
 }) => {
   return (
-    <h1 {...props} className={cn(kpHeadingVariants({ size, className }))}>
+    <h1
+      {...props}
+      className={cn(kpHeadingVariants({ size, fontWeight, className }))}
+    >
       {children}
     </h1>
   );
