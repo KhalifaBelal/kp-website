@@ -2,8 +2,8 @@ import { VariantProps, cva } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 import { HTMLAttributes, forwardRef } from 'react'
 
-export const paragraphVariants = cva(
-  'max-w-prose text-slate-700 dark:text-slate-300 mb-2 text-center',
+export const kpParagraphVariants = cva(
+  'max-w-prose text-zinc-700 dark:text-zinc-300 mb-2 text-center',
   {
     variants: {
       size: {
@@ -17,23 +17,23 @@ export const paragraphVariants = cva(
   }
 )
 
-interface ParagraphProps
+interface KPParagraphProps
   extends HTMLAttributes<HTMLParagraphElement>,
-    VariantProps<typeof paragraphVariants> {}
+    VariantProps<typeof kpParagraphVariants> {}
 
-const Paragraph = forwardRef<HTMLParagraphElement, ParagraphProps>(
+const KPParagraph = forwardRef<HTMLParagraphElement, KPParagraphProps>(
   ({ className, size, children, ...props }, ref) => {
     return (
       <p
         ref={ref}
         {...props}
-        className={cn(paragraphVariants({ size, className }))}>
+        className={cn(kpParagraphVariants({ size, className }))}>
         {children}
       </p>
     )
   }
 )
 
-Paragraph.displayName = 'Paragraph'
+KPParagraph.displayName = 'Paragraph'
 
-export default Paragraph
+export default KPParagraph

@@ -16,11 +16,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        "bg-white text-slate-900 antialiased",
+        "bg-white text-zinc-900 antialiased",
         montserrat.className
       )}
     >
-      <body className="min-h-screen bg-slate-50 dark:bg-slate-900 antialiased">
+      <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
         <Providers>
           <MobileMenu />
 
