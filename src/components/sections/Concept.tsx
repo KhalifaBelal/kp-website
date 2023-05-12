@@ -9,9 +9,8 @@ function Concept() {
   return (
     <KPSection>
       <KPRow>
-        <KPRow container="disable" flexDirection="col" alignItems="start">
+        <KPRow wrapperContainer="disable" flexDirection="col" alignItems="start">
           <KPHeading
-            size="default"
             fontWeight="heavy"
             className="text-black dark:text-white"
           >

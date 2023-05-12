@@ -15,7 +15,11 @@ function StrategyStep({ title, text, model }: PrefaceProps) {
   return (
     <KPSection>
       <KPRow>
-        <KPRow container="disable" flexDirection="col" alignItems="start">
+        <KPRow
+          wrapperContainer="disable"
+          flexDirection="col"
+          alignItems="start"
+        >
           <KPHeading
             size="default"
             fontWeight="heavy"

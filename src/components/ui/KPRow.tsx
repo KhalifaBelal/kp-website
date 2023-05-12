@@ -19,14 +19,14 @@ export const kpRowVariants = cva("relative flex mx-auto max-w-6xl", {
       start: "justify-start",
       end: "justify-end",
     },
-    container: { default: "container", disable: "" },
+    wrapperContainer: { default: "container", disable: "" },
   },
   defaultVariants: {
     variant: "default",
     flexDirection: "default",
     alignItems: "default",
     justifyContent: "default",
-    container: "default"
+    wrapperContainer: "default",
   },
 });
 
@@ -41,7 +41,7 @@ const KPRow: FC<KPRowProps> = ({
   flexDirection,
   alignItems,
   justifyContent,
-  container,
+  wrapperContainer,
   ...props
 }) => {
   return (
@@ -52,7 +52,7 @@ const KPRow: FC<KPRowProps> = ({
           flexDirection,
           alignItems,
           justifyContent,
-          container,
+          wrapperContainer,
           className,
         })
       )}

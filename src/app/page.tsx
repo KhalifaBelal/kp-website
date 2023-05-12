@@ -3,6 +3,7 @@ import Concept from "@/components/sections/Concept";
 import Intro from "@/components/sections/Intro";
 import Preface from "@/components/sections/Preface";
 import StrategyStep from "@/components/sections/StrategyStep";
+import WhoWeWorkWith from "@/components/sections/WhoWeWorkWith";
 import { prefaceData } from "@/lib/prefaceData";
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Navbar />
       <Intro />
       <Concept />
+      <WhoWeWorkWith />
       <Preface title={prefaceData[0].title} text={prefaceData[0].text} />
       {Data.map((step, index) => (
         <StrategyStep
