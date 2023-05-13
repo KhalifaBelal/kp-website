@@ -19,10 +19,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="relative h-screen overflow-hidden">
-        <Preloader
+    <div className="relative h-screen overflow-x-hidden">
+      <Preloader
         page={
-          <div className="relative h-screen overflow-x-hidden">
+          <div className="w-screen h-screen overflow-x-hidden">
             <Navbar />
             <Intro />
             <Concept />
@@ -46,6 +46,6 @@ export default function Home() {
           </div>
         }
       />
-      </div>
+    </div>
   );
 }

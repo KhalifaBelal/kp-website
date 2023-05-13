@@ -1,7 +1,6 @@
-"use client";
+"use client"
 
 import { HTMLAttributes, ReactNode, useEffect, useState, FC } from "react";
-import KPSection from "@/ui/KPSection";
 
 interface PreloaderProps extends HTMLAttributes<HTMLDivElement> {
   page: ReactNode;
@@ -9,16 +8,26 @@ interface PreloaderProps extends HTMLAttributes<HTMLDivElement> {
 
 const Preloader: FC<PreloaderProps> = ({ page }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
+
   useEffect(() => {
-    const timeoutId = setTimeout(() => setIsLoading(false), 4000);
-    return () => clearTimeout(timeoutId);
-  }, [null]);
+    // Wait for the page to fully load before hiding the preloader
+    window.addEventListener("load", () => {
+      const _timeout = setTimeout(() => setIsLoading(false), 4000)
+      return () => clearTimeout(_timeout)
+    });
+  }, []);
+
   return (
-    <KPSection
+    <div
       style={{
         backgroundColor: isLoading ? "#e8e7e8" : "",
         height: "screen",
         maxHeight: "100%",
+        width: "screen",
+        maxWidth: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       {isLoading ? (
@@ -28,12 +37,12 @@ const Preloader: FC<PreloaderProps> = ({ page }) => {
           muted
           typeof="video/mp4"
           controls={false}
-          className="scale-[.8] mr-3 lg:scale-[.2] lg:mr-12"
+          className="scale-[.8] mr-3 lg:scale-[.3] lg:mr-12"
         />
       ) : (
         <div>{page}</div>
       )}
-    </KPSection>
+    </div>
   );
 };
 
