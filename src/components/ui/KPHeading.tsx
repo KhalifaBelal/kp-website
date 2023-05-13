@@ -14,7 +14,6 @@ const kpHeadingVariants = cva(
       },
       fontWeight: {
         default: "font-semibold",
-        heavy: "font-extrabold",
         normal: "font-normal"
       },
     },

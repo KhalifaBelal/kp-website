@@ -17,7 +17,7 @@ function Model(props) {
       Math.sin(t / 4) / 15
     );
     ref.current.position.y = -(3 + Math.cos(t / 2)) / 7;
-    ref.current.position.x = -0.1;
+    ref.current.position.x = -.2;
   });
 
   return (

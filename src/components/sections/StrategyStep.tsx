@@ -22,7 +22,6 @@ function StrategyStep({ title, text, model }: PrefaceProps) {
         >
           <KPHeading
             size="default"
-            fontWeight="heavy"
             className="text-black dark:text-white"
           >
             {title}

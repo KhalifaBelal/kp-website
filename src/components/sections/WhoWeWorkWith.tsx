@@ -7,12 +7,11 @@ import KPSection from "@/ui/KPSection";
 import { whoWeWorkWithData as Data } from "@/lib/whoWeWorkWithData";
 import { useState } from "react";
 import { KPButton, kpButtonVariants } from "@/ui/KPButton";
-import Icons from "@/components/Icons";
 
 function WhoWeWorkWith() {
   const [wwww, setWwww] = useState("ideas");
   return (
-    <KPSection variant="autoHeight">
+    <KPSection>
       <KPRow
         flexDirection="col"
         alignItems="start"
@@ -26,8 +25,10 @@ function WhoWeWorkWith() {
             alignItems="start"
             justifyContent="start"
           >
+            <KPHeading>
+              Who Whe <br /> Work With:
+            </KPHeading>
             <KPHeading size="sm">
-              Who Whe Work With: <br />
               People with <span className="text-kp-red">{wwww}</span>
             </KPHeading>
             <KPRow
@@ -69,35 +70,3 @@ function WhoWeWorkWith() {
 }
 
 export default WhoWeWorkWith;
-
-// import KPHeading from "@/components/ui/KPHeading";
-// import KPRow from "@/ui/KPRow";
-// import KPParagraph from "@/ui/KPParagraph";
-// import KPSection from "@/ui/KPSection";
-// import { whoWeWorkWithData as Data } from "@/lib/whoWeWorkWithData";
-
-// function WhoWeWorkWith() {
-//   return (
-//     <KPSection>
-//       <KPRow flexDirection="col" className="gap-10">
-//         <KPHeading fontWeight="heavy">Who We Work With</KPHeading>
-//         <KPRow wrapperContainer="disable">
-//           {Data.map((wwww, index) => (
-//             <KPRow
-//               wrapperContainer="disable"
-//               alignItems="start"
-//               flexDirection="col"
-//             >
-//               <KPHeading size="sm" key={index}>
-//                 {wwww.title}
-//               </KPHeading>
-//               <KPParagraph key={index}>{wwww.text}</KPParagraph>
-//             </KPRow>
-//           ))}
-//         </KPRow>
-//       </KPRow>
-//     </KPSection>
-//   );
-// }
-
-// export default WhoWeWorkWith;

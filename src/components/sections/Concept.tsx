@@ -11,7 +11,6 @@ function Concept() {
       <KPRow>
         <KPRow wrapperContainer="disable" flexDirection="col" alignItems="start">
           <KPHeading
-            fontWeight="heavy"
             className="text-black dark:text-white"
           >
             Concept

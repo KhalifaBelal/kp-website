@@ -1,6 +1,5 @@
 "use client";
 
-import { Info, LayoutDashboard } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { KPButton } from "@/ui/KPButton";
@@ -12,6 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/ui/DropdownMenu";
+import Icons from "@/components/Icons";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -34,7 +34,7 @@ const MobileMenu = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <LayoutDashboard className="mr-2 h-5 w-5" />
+                  <Icons.LinkIcon className="mr-2 h-5 w-5" />
                   <span>Contact</span>
                 </Link>
               </DropdownMenuItem>
@@ -44,7 +44,7 @@ const MobileMenu = () => {
                   className="w-full flex items-center gap-1.5"
                   href="/portfolio"
                 >
-                  <Info className="mr-2 h-5 w-5" />
+                  <Icons.LayoutDashboardIcon className="mr-2 h-5 w-5" />
                   <span>Portfolio</span>
                 </Link>
               </DropdownMenuItem>
