@@ -10,7 +10,6 @@ const kpButtonVariants = cva(
       variant: {
         default:
           "bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-zinc-200 dark:text-zinc-900 dark:hover:bg-zinc-100",
-        destructive: "text-white hover:bg-red-600 dark:hover:bg-kp-red",
         outline:
           "bg-kp-red text-white hover:bg-zinc-800 dark:text-zinc-900 dark:hover:bg-zinc-100 border border-zinc-200 dark:border-zinc-700",
         subtle:

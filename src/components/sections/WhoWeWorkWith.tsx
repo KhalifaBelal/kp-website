@@ -32,8 +32,7 @@ function WhoWeWorkWith() {
             </KPHeading>
             <KPRow
               wrapperContainer="disable"
-              justifyContent="start"
-              className="w-full border-b border-kp-red shadow-sm pb-6 flex-row"
+              className="flex-row rounded-md border-b border-zinc-300 dark:border-zinc-700 shadow-lg w-auto mx-0"
             >
               {Data.map((_wwww, index) => (
                 <KPButton
@@ -41,7 +40,7 @@ function WhoWeWorkWith() {
                   onClick={() => {
                     setWwww(_wwww.key);
                   }}
-                  className={kpButtonVariants({ variant: "outline" })}
+                  className={kpButtonVariants({ variant: "link" })}
                 >
                   <span
                     className={`font-semibold ${

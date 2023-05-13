@@ -21,7 +21,7 @@ const MobileMenu = () => {
       <div className="shadow-2xl rounded-md outline outline-2 outline-white dark:outline-zinc-900">
         <DropdownMenu open={open} onOpenChange={setOpen}>
           <DropdownMenuTrigger asChild onClick={() => setOpen((prev) => !prev)}>
-            <KPButton variant="outline" size="lg">
+            <KPButton size="lg">
               Menu
             </KPButton>
           </DropdownMenuTrigger>
