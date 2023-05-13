@@ -10,7 +10,6 @@ import { prefaceData } from "@/lib/prefaceData";
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 
 import type { Metadata } from "next";
-import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Khalifa Partners | Home",

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { HTMLAttributes, ReactNode, useEffect, useState, FC } from "react";
 
@@ -10,20 +10,29 @@ const Preloader: FC<PreloaderProps> = ({ page }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    // Wait for the page to fully load before hiding the preloader
-    window.addEventListener("load", () => {
-      const _timeout = setTimeout(() => setIsLoading(false), 4000)
-      return () => clearTimeout(_timeout)
-    });
+    const _timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 3500);
+    return () => clearTimeout(_timeout);
   }, []);
+
+  // useEffect(() => {
+  //   setIsFirstLoad(isFirstLoad)
+  //   const _timeout = setTimeout(() => {
+  //     isFirstLoad !== true
+  //       ? (setIsFirstLoad(false))
+  //       : null;
+  //   }, 3500);
+  //   clearTimeout(_timeout);
+  // });
 
   return (
     <div
       style={{
         backgroundColor: isLoading ? "#e8e7e8" : "",
-        height: "screen",
+        height: "100%",
         maxHeight: "100%",
-        width: "screen",
+        width: "100%",
         maxWidth: "100%",
         display: "flex",
         alignItems: "center",
