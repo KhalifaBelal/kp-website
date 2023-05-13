@@ -31,7 +31,12 @@ export default function Home() {
         />
       ))}
       <Preface title={prefaceData[1].title} text={prefaceData[1].text} />
-      <Preface title={prefaceData[2].title} text={prefaceData[2].text} />
+      <Preface
+        title={prefaceData[2].title}
+        text={prefaceData[2].text}
+        withCta
+        ctaText="Portfolio"
+      />
     </div>
   );
 }
