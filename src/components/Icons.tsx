@@ -1,4 +1,4 @@
-import { LinkIcon, LayoutDashboardIcon, Moon, Sun, Laptop } from "lucide-react";
+import { LinkIcon, LayoutDashboardIcon, Moon, Sun, Laptop, TextIcon } from "lucide-react";
 
 export const Icons = {
   Sun,
@@ -6,6 +6,7 @@ export const Icons = {
   Laptop,
   LinkIcon,
   LayoutDashboardIcon,
+  TextIcon
 };
 
 export default Icons;

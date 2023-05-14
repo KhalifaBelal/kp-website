@@ -1,6 +1,5 @@
-import KPHeading from "@/components/ui/KPHeading";
-import Paragraph from "@/components/ui/KPParagraph";
 import { FC } from "react";
+import MobileMenu from "@/components/MobileMenu";
 
 import type { Metadata } from "next";
 
@@ -11,7 +10,8 @@ export const metadata: Metadata = {
 
 const page: FC = () => {
   return (
-    <div></div>
+    <div>
+    </div>
   );
 };
 

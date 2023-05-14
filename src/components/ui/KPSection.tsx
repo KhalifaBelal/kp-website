@@ -3,7 +3,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { FC, HTMLAttributes } from "react";
 
 export const kpSectionVariants = cva(
-  "relative min-h-screen flex items-center justify-center overflow-hidden"
+  "relative min-h-screen flex items-center justify-center overflow-hidden py-32"
 );
 
 export interface KPSectionProps

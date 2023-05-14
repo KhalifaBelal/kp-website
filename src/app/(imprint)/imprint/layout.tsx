@@ -9,8 +9,8 @@ export default function RootLayout({
   // offset navbar height
   return (
     <section>
-      <Navbar showLink currentRoute="/portfolio" />
-      <MobileMenu currentRoute="/portfolio" />
+      <Navbar showLink currentRoute="/imprint" />
+      <MobileMenu currentRoute="/imprint" />
       {children}
     </section>
   );

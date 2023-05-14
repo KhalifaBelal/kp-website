@@ -7,9 +7,10 @@ import { FC } from "react";
 
 interface NavbarProps {
   showLink?: boolean;
+  currentRoute?: string;
 }
 
-const Navbar: FC<NavbarProps> = ({ showLink = false }) => {
+const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute = "/" }) => {
   return (
     <div className="fixed backdrop-blur-sm bg-white/75 dark:bg-zinc-900/75 z-50 top-0 left-0 right-0 h-20 border-b border-zinc-300 dark:border-zinc-700 shadow-sm flex items-center justify-between">
       <div className="container max-w-6xl mx-auto w-full flex justify-between items-center">
@@ -49,6 +50,14 @@ const Navbar: FC<NavbarProps> = ({ showLink = false }) => {
         <div className="hidden md:flex gap-4">
           <ThemeToggle />
           <Link
+            className={`${kpButtonVariants({ variant: "ghost" })} ${
+              currentRoute === "/imprint" ? "hidden" : ""
+            }`}
+            href="/imprint"
+          >
+            Imprint
+          </Link>
+          <Link
             className={kpButtonVariants({ variant: "ghost" })}
             href="https://linktr.ee/baselkhalifa"
             rel="noreferrer"
@@ -57,7 +66,9 @@ const Navbar: FC<NavbarProps> = ({ showLink = false }) => {
             Contact
           </Link>
           <Link
-            className={kpButtonVariants({ variant: "outline" })}
+            className={`${kpButtonVariants({ variant: "outline" })} ${
+              currentRoute === "/portfolio" ? "hidden" : ""
+            }`}
             href="/portfolio"
           >
             Portfolio
