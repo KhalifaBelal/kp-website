@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
-import { FC, HTMLAttributes } from "react";
+import { HTMLAttributes, FC } from "react";
 
 export const kpSectionVariants = cva(
   "relative min-h-screen flex items-center justify-center overflow-hidden"
