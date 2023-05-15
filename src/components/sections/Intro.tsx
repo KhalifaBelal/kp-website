@@ -17,6 +17,8 @@ function Intro() {
             fill
             src="/square.png"
             alt="square"
+            width={100}
+            height={100}
           />
         </div>
         <KPHeading size="default" className="text-black dark:text-white">
