@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import { FC, HTMLAttributes } from "react";
-import { KPButton } from "./KPButton";
 
 export const kpRowVariants = cva("relative flex mx-auto max-w-6xl w-full", {
   variants: {

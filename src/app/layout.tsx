@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import { Montserrat } from "next/font/google";
-import MobileMenu from "@/components/MobileMenu";
 import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
 

@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import KPHeading from "@/components/ui/KPHeading";
-import KPRow from "@/ui/KPRow";
-import KPSection from "../ui/KPSection";
+import dynamic from "next/dynamic";
+const KPSection = dynamic(() => import("@/ui/KPSection"));
+const KPRow = dynamic(() => import("@/ui/KPRow"));
+const KPHeading = dynamic(() => import("@/ui/KPHeading"));
 
 function Intro() {
   return (

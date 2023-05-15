@@ -1,5 +1,6 @@
+import dynamic from "next/dynamic";
 import MobileMenu from "@/components/MobileMenu";
-import Navbar from "@/components/Navbar";
+const Navbar = dynamic(() => import("@/components/Navbar"));
 
 export default function RootLayout({
   children,
