@@ -1,21 +1,20 @@
-import dynamic from "next/dynamic";
+import KPHeading from "@/components/ui/KPHeading";
+import KPRow from "@/ui/KPRow";
+import KPParagraph from "@/ui/KPParagraph";
 import PyramidDark from "@/glb-models/PyramidDark";
 import PyramidLight from "@/glb-models/PyramidLight";
-const KPSection = dynamic(() => import("@/ui/KPSection"));
-const KPRow = dynamic(() => import("@/ui/KPRow"));
-const KPHeading = dynamic(() => import("@/ui/KPHeading"));
-const KPParagraph = dynamic(() => import("@/ui/KPSection"));
+import KPSection from "@/ui/KPSection";
 
 function Concept() {
   return (
     <KPSection>
       <KPRow>
-        <KPRow
-          wrapperContainer="disable"
-          flexDirection="col"
-          alignItems="start"
-        >
-          <KPHeading className="text-black dark:text-white">Concept</KPHeading>
+        <KPRow wrapperContainer="disable" flexDirection="col" alignItems="start">
+          <KPHeading
+            className="text-black dark:text-white"
+          >
+            Concept
+          </KPHeading>
           <KPParagraph>
             Our business model consists of founding a company together with you
             and supporting you strategically and operationally in the areas of

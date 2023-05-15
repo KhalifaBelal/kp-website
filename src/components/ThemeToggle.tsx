@@ -3,13 +3,13 @@
 import { useTheme } from "next-themes";
 
 import { Icons } from "@/components/Icons";
-import { KPButton } from "@/components/ui/KPButton";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/DropdownMenu";
+import { KPButton } from "@/ui/KPButton";
 
 export function ThemeToggle() {
   const { setTheme } = useTheme();
