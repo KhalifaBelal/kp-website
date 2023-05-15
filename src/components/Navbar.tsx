@@ -22,7 +22,6 @@ const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute = "/" }) => {
           <>
             <div className="relative w-full max-w-[105px] lg:max-w-[135px] aspect-square dark:hidden">
               <Image
-                priority
                 quality={100}
                 style={{ objectFit: "contain" }}
                 fill
@@ -32,7 +31,6 @@ const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute = "/" }) => {
             </div>
             <div className="relative w-full max-w-[105px] lg:max-w-[135px] aspect-square hidden dark:block">
               <Image
-                priority
                 quality={100}
                 style={{ objectFit: "contain" }}
                 fill
