@@ -26,7 +26,7 @@ jobs:
         run: npm run build
 
       - name: 📦 Install partytown
-        run: npm install partytown
+        run: npm install "@builder.io/partytown"
 
       - name: 🚀 Deploy with partytown
         run: npx partytown copylib public/~partytown && npm run start
