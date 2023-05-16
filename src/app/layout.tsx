@@ -17,8 +17,8 @@ export default function RootLayout({
       lang="en"
       className={cn("bg-white text-zinc-900 antialiased", montserrat.className)}
     >
-      <GoogleAnalytics GA_MEASUREMENT_ID="G-KG3VJEPD33" />
       <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-KG3VJEPD33" />
         <CookieBanner />
         <Providers>
           <main>{children}</main>
