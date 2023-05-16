@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import { Montserrat } from "next/font/google";
 import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
-import Square from "../../public/square.png";
 import dynamic from "next/dynamic";
 const CookieBanner = dynamic(async () => import("@/components/CookieBanner"));
 const GoogleAnalytics = dynamic(() => import("@/components/GoogleAnalytics"));
@@ -19,10 +18,6 @@ export default function RootLayout({
       lang="en"
       className={cn("bg-white text-zinc-900 antialiased", montserrat.className)}
     >
-      <head>
-        <link rel="preload" href={`${Square}`} as="image" />
-        <link rel="prefetch" href={`${Square}`} as="image" />
-      </head>
       <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
         <Providers>
           <GoogleAnalytics GA_MEASUREMENT_ID="G-KG3VJEPD33" />

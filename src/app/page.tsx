@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import MobileMenu from "@/components/MobileMenu";
+const MobileMenu = dynamic(() => import("@/components/MobileMenu"));
 const Navbar = dynamic(() => import("@/components/Navbar"));
 const Concept = dynamic(() => import("@/components/sections/Concept"));
 const Intro = dynamic(() => import("@/components/sections/Intro"));
