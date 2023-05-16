@@ -13,7 +13,7 @@ function Intro() {
           <Image
             priority
             quality={100}
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: "fill" }}
             fill
             src="/square.png"
             alt="square"
