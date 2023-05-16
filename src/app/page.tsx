@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
-const MobileMenu = dynamic(() => import("@/components/MobileMenu"));
-const Navbar = dynamic(() => import("@/components/Navbar"));
+const MobileMenu = dynamic(async () => import("@/components/MobileMenu"));
+const Navbar = dynamic(async () => import("@/components/Navbar"));
 const Concept = dynamic(() => import("@/components/sections/Concept"));
-const Intro = dynamic(() => import("@/components/sections/Intro"));
+const Intro = dynamic(async () => import("@/components/sections/Intro"));
 const Preface = dynamic(() => import("@/components/sections/Preface"));
 const StrategyStep = dynamic(
   () => import("@/components/sections/StrategyStep")
