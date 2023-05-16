@@ -8,29 +8,32 @@ jobs:
     name: 🎉 Deploy Staging
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code Staging
-      uses: actions/checkout@v3
+      - name: 🚚 Get latest code Staging
+        uses: actions/checkout@v3
 
-    - name: Use Node.js 18 Staging
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-      
-    - name: 🔨 Build Project Staging
-      run: |
-        npm install
-        npm run build
-    
-    - name: List output files Staging
-      run: find out/ -print
-      
-    - name: 📂 Sync files Staging
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
-      with:
-        server: ${{ vars.FTP_URL }}
-        username: ${{ vars.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        protocol: "ftps"
-        local-dir: out/
-        server-dir: "./staging/"
-        dangerous-clean-slate: true
+      - name: Use Node.js 18 Staging
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: 🔨 Install partytown
+        run: npm install -g partytown
+
+      - name: 🔨 Build Project Staging
+        run: |
+          npm install
+          npm run build
+
+      - name: List output files Staging
+        run: find out/ -print
+
+      - name: 📂 Sync files Staging
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        with:
+          server: ${{ vars.FTP_URL }}
+          username: ${{ vars.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: "ftps"
+          local-dir: out/
+          server-dir: "./staging/"
+          dangerous-clean-slate: true
