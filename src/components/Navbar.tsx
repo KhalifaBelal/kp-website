@@ -48,6 +48,14 @@ const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute = "/" }) => {
         <div className="hidden md:flex gap-4">
           <ThemeToggle />
           <Link
+            className={kpButtonVariants({ variant: "ghost" })}
+            href="/privacyPolicy"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Privacy Policy
+          </Link>
+          <Link
             className={`${kpButtonVariants({ variant: "ghost" })} ${
               currentRoute === "/imprint" ? "hidden" : ""
             }`}
