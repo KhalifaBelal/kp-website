@@ -31,7 +31,7 @@ export default function CookieBanner() {
   useEffect(() => {
     setTimeout(
       () => setConsentVisible(cookieConsent != null ? false : true),
-      5000
+      10000
     );
   }, [cookieConsent]);
 
