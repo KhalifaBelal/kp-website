@@ -34,14 +34,14 @@ export default function CookieBanner() {
                         ${
                           cookieConsent != null ? "hidden" : "flex"
                         } px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4  
-                         bg-zinc-900 dark:bg-zinc-100 rounded-lg shadow z-[9999]`}
+                         bg-zinc-100 rounded-lg shadow z-[9999] border border-kp-red`}
     >
       <div className="text-center">
         <Link
           href="/info/cookies"
           className={kpButtonVariants({ variant: "link" })}
         >
-          <span className="text-slate-100 dark:text-slate-900">
+          <span className="text-zinc-900">
             We use <span className="font-bold text-kp-red">cookies</span> on our
             site.
           </span>
@@ -53,7 +53,7 @@ export default function CookieBanner() {
           className={kpButtonVariants({ variant: "link" })}
           onClick={() => setCookieConsent(false)}
         >
-          <span className="text-zinc-100 dark:text-zinc-900">Decline</span>
+          <span className="text-zinc-900">Decline</span>
         </KPButton>
         <KPButton
           className={kpButtonVariants({ variant: "outline" })}
