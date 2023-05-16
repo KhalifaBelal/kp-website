@@ -8,10 +8,10 @@ const StrategyStep = dynamic(
   () => import("@/components/sections/StrategyStep")
 );
 import WhoWeWorkWith from "@/components/sections/WhoWeWorkWith";
-import { prefaceData } from "@/lib/prefaceData";
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 
 import type { Metadata } from "next";
+import { prefaceData } from "@/lib/prefaceData";
 
 export const metadata: Metadata = {
   title: "Khalifa Partners | Home",
