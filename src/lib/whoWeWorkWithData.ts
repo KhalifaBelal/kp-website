@@ -1,9 +1,10 @@
 interface DataObject {
+  key: string;
   title: string;
   text: string;
 }
 
-export const whoWeWorkWithData = [
+export const whoWeWorkWithData: DataObject[] = [
   {
     key: "ideas",
     title: "Ideas",

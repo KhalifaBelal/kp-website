@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import { FC, HTMLAttributes } from "react";
 
-export const kpRowVariants = cva("relative flex mx-auto max-w-6xl w-full", {
+export const kpRowVariants = cva("relative flex max-w-6xl w-full", {
   variants: {
     variant: { default: "gap-5", intro: "gap-10 max-w-2xl text-center" },
     flexDirection: {
@@ -19,7 +19,7 @@ export const kpRowVariants = cva("relative flex mx-auto max-w-6xl w-full", {
       start: "justify-start",
       end: "justify-end",
     },
-    wrapperContainer: { default: "container", disable: "" },
+    wrapperContainer: { default: "container mx-auto", disable: "" },
   },
   defaultVariants: {
     variant: "default",

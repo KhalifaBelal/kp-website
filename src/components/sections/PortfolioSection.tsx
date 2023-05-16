@@ -3,16 +3,21 @@ const KPSection = dynamic(() => import("@/ui/KPSection"));
 const KPRow = dynamic(() => import("@/ui/KPRow"));
 const KPHeading = dynamic(() => import("@/ui/KPHeading"));
 const KPParagraph = dynamic(() => import("@/ui/KPParagraph"));
-import StrategyModelDark from "@/glb-models/StrategyModelDark";
-import StrategyModelLight from "@/glb-models/StrategyModelLight";
+import Image from "next/image";
 
-interface StrategyStepProps {
+interface PortfolioSectionProps {
   title: string;
   text: string;
-  model: number;
+  logoPath: string;
+  logoName: string;
 }
 
-function StrategyStep({ title, text, model }: StrategyStepProps) {
+function PortfolioSection({
+  title,
+  text,
+  logoPath,
+  logoName,
+}: PortfolioSectionProps) {
   return (
     <KPSection>
       <KPRow>
@@ -26,15 +31,19 @@ function StrategyStep({ title, text, model }: StrategyStepProps) {
           </KPHeading>
           <KPParagraph>{text}</KPParagraph>
         </KPRow>
-        <div className="relative w-full aspect-square dark:hidden">
-          <StrategyModelDark model={model} />
-        </div>
-        <div className="relative w-full aspect-square hidden dark:block">
-          <StrategyModelLight model={model} />
+        <div className="relative w-full aspect-square">
+          <Image
+            priority
+            quality={100}
+            style={{ objectFit: "contain" }}
+            fill
+            src={logoPath}
+            alt={logoName}
+          />
         </div>
       </KPRow>
     </KPSection>
   );
 }
 
-export default StrategyStep;
+export default PortfolioSection;
