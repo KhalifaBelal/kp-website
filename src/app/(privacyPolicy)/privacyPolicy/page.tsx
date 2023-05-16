@@ -202,7 +202,7 @@ export default function page() {
         von unseren Einwilligungs- und Verarbeitungsprozessen auf.
       </p>
       <p>
-        <strong>Speicherdauer: </strong>Im Hinblick auf die Speicherdauer werden
+        <strong>Speicherdauer: </strong>Im Hinblick auf die Speicherdauer werden
         die folgenden Arten von Cookies unterschieden:
       </p>
       <ul>
@@ -210,7 +210,7 @@ export default function page() {
           <strong>
             Temporäre Cookies (auch: Session- oder Sitzungs-Cookies):
           </strong>
-           Temporäre Cookies werden spätestens gelöscht, nachdem ein Nutzer ein
+          Temporäre Cookies werden spätestens gelöscht, nachdem ein Nutzer ein
           Online-Angebot verlassen und sein Endgerät (z.B. Browser oder mobile
           Applikation) geschlossen hat.
         </li>
@@ -220,7 +220,7 @@ export default function page() {
           beispielsweise der Login-Status gespeichert oder bevorzugte Inhalte
           direkt angezeigt werden, wenn der Nutzer eine Website erneut besucht.
           Ebenso können die mit Hilfe von Cookies erhobenen Daten der Nutzer zur
-          Reichweitenmessung verwendet werden. Sofern wir Nutzern keine
+          Reichweitenmessung verwendet werden. Sofern wir Nutzern keine
           expliziten Angaben zur Art und Speicherdauer von Cookies mitteilen (z.
           B. im Rahmen der Einholung der Einwilligung), sollten Nutzer davon
           ausgehen, dass Cookies permanent sind und die Speicherdauer bis zu
@@ -233,7 +233,7 @@ export default function page() {
         </strong>
         Nutzer können die von ihnen abgegebenen Einwilligungen jederzeit
         widerrufen und zudem einen Widerspruch gegen die Verarbeitung
-        entsprechend den gesetzlichen Vorgaben im Art. 21 DSGVO einlegen. Nutzer
+        entsprechend den gesetzlichen Vorgaben im Art. 21 DSGVO einlegen. Nutzer
         können ihren Widerspruch auch über die Einstellungen ihres Browsers
         erklären, z.B. durch Deaktivierung der Verwendung von Cookies (wobei
         dadurch auch die Funktionalität unserer Online-Dienste eingeschränkt
@@ -350,8 +350,8 @@ export default function page() {
       </ul>
       <h2 id="m263">Webanalyse, Monitoring und Optimierung</h2>
       <p>
-        Die Webanalyse (auch als "Reichweitenmessung" bezeichnet) dient der
-        Auswertung der Besucherströme unseres Onlineangebotes und kann
+        Die Webanalyse (auch als &quot;Reichweitenmessung&quot; bezeichnet)
+        dient der Auswertung der Besucherströme unseres Onlineangebotes und kann
         Verhalten, Interessen oder demographische Informationen zu den
         Besuchern, wie z.B. das Alter oder das Geschlecht, als pseudonyme Werte
         umfassen. Mit Hilfe der Reichweitenanalyse können wir z.B. erkennen, zu
