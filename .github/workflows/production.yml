@@ -16,13 +16,17 @@ jobs:
       with:
         node-version: '18'
       
-    - name: 🔨 Build Project Production
-      run: |
-        npm install
-        npm run build
-    
-    - name: List output files Production
-      run: find out/ -print
+        - name: 🔨 Install dependencies
+        run: npm ci
+
+      - name: 🔨 Build Project Staging
+        run: npm run build
+
+      - name: 📦 Install partytown
+        run: npm install "@builder.io/partytown"
+
+      - name: 🚀 Deploy with partytown
+        run: npx partytown copylib public/~partytown && npm run dev
       
     - name: 📂 Sync files Production
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
