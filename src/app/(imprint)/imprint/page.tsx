@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const page: FC = () => {
   return (
     <KPSection>
-      <KPRow flexDirection="col">
+      <KPRow flexDirection="col" alignItems="start">
         <KPHeading>Impressum</KPHeading>
 
         <KPHeading size="sm">Angaben gem&auml;&szlig; &sect; 5 TMG</KPHeading>
