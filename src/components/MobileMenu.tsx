@@ -32,7 +32,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ currentRoute = "/" }) => {
               <DropdownMenuItem asChild>
                 <Link
                   className="w-full flex items-center gap-1.5"
-                  href="/privacyPolicy"
+                  href="/privacy-policy"
                   rel="noreferrer"
                   target="_blank"
                 >

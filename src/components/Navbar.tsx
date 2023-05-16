@@ -49,7 +49,7 @@ const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute = "/" }) => {
           <ThemeToggle />
           <Link
             className={kpButtonVariants({ variant: "ghost" })}
-            href="/privacyPolicy"
+            href="/privacy-policy"
             rel="noreferrer"
             target="_blank"
           >
