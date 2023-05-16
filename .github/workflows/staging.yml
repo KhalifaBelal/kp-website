@@ -25,7 +25,7 @@ jobs:
         run: npm install --save-dev "@builder.io/partytown"
 
       - name: 🚀 Deploy with partytown
-        run: npm run partytown
+        run: npx partytown --source=./out --target=./staging
 
       - name: List output files Staging
         run: find out/ -print
