@@ -31,10 +31,6 @@ module.exports = {
         "kp-black": "#111111",
         "kp-white": "#f2f2f2",
       },
-      boxShadow: {
-        "inner-morph":
-          "inset 6px 6px 12px #121214, inset -6px -6px 12px #1e1e21",
-      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
