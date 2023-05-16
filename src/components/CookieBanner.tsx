@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 import { getLocalStorage, setLocalStorage } from "@/lib/storageHelper";
 import { useState, useEffect } from "react";
 import { KPButton, kpButtonVariants } from "@/ui/KPButton";
