@@ -1,10 +1,4 @@
-interface DataObject {
-  title: string;
-  text: string;
-  model: number;
-}
-
-export const strategyStepData: DataObject[] = [
+export const strategyStepData = [
   {
     title: "1:1 Sparring",
     text: "During the 1:1 sparring, your business model is validated on the basis of various criteria. If your idea has the necessary potential, we identify your personal as well as your business goals in an in-depth discussion and determine your strengths and weaknesses in relation to your business model.",

@@ -1,9 +1,4 @@
-interface DataObject {
-  title: string;
-  text: string;
-}
-
-export const prefaceData: DataObject[] = [
+export const prefaceData = [
   {
     title: "„ Strategy “",
     text: "In the first phase, we get to know you and your business model and make the necessary optimisations to implement your idea together in the best possible way.",

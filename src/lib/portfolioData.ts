@@ -1,11 +1,4 @@
-interface DataObject {
-  title: string;
-  text: string;
-  logoPath: string;
-  logoName: string;
-}
-
-export const portfolioData: DataObject[] = [
+export const portfolioData = [
   {
     title: "Salespects",
     text: "Salespects is the first customer acquisition system for financial and insurance advisors. The CRM-System is designed to help users structure their day-to-day business to achieve the highest possible level of business success. Compared to other CRM systems, it only has functions that are highly relevant to the industry, so that the target group feels that they are being met in the best possible way.",
