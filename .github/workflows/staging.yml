@@ -17,7 +17,7 @@ jobs:
           node-version: "18"
 
       - name: 🔨 Install partytown
-        run: npm install -g partytown
+        run: npm run partytown && next build
 
       - name: 🔨 Build Project Staging
         run: |
