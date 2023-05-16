@@ -7,7 +7,7 @@ const KPHeading = dynamic(() => import("@/ui/KPHeading"));
 
 function Intro() {
   return (
-    <KPSection>
+    <KPSection rel={"preload" && "prefetch"}>
       <KPRow flexDirection="col" alignItems="end">
         <div className="relative w-full max-w-[125px] lg:max-w-[175px] aspect-square">
           <Image
