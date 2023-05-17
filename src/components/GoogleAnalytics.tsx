@@ -1,4 +1,3 @@
-// components/GoogleAnalytics.tsx
 "use client";
 
 import Script from "next/script";
@@ -24,12 +23,12 @@ export default function GoogleAnalytics({
   return (
     <>
       <Script
-        strategy="worker"
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
       />
       <Script
         id="google-analytics"
-        strategy="worker"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
                 window.dataLayer = window.dataLayer || [];

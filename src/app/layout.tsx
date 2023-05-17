@@ -24,10 +24,10 @@ export default function RootLayout({
         <link rel="preload" href={`${Square}`} as="image" />
         <link rel="prefetch" href={`${Square}`} as="image" />
       </Head>
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-KG3VJEPD33" />
       <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
+        <CookieBanner />
         <Providers>
-          <GoogleAnalytics GA_MEASUREMENT_ID="G-KG3VJEPD33" />
-          <CookieBanner />
           <main>{children}</main>
         </Providers>
       </body>
