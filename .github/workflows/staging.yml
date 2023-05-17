@@ -24,14 +24,14 @@ jobs:
       - name: 📦 Install partytown
         run: npm install --save-dev "@builder.io/partytown" 
 
+      - name: 📂 Create partytown directory on server
+        run: echo mkdir -p ./staging/~partytown
+
       - name: 🚀 Deploy with partytown
         run: npm run partytown
 
       - name: List output files Staging
         run: find out/ -print
-
-      - name: 📂 Create partytown directory on server
-        run: echo mkdir -p ./staging/~partytown
 
       - name: 📂 Sync files Staging
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
