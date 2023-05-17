@@ -32,6 +32,7 @@ function PortfolioSection({
         </KPRow>
         <div className="relative w-full aspect-square">
           <Image
+            priority
             quality={100}
             style={{ objectFit: "contain" }}
             fill
