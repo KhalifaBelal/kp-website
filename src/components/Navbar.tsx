@@ -48,18 +48,16 @@ const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute }) => {
         <div className="hidden md:flex gap-4">
           <ThemeToggle />
           <Link
-            className={`${kpButtonVariants({ variant: "ghost" })} ${
-              currentRoute === "/privacy-policy" ? "hidden" : ""
-            }`}
+            className={kpButtonVariants({ variant: "ghost" })}
             href="/privacy-policy"
+            replace
           >
             Privacy Policy
           </Link>
           <Link
-            className={`${kpButtonVariants({ variant: "ghost" })} ${
-              currentRoute === "/imprint" ? "hidden" : ""
-            }`}
+            className={kpButtonVariants({ variant: "ghost" })}
             href="/imprint"
+            replace
           >
             Imprint
           </Link>
@@ -72,10 +70,9 @@ const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute }) => {
             Contact
           </Link>
           <Link
-            className={`${kpButtonVariants({ variant: "outline" })} ${
-              currentRoute === "/portfolio" ? "hidden" : ""
-            }`}
+            className={kpButtonVariants({ variant: "outline" })}
             href="/portfolio"
+            replace
           >
             Portfolio
           </Link>
