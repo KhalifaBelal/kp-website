@@ -50,8 +50,6 @@ const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute = "/" }) => {
           <Link
             className={kpButtonVariants({ variant: "ghost" })}
             href="/privacy-policy"
-            rel="noreferrer"
-            target="_blank"
           >
             Privacy Policy
           </Link>

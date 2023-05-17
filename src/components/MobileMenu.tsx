@@ -33,8 +33,6 @@ const MobileMenu: FC<MobileMenuProps> = ({ currentRoute = "/" }) => {
                 <Link
                   className="w-full flex items-center gap-1.5"
                   href="/privacy-policy"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <Icons.ShieldCheckIcon className="mr-2 h-5 w-5" />
                   <span>Privacy Policy</span>
