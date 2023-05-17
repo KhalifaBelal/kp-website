@@ -24,8 +24,6 @@ export default function RootLayout({
       <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
         <Providers>
           <CookieBanner />
-          <Navbar />
-          <MobileMenu />
           <main>{children}</main>
         </Providers>
       </body>

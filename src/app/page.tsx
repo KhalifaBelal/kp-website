@@ -18,6 +18,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="relative h-screen overflow-x-hidden">
+      <Navbar />
+      <MobileMenu />
       <Intro />
       <Concept />
       <WhoWeWorkWith />

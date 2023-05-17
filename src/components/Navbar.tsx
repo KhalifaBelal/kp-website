@@ -10,7 +10,7 @@ interface NavbarProps {
   currentRoute?: string;
 }
 
-const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute }) => {
+const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute = "/" }) => {
   return (
     <div className="fixed backdrop-blur-sm bg-white/75 dark:bg-zinc-900/75 z-50 top-0 left-0 right-0 h-20 border-b border-zinc-300 dark:border-zinc-700 shadow-sm flex items-center justify-between">
       <div className="container max-w-6xl mx-auto w-full flex justify-between items-center">
@@ -48,16 +48,18 @@ const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute }) => {
         <div className="hidden md:flex gap-4">
           <ThemeToggle />
           <Link
-            className={kpButtonVariants({ variant: "ghost" })}
+            className={`${kpButtonVariants({ variant: "ghost" })} ${
+              currentRoute === "/privacy-policy" ? "hidden" : ""
+            }`}
             href="/privacy-policy"
-            replace
           >
             Privacy Policy
           </Link>
           <Link
-            className={kpButtonVariants({ variant: "ghost" })}
+            className={`${kpButtonVariants({ variant: "ghost" })} ${
+              currentRoute === "/imprint" ? "hidden" : ""
+            }`}
             href="/imprint"
-            replace
           >
             Imprint
           </Link>
@@ -70,9 +72,10 @@ const Navbar: FC<NavbarProps> = ({ showLink = false, currentRoute }) => {
             Contact
           </Link>
           <Link
-            className={kpButtonVariants({ variant: "outline" })}
+            className={`${kpButtonVariants({ variant: "outline" })} ${
+              currentRoute === "/portfolio" ? "hidden" : ""
+            }`}
             href="/portfolio"
-            replace
           >
             Portfolio
           </Link>

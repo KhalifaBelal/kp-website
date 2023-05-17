@@ -4,8 +4,6 @@ import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
 import React from "react";
 
-import { FC } from "react";
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
