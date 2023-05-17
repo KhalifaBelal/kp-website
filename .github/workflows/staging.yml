@@ -21,15 +21,6 @@ jobs:
           npm install
           npm run build
 
-      - name: 📦 Install partytown
-        run: npm install --save-dev "@builder.io/partytown" 
-
-      - name: 📂 Create partytown directory on server
-        run: echo mkdir -p ./staging/~partytown
-
-      - name: 🚀 Deploy with partytown
-        run: npm run partytown
-
       - name: List output files Staging
         run: find out/ -print
 
@@ -42,4 +33,3 @@ jobs:
           protocol: "ftps"
           local-dir: out/
           server-dir: "./staging/"
-          dangerous-clean-slate: true

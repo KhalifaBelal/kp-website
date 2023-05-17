@@ -7,7 +7,6 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 const CookieBanner = dynamic(async () => import("@/components/CookieBanner"));
 const GoogleAnalytics = dynamic(() => import("@/components/GoogleAnalytics"));
-import { Partytown } from "@builder.io/partytown/react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -24,7 +23,6 @@ export default function RootLayout({
       <Head>
         <link rel="preload" href={`${Square}`} as="image" />
         <link rel="prefetch" href={`${Square}`} as="image" />
-        <Partytown debug={true} forward={["dataLayer.push"]} />
       </Head>
       <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
         <Providers>

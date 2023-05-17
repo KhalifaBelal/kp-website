@@ -21,12 +21,6 @@ jobs:
           npm install
           npm run build
 
-      - name: 📦 Install partytown
-        run: npm install "@builder.io/partytown"
-
-      - name: 🚀 Deploy with partytown
-        run: npx partytown copylib public/~partytown && npm run dev
-
       - name: List output files Production
         run: find out/ -print
 
@@ -39,4 +33,3 @@ jobs:
           protocol: "ftps"
           local-dir: out/
           server-dir: "./"
-          dangerous-clean-slate: true
