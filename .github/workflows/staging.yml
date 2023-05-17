@@ -22,7 +22,7 @@ jobs:
           npm run build
 
       - name: 📦 Install partytown
-        run: npm install --save-dev "@builder.io/partytown"
+        run: npm install --save-dev "@builder.io/partytown" && mkdir -p ./staging/~partytown
 
       - name: 🚀 Deploy with partytown
         run: npm run partytown
