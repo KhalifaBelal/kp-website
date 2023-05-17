@@ -1,6 +1,5 @@
 import WhoWeWorkWith from "@/components/sections/WhoWeWorkWith";
 import { strategyStepData as Data } from "@/lib/strategyStepData";
-import type { Metadata } from "next";
 import { prefaceData } from "@/lib/prefaceData";
 import MobileMenu from "@/components/MobileMenu";
 import Navbar from "@/components/Navbar";
@@ -8,6 +7,8 @@ import Concept from "@/components/sections/Concept";
 import Intro from "@/components/sections/Intro";
 import Preface from "@/components/sections/Preface";
 import StrategyStep from "@/components/sections/StrategyStep";
+
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Khalifa Partners | Home",

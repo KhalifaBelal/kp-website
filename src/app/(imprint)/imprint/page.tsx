@@ -4,14 +4,11 @@ import KPSection from "@/components/ui/KPSection";
 import KPRow from "@/components/ui/KPRow";
 import KPParagraph from "@/components/ui/KPParagraph";
 import Link from "next/link";
-import MobileMenu from "@/components/MobileMenu";
 
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Khalifa Partners | Portfolio",
-  description: "Discover our Hall of Partners.",
+  title: "Khalifa Partners | Imprint",
 };
 
 const page: FC = () => {
