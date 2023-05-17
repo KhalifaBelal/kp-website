@@ -29,7 +29,7 @@ export default function CookieBanner() {
   useEffect(() => {
     setTimeout(
       () => setConsentVisible(cookieConsent != null ? false : true),
-      10000
+      11111
     );
   }, [cookieConsent]);
 
