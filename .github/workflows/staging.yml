@@ -31,7 +31,7 @@ jobs:
         run: find out/ -print
 
       - name: 📂 Create partytown directory on server
-        run: echo "mkdir -p ./staging/~partytown"
+        run: echo mkdir -p ./staging/~partytown
 
       - name: 📂 Sync files Staging
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
