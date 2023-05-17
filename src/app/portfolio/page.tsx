@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Discover our Hall of Partners.",
 };
 
-const page: FC = () => {
+export default function page() {
   return (
     <div>
       {Data.map((section, index) => (
@@ -23,6 +23,4 @@ const page: FC = () => {
       ))}
     </div>
   );
-};
-
-export default page;
+}

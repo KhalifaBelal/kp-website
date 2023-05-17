@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Khalifa Partners | Imprint",
 };
 
-const page: FC = () => {
+export default function page() {
   return (
     <KPSection>
       <KPRow flexDirection="col" alignItems="start">
@@ -67,5 +67,3 @@ const page: FC = () => {
     </KPSection>
   );
 };
-
-export default page;

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Khalifa Partners | Privacy Policy",
 };
 
-const page: FC = ({}) => {
+export default function page() {
   return (
     <KPSection className="text-black dark:text-white">
       <KPRow flexDirection="col" alignItems="start">
@@ -545,6 +545,4 @@ const page: FC = ({}) => {
       </KPRow>
     </KPSection>
   );
-};
-
-export default page;
+}
