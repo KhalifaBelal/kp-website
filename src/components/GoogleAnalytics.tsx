@@ -15,10 +15,10 @@ export default function GoogleAnalytics({
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const url = pathname + searchParams.toString();
+    const url = pathname
 
     pageview(GA_MEASUREMENT_ID, url);
-  }, [pathname, searchParams, GA_MEASUREMENT_ID]);
+  }, [pathname, GA_MEASUREMENT_ID]);
 
   return (
     <>
