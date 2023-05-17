@@ -4,7 +4,15 @@ import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
 import React from "react";
 
-export default function page() {
+import { FC } from "react";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Khalifa Partners | Privacy Policy",
+};
+
+const page: FC = ({}) => {
   return (
     <KPSection className="text-black dark:text-white">
       <KPRow flexDirection="col" alignItems="start">
@@ -537,4 +545,6 @@ export default function page() {
       </KPRow>
     </KPSection>
   );
-}
+};
+
+export default page;

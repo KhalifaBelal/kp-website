@@ -31,14 +31,20 @@ const MobileMenu: FC<MobileMenuProps> = ({ currentRoute = "/" }) => {
             <DropdownMenuGroup onClick={() => setOpen(false)}>
               <DropdownMenuItem asChild>
                 <Link
-                  className="w-full flex items-center gap-1.5"
+                  className={`w-full flex items-center gap-1.5 ${
+                    currentRoute === "/privacy-policy" ? "hidden" : ""
+                  }`}
                   href="/privacy-policy"
                 >
                   <Icons.ShieldCheckIcon className="mr-2 h-5 w-5" />
                   <span>Privacy Policy</span>
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuSeparator />
+              <DropdownMenuSeparator
+                className={`${
+                  currentRoute === "/privacy-policy" ? "hidden" : ""
+                }`}
+              />
               <DropdownMenuItem asChild>
                 <Link
                   className={`w-full flex items-center gap-1.5 ${
