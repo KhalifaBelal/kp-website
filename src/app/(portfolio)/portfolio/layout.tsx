@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import MobileMenu from "@/components/MobileMenu";
 import Navbar from "@/components/Navbar";
 

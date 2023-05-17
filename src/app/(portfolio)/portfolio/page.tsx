@@ -1,9 +1,6 @@
 import { FC } from "react";
-import dynamic from "next/dynamic";
-const PortfolioSection = dynamic(
-  () => import("@/components/sections/PortfolioSection")
-);
 import { portfolioData as Data } from "@/lib/portfolioData";
+import PortfolioSection from "@/components/sections/PortfolioSection";
 
 import type { Metadata } from "next";
 
