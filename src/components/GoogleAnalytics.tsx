@@ -24,14 +24,12 @@ export default function GoogleAnalytics({
   return (
     <>
       <Script
-        strategy="afterInteractive"
+        strategy="worker"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        typeof="text/partytown"
       />
       <Script
         id="google-analytics"
         strategy="afterInteractive"
-        typeof="text/partytown"
         dangerouslySetInnerHTML={{
           __html: `
                 window.dataLayer = window.dataLayer || [];
