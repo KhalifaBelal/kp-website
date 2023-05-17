@@ -22,13 +22,18 @@ jobs:
           npm run build
 
       - name: 📦 Install partytown
-        run: npm install --save-dev "@builder.io/partytown" mkdir -p ./staging/~partytown
+        run: npm install --save-dev "@builder.io/partytown" 
 
       - name: 🚀 Deploy with partytown
         run: npm run partytown
 
       - name: List output files Staging
         run: find out/ -print
+
+      - name: 📂 Create partytown directory on server
+        run: |
+          echo "Creating partytown directory on server..."
+          echo "mkdir -p ./staging/~partytown" | lftp -c "open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_URL }}"
 
       - name: 📂 Sync files Staging
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
