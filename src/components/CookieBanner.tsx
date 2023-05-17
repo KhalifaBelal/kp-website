@@ -34,14 +34,7 @@ export default function CookieBanner() {
   }, [cookieConsent]);
 
   return consetVisible ? (
-    <div
-      className={`my-10 mx-auto max-w-max md:max-w-screen-sm
-                        fixed bottom-0 left-0 right-0 
-                        ${
-                          consetVisible != null ? "hidden" : "flex"
-                        } px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4  
-                         bg-white/90 backdrop-blur-sm rounded-lg shadow z-[9999] border border-kp-red`}
-    >
+    <div className="my-10 mx-auto max-w-max md:max-w-screen-sm fixed bottom-0 left-0 right-0 flex px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4 bg-white rounded-sm z-[9999] border border-kp-red">
       <div className="text-center">
         <p className="text-zinc-900">
           We use <span className="font-bold text-kp-red">cookies</span> on our

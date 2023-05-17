@@ -6,9 +6,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // offset navbar height
   return (
-    <section>
+    <section className="py-32">
       <Navbar showLink currentRoute="/portfolio" />
       <MobileMenu currentRoute="/portfolio" />
       {children}
