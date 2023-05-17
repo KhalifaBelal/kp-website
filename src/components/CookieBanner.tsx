@@ -40,7 +40,7 @@ export default function CookieBanner() {
                         ${
                           cookieConsent != null ? "hidden" : "flex"
                         } px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4  
-                         bg-zinc-100 rounded-lg shadow z-[9999] border border-kp-red`}
+                         bg-white/90 backdrop-blur-sm rounded-lg shadow z-[9999] border border-kp-red`}
     >
       <div className="text-center">
         <p className="text-zinc-900">
