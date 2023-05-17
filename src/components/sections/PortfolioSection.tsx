@@ -1,9 +1,8 @@
-import dynamic from "next/dynamic";
-const KPSection = dynamic(() => import("@/ui/KPSection"));
-const KPRow = dynamic(() => import("@/ui/KPRow"));
-const KPHeading = dynamic(() => import("@/ui/KPHeading"));
-const KPParagraph = dynamic(() => import("@/ui/KPParagraph"));
 import Image from "next/image";
+import KPHeading from "../ui/KPHeading";
+import KPParagraph from "../ui/KPParagraph";
+import KPRow from "../ui/KPRow";
+import KPSection from "../ui/KPSection";
 
 interface PortfolioSectionProps {
   title: string;
