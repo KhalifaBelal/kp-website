@@ -1,17 +1,13 @@
-import dynamic from "next/dynamic";
-const MobileMenu = dynamic(async () => import("@/components/MobileMenu"));
-const Navbar = dynamic(async () => import("@/components/Navbar"));
-const Concept = dynamic(() => import("@/components/sections/Concept"));
-const Intro = dynamic(async () => import("@/components/sections/Intro"));
-const Preface = dynamic(() => import("@/components/sections/Preface"));
-const StrategyStep = dynamic(
-  () => import("@/components/sections/StrategyStep")
-);
 import WhoWeWorkWith from "@/components/sections/WhoWeWorkWith";
 import { strategyStepData as Data } from "@/lib/strategyStepData";
-
 import type { Metadata } from "next";
 import { prefaceData } from "@/lib/prefaceData";
+import MobileMenu from "@/components/MobileMenu";
+import Navbar from "@/components/Navbar";
+import Concept from "@/components/sections/Concept";
+import Intro from "@/components/sections/Intro";
+import Preface from "@/components/sections/Preface";
+import StrategyStep from "@/components/sections/StrategyStep";
 
 export const metadata: Metadata = {
   title: "Khalifa Partners | Home",
