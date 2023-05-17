@@ -4,6 +4,8 @@ import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import MobileMenu from "@/components/MobileMenu";
+import Navbar from "@/components/Navbar";
 const CookieBanner = dynamic(async () => import("@/components/CookieBanner"));
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -22,6 +24,8 @@ export default function RootLayout({
       <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
         <Providers>
           <CookieBanner />
+          <Navbar />
+          <MobileMenu />
           <main>{children}</main>
         </Providers>
       </body>

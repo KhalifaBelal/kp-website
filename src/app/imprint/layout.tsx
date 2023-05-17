@@ -9,8 +9,6 @@ export default function RootLayout({
   // offset navbar height
   return (
     <section className="py-32">
-      <Navbar showLink currentRoute="/imprint" />
-      <MobileMenu currentRoute="/imprint" />
       {children}
     </section>
   );
