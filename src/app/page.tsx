@@ -3,9 +3,9 @@ const Preface = dynamic(() => import("@/components/sections/Preface"));
 const WhoWeWorkWith = dynamic(
   () => import("@/components/sections/WhoWeWorkWith")
 );
-const CookieBanner = dynamic(
-  async () => await import("@/components/CookieBanner")
-);
+// const CookieBanner = dynamic(
+//   async () => await import("@/components/CookieBanner")
+// );
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 import { prefaceData } from "@/lib/prefaceData";
 import MobileMenu from "@/components/MobileMenu";
@@ -27,9 +27,9 @@ export default function Home() {
     <div className="relative h-screen overflow-x-hidden">
       <Navbar />
       <MobileMenu />
-      <Suspense fallback={null}>
+      {/* <Suspense fallback={null}>
         <CookieBanner />
-      </Suspense>
+      </Suspense> */}
       <Intro />
       <Concept />
       <WhoWeWorkWith />
