@@ -3,9 +3,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  output: "export",
   swcMinify: true,
-  images: { unoptimized: true },
   trailingSlash: true,
   compress: true,
   async headers() {
@@ -47,4 +45,6 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = {
+  ...nextConfig,
+};
