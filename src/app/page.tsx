@@ -3,6 +3,7 @@ const Preface = dynamic(() => import("@/components/sections/Preface"));
 const WhoWeWorkWith = dynamic(
   () => import("@/components/sections/WhoWeWorkWith")
 );
+const CookieBanner = dynamic(() => import("@/components/CookieBanner"));
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 import { prefaceData } from "@/lib/prefaceData";
 import MobileMenu from "@/components/MobileMenu";
@@ -12,6 +13,7 @@ import Intro from "@/components/sections/Intro";
 import StrategyStep from "@/components/sections/StrategyStep";
 
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Khalifa Partners | Home",
@@ -23,6 +25,9 @@ export default function Home() {
     <div className="relative h-screen overflow-x-hidden">
       <Navbar />
       <MobileMenu />
+      <Suspense fallback={null}>
+        <CookieBanner />
+      </Suspense>
       <Intro />
       <Concept />
       <WhoWeWorkWith />

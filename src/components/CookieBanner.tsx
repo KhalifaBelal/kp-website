@@ -27,11 +27,11 @@ export default function CookieBanner() {
 
   return (
     <div
-      className={`my-10 mx-auto max-w-max md:max-w-screen-sm
+      className={`my-3 mx-auto max-w-max md:max-w-screen-sm
                         fixed bottom-0 left-0 right-0 
                         ${
                           cookieConsent != null ? "hidden" : "flex"
-                        } px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4  
+                        } px-1 md:px-2 py-1 justify-between items-center flex-col sm:flex-row gap-3  
                          bg-zinc-100 rounded-lg shadow z-[9999] border border-kp-red`}
     >
       <div className="text-center">

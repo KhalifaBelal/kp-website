@@ -52,7 +52,6 @@ function PyramidDark() {
         position={[10, 15, -5]}
         castShadow
       />
-      <Environment preset="city" background={null} />
       <ContactShadows
         color={"#111111"}
         resolution={512}

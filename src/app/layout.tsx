@@ -1,7 +1,5 @@
 import "@/styles/globals.css";
 import Providers from "@/components/Providers";
-import dynamic from "next/dynamic";
-const CookieBanner = dynamic(() => import("@/components/CookieBanner"));
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -21,7 +19,6 @@ export default function RootLayout({
       <GoogleAnalytics GA_MEASUREMENT_ID="G-KG3VJEPD33" />
       <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
         <Providers>
-          <CookieBanner />
           <main>{children}</main>
         </Providers>
       </body>
