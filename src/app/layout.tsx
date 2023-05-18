@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
-import { Montserrat } from "next/font/google";
 import Providers from "@/components/Providers";
-import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
 const CookieBanner = dynamic(() => import("@/components/CookieBanner"));
+import { Montserrat } from "next/font/google";
+import { cn } from "@/lib/utils";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 

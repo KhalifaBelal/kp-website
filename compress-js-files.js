@@ -14,12 +14,8 @@ const filesToCompress = [
     output: "./out/_next/static/chunks/2443530c-ae343e094d078836.js",
   },
   {
-    input: "./out/_next/static/chunks/139-0927d340f6af3f90.js",
-    output: "./out/_next/static/chunks/139-0927d340f6af3f90.js",
-  },
-  {
-    input: "./out/_next/static/chunks/main-bca3207a2ca4794e.js",
-    output: "./out/_next/static/chunks/main-bca3207a2ca4794e.js",
+    input: "./out/_next/static/chunks/414-90d59fdc595e78a1.js",
+    output: "./out/_next/static/chunks/414-90d59fdc595e78a1.js",
   },
 ];
 

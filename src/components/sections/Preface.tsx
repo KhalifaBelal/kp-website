@@ -1,9 +1,9 @@
-
+import dynamic from "next/dynamic";
+const KPSection = dynamic(() => import("@/ui/KPSection"));
+const KPRow = dynamic(() => import("@/ui/KPRow"));
+const KPHeading = dynamic(() => import("@/ui/KPHeading"));
 import { kpButtonVariants } from "@/ui/KPButton";
 import Link from "next/link";
-import KPHeading from "../ui/KPHeading";
-import KPRow from "../ui/KPRow";
-import KPSection from "../ui/KPSection";
 
 interface PrefaceProps {
   title: string;
