@@ -3,10 +3,6 @@ const Preface = dynamic(() => import("@/components/sections/Preface"));
 const WhoWeWorkWith = dynamic(
   () => import("@/components/sections/WhoWeWorkWith")
 );
-const CookieBanner = dynamic(() => import("@/components/CookieBanner"), {
-  loading: () => <div>Loading...</div>,
-  ssr: false, // Set this to false if you don't want to server-side render the lazy component
-});
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 import { prefaceData } from "@/lib/prefaceData";
 import MobileMenu from "@/components/MobileMenu";
@@ -25,9 +21,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="relative h-screen overflow-x-hidden">
-      <Navbar />
-      <MobileMenu />
-      <CookieBanner />
 
       <Intro />
       <Concept />
