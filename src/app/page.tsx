@@ -1,11 +1,14 @@
-import WhoWeWorkWith from "@/components/sections/WhoWeWorkWith";
+import dynamic from "next/dynamic";
+const Preface = dynamic(() => import("@/components/sections/Preface"));
+const WhoWeWorkWith = dynamic(
+  () => import("@/components/sections/WhoWeWorkWith")
+);
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 import { prefaceData } from "@/lib/prefaceData";
 import MobileMenu from "@/components/MobileMenu";
 import Navbar from "@/components/Navbar";
 import Concept from "@/components/sections/Concept";
 import Intro from "@/components/sections/Intro";
-import Preface from "@/components/sections/Preface";
 import StrategyStep from "@/components/sections/StrategyStep";
 
 import type { Metadata } from "next";
