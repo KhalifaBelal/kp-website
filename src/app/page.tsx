@@ -3,7 +3,9 @@ const Preface = dynamic(() => import("@/components/sections/Preface"));
 const WhoWeWorkWith = dynamic(
   () => import("@/components/sections/WhoWeWorkWith")
 );
-const CookieBanner = dynamic(() => import("@/components/CookieBanner"));
+const CookieBanner = dynamic(
+  async () => await import("@/components/CookieBanner")
+);
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 import { prefaceData } from "@/lib/prefaceData";
 import MobileMenu from "@/components/MobileMenu";

@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF, Environment, ContactShadows } from "@react-three/drei";
+import { useGLTF, ContactShadows } from "@react-three/drei";
 import React, { Suspense, useRef } from "react";
 import * as THREE from "three";
 
@@ -42,18 +42,19 @@ function PyramidDark() {
       }}
       camera={{ position: [0, 0, 4], fov: 40 }}
     >
-      <ambientLight intensity={3} color={"#f2f2f2"} />
-      <directionalLight intensity={3} color={"#f2f2f2"} />
-      <pointLight position={[1, 2, 1]} intensity={1} color={"#f2f2f2"} />
+      <ambientLight intensity={3} color={"#ffffff"} />
+      <directionalLight intensity={3} color={"#ffffff"} />
+      <pointLight position={[1, 2, 1]} intensity={1} color={"#ffffff"} />
       <spotLight
         intensity={0.5}
         angle={0.1}
         penumbra={1}
         position={[10, 15, -5]}
         castShadow
+        color="#ffffff"
       />
       <ContactShadows
-        color={"#111111"}
+        color={"#000000"}
         resolution={512}
         position={[0, -0.8, 0]}
         opacity={1}
