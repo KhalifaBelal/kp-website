@@ -6,7 +6,6 @@ import { KPButton, kpButtonVariants } from "@/ui/KPButton";
 
 export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState<boolean>(false);
-  const [consetVisible, setConsentVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const storedCookieConsent = getLocalStorage("cookie_consent", null);
@@ -26,15 +25,15 @@ export default function CookieBanner() {
     console.log("Cookie Consent: ", cookieConsent);
   }, [cookieConsent]);
 
-  useEffect(() => {
-    setTimeout(
-      () => setConsentVisible(cookieConsent != null ? false : true),
-      10000
-    );
-  }, [cookieConsent]);
-
-  return consetVisible ? (
-    <div className="my-10 mx-auto max-w-max md:max-w-screen-sm fixed bottom-0 left-0 right-0 flex px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4 bg-white rounded-sm z-[9999] border border-kp-red">
+  return (
+    <div
+      className={`my-10 mx-auto max-w-max md:max-w-screen-sm
+                        fixed bottom-0 left-0 right-0 
+                        ${
+                          cookieConsent != null ? "hidden" : "flex"
+                        } px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4  
+                         bg-zinc-100 rounded-lg shadow z-[9999] border border-kp-red`}
+    >
       <div className="text-center">
         <p className="text-zinc-900">
           We use <span className="font-bold text-kp-red">cookies</span> on our
@@ -57,5 +56,5 @@ export default function CookieBanner() {
         </KPButton>
       </div>
     </div>
-  ) : null;
+  );
 }

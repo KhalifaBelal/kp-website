@@ -33,18 +33,6 @@ const filesToCompress = [
     input: "./public/glb-assets/pyramid_light.glb",
     output: "./public/glb-assets/pyramid_light.glb",
   },
-  {
-    input: "./out/_next/static/chunks/05ee798f-8231db80582eed74.js",
-    output: "./out/_next/static/chunks/05ee798f-8231db80582eed74.js",
-  },
-  {
-    input: "./out/_next/static/chunks/167-4f711d550d7696af.js",
-    output: "./out/_next/static/chunks/167-4f711d550d7696af.js",
-  },
-  {
-    input: "./out/_next/static/chunks/2443530c-ae343e094d078836.js",
-    output: "./out/_next/static/chunks/2443530c-ae343e094d078836.js",
-  },
 ];
 
 filesToCompress.forEach((file) => {

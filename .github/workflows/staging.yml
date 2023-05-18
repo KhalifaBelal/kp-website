@@ -21,9 +21,13 @@ jobs:
           npm install
           npm run build
 
-      - name: Compress large files
+      - name: Compress glb files
         run: |
-          node compress-large-files.js
+          node compress-glb-files.js
+
+      - name: Compress js files
+        run: |
+          node compress-js-files.js
 
       - name: List output files Staging
         run: find out/ -print
