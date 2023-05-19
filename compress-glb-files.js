@@ -33,6 +33,38 @@ const filesToCompress = [
     input: "./public/glb-assets/pyramid_light.glb",
     output: "./public/glb-assets/pyramid_light.glb",
   },
+  {
+    input: "./out/glb-assets/sparring-model_dark.glb",
+    output: "./out/glb-assets/sparring-model_dark.glb",
+  },
+  {
+    input: "./out/glb-assets/sparring-model_light.glb",
+    output: "./out/glb-assets/sparring-model_light.glb",
+  },
+  {
+    input: "./out/glb-assets/strategicplan-model_dark.glb",
+    output: "./out/glb-assets/strategicplan-model_dark.glb",
+  },
+  {
+    input: "./out/glb-assets/strategicplan-model_light.glb",
+    output: "./out/glb-assets/strategicplan-model_light.glb",
+  },
+  {
+    input: "./out/glb-assets/offer-model_dark.glb",
+    output: "./out/glb-assets/offer-model_dark.glb",
+  },
+  {
+    input: "./out/glb-assets/offer-model_light.glb",
+    output: "./out/glb-assets/offer-model_light.glb",
+  },
+  {
+    input: "./out/glb-assets/pyramid_dark.glb",
+    output: "./out/glb-assets/pyramid_dark.glb",
+  },
+  {
+    input: "./out/glb-assets/pyramid_light.glb",
+    output: "./out/glb-assets/pyramid_light.glb",
+  },
 ];
 
 filesToCompress.forEach((file) => {
