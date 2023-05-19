@@ -1,6 +1,5 @@
 "use client";
 
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { Canvas } from "@react-three/fiber";
 import {
   useGLTF,
@@ -26,16 +25,8 @@ function Model({ model }) {
 }
 
 function StrategyModelLight({ model }) {
-  const controls = useRef();
-  useFrame(() => {
-    controls.current.update();
-  });
-
   return (
     <Canvas
-      onCreated={({ gl }) => {
-        controls.current = new OrbitControls(gl.domElement);
-      }}
       dpr={[1, 2]}
       camera={{ fov: 25 }}
       style={{
