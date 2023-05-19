@@ -19,7 +19,7 @@ function PortfolioSection({
 }: PortfolioSectionProps) {
   return (
     <KPSection>
-      <KPRow>
+      <KPRow className="lg:gap-32">
         <KPRow
           wrapperContainer="disable"
           flexDirection="col"
@@ -30,16 +30,18 @@ function PortfolioSection({
           </KPHeading>
           <KPParagraph>{text}</KPParagraph>
         </KPRow>
-        <div className="relative w-full aspect-square">
           <Image
             priority
             quality={100}
-            style={{ objectFit: "contain" }}
-            fill
+            typeof="image"
+            rel="preload"
+            unoptimized={false}
+            width={500}
+            height={500}
+            className="aspect-square"
             src={logoPath}
             alt={logoName}
           />
-        </div>
       </KPRow>
     </KPSection>
   );

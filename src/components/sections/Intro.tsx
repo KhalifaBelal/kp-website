@@ -17,6 +17,7 @@ function Intro() {
           unoptimized={false}
           width={150}
           height={150}
+          className="aspect-square"
         />
         <KPHeading className="text-black dark:text-white">
           We diversify our Portfolio by building companies with outstanding

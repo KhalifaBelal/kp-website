@@ -19,6 +19,7 @@ export default function Navbar() {
             height={120}
             src="/logos/kp-logo-dark.png"
             alt="kp-logo"
+            className="aspect-square"
           />
         </div>
         <div className="hidden dark:block">
@@ -30,6 +31,7 @@ export default function Navbar() {
             height={120}
             src="/logos/kp-logo-light.png"
             alt="kp-logo"
+            className="aspect-square"
           />
         </div>
 

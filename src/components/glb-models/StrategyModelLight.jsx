@@ -3,10 +3,10 @@
 import { Canvas } from "@react-three/fiber";
 import {
   useGLTF,
-  PresentationControls,
   OrbitControls,
+  PresentationControls,
 } from "@react-three/drei";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 
 function Model({ model }) {
   const models = [

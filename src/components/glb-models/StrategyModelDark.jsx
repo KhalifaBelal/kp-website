@@ -1,12 +1,12 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
+import React, { Suspense } from "react";
 import {
   useGLTF,
   PresentationControls,
   OrbitControls,
 } from "@react-three/drei";
-import React, { Suspense } from "react";
 
 function Model({ model }) {
   const models = [
