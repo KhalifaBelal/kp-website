@@ -1,5 +1,6 @@
 "use client";
 
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, ContactShadows } from "@react-three/drei";
 import React, { Suspense, useRef } from "react";
@@ -17,7 +18,7 @@ function Model(props) {
       Math.sin(t / 4) / 15
     );
     ref.current.position.y = -(3 + Math.cos(t / 2)) / 7;
-    ref.current.position.x = -.2;
+    ref.current.position.x = -0.2;
   });
 
   return (
@@ -32,8 +33,13 @@ function Model(props) {
 }
 
 function PyramidDark() {
+  const controls = useRef();
+
   return (
     <Canvas
+      onCreated={({ gl }) => {
+        controls.current = new OrbitControls(gl.domElement);
+      }}
       eventPrefix="client"
       style={{
         pointerEvents: "none",

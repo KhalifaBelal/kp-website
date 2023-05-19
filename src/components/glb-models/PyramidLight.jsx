@@ -1,5 +1,6 @@
 "use client";
 
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, ContactShadows } from "@react-three/drei";
 import React, { Suspense, useRef } from "react";
@@ -32,8 +33,13 @@ function Model(props) {
 }
 
 function PyramidLight() {
+  const controls = useRef();
+
   return (
     <Canvas
+      onCreated={({ gl }) => {
+        controls.current = new OrbitControls(gl.domElement);
+      }}
       eventPrefix="client"
       style={{
         pointerEvents: "none",
