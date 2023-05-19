@@ -1,10 +1,9 @@
 "use client";
 
-import dynamic from "next/dynamic";
-const KPSection = dynamic(() => import("@/ui/KPSection"));
-const KPRow = dynamic(() => import("@/ui/KPRow"));
-const KPHeading = dynamic(() => import("@/ui/KPHeading"));
-const KPParagraph = dynamic(() => import("@/ui/KPParagraph"));
+import KPHeading from "../ui/KPHeading";
+import KPParagraph from "../ui/KPParagraph";
+import KPRow from "../ui/KPRow";
+import KPSection from "../ui/KPSection";
 import { whoWeWorkWithData as Data } from "@/lib/whoWeWorkWithData";
 import { useState } from "react";
 import { KPButton, kpButtonVariants } from "@/ui/KPButton";

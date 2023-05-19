@@ -1,12 +1,22 @@
 import Intro from "@/components/sections/Intro";
 import dynamic from "next/dynamic";
-const Preface = dynamic(() => import("@/components/sections/Preface"));
+const Preface = dynamic(() => import("@/components/sections/Preface"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false,
+});
 const WhoWeWorkWith = dynamic(
   () => import("@/components/sections/WhoWeWorkWith")
 );
-const Concept = dynamic(() => import("@/components/sections/Concept"));
+const Concept = dynamic(() => import("@/components/sections/Concept"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false,
+});
 const StrategyStep = dynamic(
-  () => import("@/components/sections/StrategyStep")
+  () => import("@/components/sections/StrategyStep"),
+  {
+    loading: () => <div>Loading...</div>,
+    ssr: false,
+  }
 );
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 import { prefaceData } from "@/lib/prefaceData";

@@ -1,6 +1,10 @@
-
-import StrategyModelDark from "@/glb-models/StrategyModelDark";
-import StrategyModelLight from "@/glb-models/StrategyModelLight";
+import dynamic from "next/dynamic";
+const StrategyModelDark = dynamic(
+  () => import("@/glb-models/StrategyModelDark")
+);
+const StrategyModelLight = dynamic(
+  () => import("@/glb-models/StrategyModelLight")
+);
 import KPHeading from "../ui/KPHeading";
 import KPParagraph from "../ui/KPParagraph";
 import KPRow from "../ui/KPRow";
