@@ -21,6 +21,10 @@ jobs:
           npm install
           npm run build
 
+      - name: GZIP-js-files
+        run: |
+          node gzip-compression.js
+
       - name: List output files Production
         run: find out/ -print
 
