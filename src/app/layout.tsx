@@ -1,10 +1,10 @@
+import "@/styles/globals.css";
 import Providers from "@/components/Providers";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
-import MobileMenu from "@/components/MobileMenu";
 const CookieBanner = dynamic(() => import("@/components/CookieBanner"), {
   loading: () => <div>Loading...</div>,
   ssr: false,
