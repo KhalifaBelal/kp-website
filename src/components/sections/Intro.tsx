@@ -20,16 +20,10 @@ function Intro() {
             rel="preload"
           />
         </div>
-        <KPHeading size="default" className="text-black dark:text-white">
-          We diversify our{" "}
-          <Link
-            href="/portfolio"
-            className="underline underline-offset-2 text-kp-red"
-          >
-            Portfolio
-          </Link>{" "}
-          by building companies with outstanding personalities and supporting
-          them with our know-how, network and capital.
+        <KPHeading className="text-black dark:text-white">
+          We diversify our Portfolio by building companies with outstanding
+          personalities and supporting them with our know-how, network and
+          capital.
         </KPHeading>
       </KPRow>
     </KPSection>
