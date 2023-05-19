@@ -32,8 +32,8 @@ export default function RootLayout({
       <GoogleAnalytics GA_MEASUREMENT_ID="G-KG3VJEPD33" />
       <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
         <Providers>
-          <Navbar />
           <CookieBanner />
+          <Navbar />
           <main>{children}</main>
         </Providers>
       </body>

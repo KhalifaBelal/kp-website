@@ -3,6 +3,8 @@
 import { getLocalStorage, setLocalStorage } from "@/lib/storageHelper";
 import { useState, useEffect } from "react";
 import { KPButton, kpButtonVariants } from "@/ui/KPButton";
+import Link from "next/link";
+import KPParagraph from "./ui/KPParagraph";
 
 export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState<boolean>(false);
@@ -28,32 +30,39 @@ export default function CookieBanner() {
   return (
     <div
       className={`my-3 mx-auto max-w-xs
-                        fixed bottom-0 left-0 right-0 md:bottom-10 md:left-10 md:right-auto
+                        fixed bottom-0 left-0 right-0 md:bottom-6 md:left-6 md:right-auto
                         ${
                           cookieConsent != null ? "hidden" : "flex"
-                        } p-3 md:p-5 justify-between items-center flex-col gap-3  
-                         bg-zinc-100 rounded-lg shadow z-[9999] border border-kp-red`}
+                        } p-3 md:p-5 justify-between items-center flex-col gap-5 bg-zinc-100
+                        dark:bg-zinc-900 rounded-lg shadow z-[9999] border border-zinc-900 dark:border-zinc-100`}
     >
       <div className="text-center">
-        <p className="text-zinc-900">
-          We use <span className="font-bold text-kp-red">cookies</span> on our
-          site.
-        </p>
+        <KPParagraph className="text-zinc-900 dark:text-zinc-100">
+          We use cookies on our site.
+        </KPParagraph>
       </div>
 
-      <div className="flex gap-2">
-        <KPButton
-          className={kpButtonVariants({ variant: "outline" })}
-          onClick={() => setCookieConsent(false)}
+      <div className="flex flex-col gap-2">
+        <div className="flex gap-2">
+          <KPButton
+            className={kpButtonVariants({ variant: "outline" })}
+            onClick={() => setCookieConsent(false)}
+          >
+            Decline
+          </KPButton>
+          <KPButton
+            className={kpButtonVariants({ variant: "outline" })}
+            onClick={() => setCookieConsent(true)}
+          >
+            Allow Cookies
+          </KPButton>
+        </div>
+        <Link
+          className={kpButtonVariants({ variant: "ghost" }) + "w-full"}
+          href="/privacy-policy"
         >
-          Decline
-        </KPButton>
-        <KPButton
-          className={kpButtonVariants({ variant: "outline" })}
-          onClick={() => setCookieConsent(true)}
-        >
-          Allow Cookies
-        </KPButton>
+          Privacy Policy
+        </Link>
       </div>
     </div>
   );
