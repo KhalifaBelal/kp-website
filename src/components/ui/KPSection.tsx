@@ -10,8 +10,12 @@ export const kpSectionVariants = cva(
         default: "flex",
         col: "flex-col",
       },
+      layout: {
+        default: "pt-32",
+        intro: "pt-10",
+      },
     },
-    defaultVariants: { flexDirection: "default" },
+    defaultVariants: { flexDirection: "default", layout: "default" },
   }
 );
 
@@ -22,6 +26,7 @@ export interface KPSectionProps
 const KPSection: FC<KPSectionProps> = ({
   className,
   flexDirection,
+  layout,
   children,
   ...props
 }) => {
@@ -31,6 +36,7 @@ const KPSection: FC<KPSectionProps> = ({
         kpSectionVariants({
           className,
           flexDirection,
+          layout,
         })
       )}
       {...props}

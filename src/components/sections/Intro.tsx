@@ -5,19 +5,19 @@ import KPSection from "../ui/KPSection";
 
 function Intro() {
   return (
-    <KPSection>
+    <KPSection layout="intro">
       <KPRow flexDirection="col" alignItems="end">
-          <Image
-            priority
-            quality={100}
-            src="/square.png"
-            alt="square"
-            typeof="image"
-            rel="preload"
-            unoptimized={false}
-            width={150}
-            height={150}
-          />
+        <Image
+          priority
+          quality={100}
+          src="/square.png"
+          alt="square"
+          typeof="image"
+          rel="preload"
+          unoptimized={false}
+          width={150}
+          height={150}
+        />
         <KPHeading className="text-black dark:text-white">
           We diversify our Portfolio by building companies with outstanding
           personalities and supporting them with our know-how, network and
