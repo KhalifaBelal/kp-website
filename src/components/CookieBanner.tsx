@@ -46,7 +46,7 @@ export default function CookieBanner() {
           className={kpButtonVariants({ variant: "outline" })}
           onClick={() => setCookieConsent(false)}
         >
-          <span className="text-zinc-900">Decline</span>
+          Decline
         </KPButton>
         <KPButton
           className={kpButtonVariants({ variant: "outline" })}
