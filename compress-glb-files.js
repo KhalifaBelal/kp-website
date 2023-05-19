@@ -62,12 +62,12 @@ const filesToCompress = [
     output: "./out/glb-assets/pyramid_dark.glb",
   },
   {
-    input: "./out/glb-assets/pyramid_light.glb",
-    output: "./out/glb-assets/pyramid_light.glb",
+    input: "/out/glb-assets/pyramid_light.glb",
+    output: "/out/glb-assets/pyramid_light.glb",
   },
 ];
 
-filesToCompress.forEach((file) => {
+filesToCompress.forEach(async (file) => {
   exec(
     `npx gltf-pipeline -i ${file.input} -o ${file.output} --draco.compressionLevel 7`,
     (error, stdout, stderr) => {

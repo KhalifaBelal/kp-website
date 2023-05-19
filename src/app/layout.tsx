@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import Providers from "@/components/Providers";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -11,7 +10,14 @@ const CookieBanner = dynamic(() => import("@/components/CookieBanner"), {
   ssr: false,
 });
 
+import type { Metadata } from "next";
+
 const montserrat = Montserrat({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Khalifa Partners | Home",
+  description: "People First. Business Lasts.",
+};
 
 export default function RootLayout({
   children,

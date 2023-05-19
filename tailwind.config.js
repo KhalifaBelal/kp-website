@@ -27,9 +27,6 @@ module.exports = {
       colors: {
         ...colors,
         "kp-red": "#c1272d",
-        "kp-gray": "#333333",
-        "kp-black": "#111111",
-        "kp-white": "#f2f2f2",
       },
     },
   },

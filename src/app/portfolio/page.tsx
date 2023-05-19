@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { portfolioData as Data } from "@/lib/portfolioData";
 import PortfolioSection from "@/components/sections/PortfolioSection";
 

@@ -5,23 +5,13 @@ const WhoWeWorkWith = dynamic(
 );
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 import { prefaceData } from "@/lib/prefaceData";
-import MobileMenu from "@/components/MobileMenu";
-import Navbar from "@/components/Navbar";
 import Concept from "@/components/sections/Concept";
 import Intro from "@/components/sections/Intro";
 import StrategyStep from "@/components/sections/StrategyStep";
 
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Khalifa Partners | Home",
-  description: "People First. Business Lasts.",
-};
-
 export default function Home() {
   return (
     <div className="relative h-screen overflow-x-hidden">
-
       <Intro />
       <Concept />
       <WhoWeWorkWith />
