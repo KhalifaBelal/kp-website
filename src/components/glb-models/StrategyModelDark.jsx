@@ -27,7 +27,9 @@ function Model({ model }) {
 
 function StrategyModelDark({ model }) {
   const controls = useRef();
-
+  useFrame(() => {
+    controls.current.update();
+  });
   return (
     <Canvas
       onCreated={({ gl }) => {

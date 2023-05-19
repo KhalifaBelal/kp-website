@@ -34,6 +34,9 @@ function Model(props) {
 
 function PyramidDark() {
   const controls = useRef();
+  useFrame(() => {
+    controls.current.update();
+  });
 
   return (
     <Canvas

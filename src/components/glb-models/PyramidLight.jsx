@@ -34,6 +34,9 @@ function Model(props) {
 
 function PyramidLight() {
   const controls = useRef();
+  useFrame(() => {
+    controls.current.update();
+  });
 
   return (
     <Canvas

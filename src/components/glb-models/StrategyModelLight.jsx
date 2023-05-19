@@ -27,6 +27,9 @@ function Model({ model }) {
 
 function StrategyModelLight({ model }) {
   const controls = useRef();
+  useFrame(() => {
+    controls.current.update();
+  });
 
   return (
     <Canvas
