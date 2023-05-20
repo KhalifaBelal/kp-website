@@ -10,12 +10,13 @@ import {
 import { useTheme } from "next-themes";
 
 function Model({ model }) {
-  const currentTheme = useTheme().resolvedTheme;
+  const currentTheme = useTheme().theme;
   const [theme, setTheme] = useState();
 
   useEffect(() => {
     setTheme(currentTheme);
   });
+
   const models =
     theme === "dark"
       ? [
@@ -39,12 +40,13 @@ function Model({ model }) {
 }
 
 function StrategyModelDark({ model }) {
-  const currentTheme = useTheme().resolvedTheme;
+  const currentTheme = useTheme().theme;
   const [theme, setTheme] = useState();
 
   useEffect(() => {
     setTheme(currentTheme);
   });
+
   return (
     <Canvas
       dpr={[1, 2]}

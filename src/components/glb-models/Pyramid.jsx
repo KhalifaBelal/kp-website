@@ -7,7 +7,7 @@ import { Euler } from "three";
 import { useTheme } from "next-themes";
 
 function Model(props) {
-  const currentTheme = useTheme().resolvedTheme;
+  const currentTheme = useTheme().theme;
   const [theme, setTheme] = useState();
 
   useEffect(() => {
@@ -44,13 +44,13 @@ function Model(props) {
 }
 
 function Pyramid() {
-  const currentTheme = useTheme().resolvedTheme;
+  const currentTheme = useTheme().theme;
   const [theme, setTheme] = useState();
 
   useEffect(() => {
     setTheme(currentTheme);
   });
-  
+
   return (
     <Canvas
       eventPrefix="client"

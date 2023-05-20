@@ -1,10 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { kpButtonVariants } from "@/ui/KPButton";
-import KPParagraph from "./ui/KPParagraph";
+import KPParagraph from "@/ui/KPParagraph";
 
-export default function Navbar() {
+export default function Footer() {
   return (
     <div className="bg-black py-20 border-t border-kp-red flex items-center justify-between">
       <div className="container max-w-xl mx-auto w-full flex flex-col gap-10 justify-center items-center">

@@ -1,7 +1,7 @@
-import KPHeading from "../ui/KPHeading";
-import KPParagraph from "../ui/KPParagraph";
-import KPRow from "../ui/KPRow";
-import KPSection from "../ui/KPSection";
+import KPHeading from "@/ui/KPHeading";
+import KPParagraph from "@/ui/KPParagraph";
+import KPRow from "@/ui/KPRow";
+import KPSection from "@/ui/KPSection";
 import StrategyModel from "@/glb-models/StrategyModel";
 
 interface StrategyStepProps {

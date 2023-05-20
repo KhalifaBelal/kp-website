@@ -3,7 +3,6 @@ import {
   LayoutDashboardIcon,
   Moon,
   Sun,
-  Laptop,
   TextIcon,
   ShieldCheckIcon,
   LucideMenu,
@@ -13,7 +12,6 @@ import {
 export const Icons = {
   Sun,
   Moon,
-  Laptop,
   LinkIcon,
   LayoutDashboardIcon,
   TextIcon,

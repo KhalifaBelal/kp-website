@@ -1,6 +1,6 @@
-import KPHeading from "../ui/KPHeading";
-import KPRow from "../ui/KPRow";
-import KPSection from "../ui/KPSection";
+import KPHeading from "@/ui/KPHeading";
+import KPRow from "@/ui/KPRow";
+import KPSection from "@/ui/KPSection";
 import { kpButtonVariants } from "@/ui/KPButton";
 import Link from "next/link";
 

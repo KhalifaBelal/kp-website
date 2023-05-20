@@ -1,8 +1,8 @@
 import Image from "next/image";
-import KPHeading from "../ui/KPHeading";
-import KPParagraph from "../ui/KPParagraph";
-import KPRow from "../ui/KPRow";
-import KPSection from "../ui/KPSection";
+import KPHeading from "@/ui/KPHeading";
+import KPParagraph from "@/ui/KPParagraph";
+import KPRow from "@/ui/KPRow";
+import KPSection from "@/ui/KPSection";
 
 interface PortfolioSectionProps {
   title: string;

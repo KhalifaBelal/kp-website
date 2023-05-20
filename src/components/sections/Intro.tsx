@@ -1,7 +1,7 @@
 import Image from "next/image";
-import KPHeading from "../ui/KPHeading";
-import KPRow from "../ui/KPRow";
-import KPSection from "../ui/KPSection";
+import KPHeading from "@/ui/KPHeading";
+import KPRow from "@/ui/KPRow";
+import KPSection from "@/ui/KPSection";
 
 function Intro() {
   return (

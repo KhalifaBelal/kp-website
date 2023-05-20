@@ -1,9 +1,9 @@
 "use client";
 
-import KPHeading from "../ui/KPHeading";
-import KPParagraph from "../ui/KPParagraph";
-import KPRow from "../ui/KPRow";
-import KPSection from "../ui/KPSection";
+import KPHeading from "@/ui/KPHeading";
+import KPParagraph from "@/ui/KPParagraph";
+import KPRow from "@/ui/KPRow";
+import KPSection from "@/ui/KPSection";
 import { whoWeWorkWithData as Data } from "@/lib/whoWeWorkWithData";
 import { useState } from "react";
 import { KPButton, kpButtonVariants } from "@/ui/KPButton";

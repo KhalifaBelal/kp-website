@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { kpButtonVariants } from "@/ui/KPButton";
-import MobileMenu from "./MobileMenu";
+import MobileMenu from "@/components/MobileMenu";
 
 export default function Navbar() {
   return (

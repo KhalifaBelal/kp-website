@@ -4,7 +4,7 @@ import { getLocalStorage, setLocalStorage } from "@/lib/storageHelper";
 import { useState, useEffect } from "react";
 import { KPButton, kpButtonVariants } from "@/ui/KPButton";
 import Link from "next/link";
-import KPParagraph from "./ui/KPParagraph";
+import KPParagraph from "@/ui/KPParagraph";
 
 export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState<boolean>(false);
