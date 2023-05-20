@@ -25,10 +25,10 @@ function Concept() {
           </KPParagraph>
         </KPRow>
         <div className="relative w-full aspect-square dark:hidden">
-          <PyramidLight />
+          <PyramidDark />
         </div>
         <div className="relative w-full aspect-square hidden dark:block">
-          <PyramidDark />
+          <PyramidLight />
         </div>
       </KPRow>
     </KPSection>
