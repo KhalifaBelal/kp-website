@@ -46,7 +46,7 @@ const DropdownMenuSubContent = forwardRef<
   <DropdownMenuPrimitive.SubContent
     ref={ref}
     className={cn(
-      'z-50 min-w-[8rem] overflow-hidden rounded-md border border-zinc-100 bg-white p-1 text-zinc-700 shadow-md animate-in slide-in-from-left-1 dark:border-zinc-800 dark:bg-zinc-800 dark:text-zinc-400',
+      'z-50 min-w-[8rem] overflow-hidden rounded-sm border border-zinc-100 bg-white p-1 text-zinc-700 shadow-md animate-in slide-in-from-left-1 dark:border-zinc-800 dark:bg-zinc-800 dark:text-zinc-400',
       className
     )}
     {...props}
@@ -64,7 +64,7 @@ const DropdownMenuContent = forwardRef<
       ref={ref}
       sideOffset={sideOffset}
       className={cn(
-        'z-50 min-w-[8rem] mr-6 overflow-hidden rounded-md border border-zinc-300 bg-white/75 backdrop-blur-xl p-1 text-zinc-700 shadow-md animate-in data-[side=right]:slide-in-from-left-2 data-[side=left]:slide-in-from-right-2 data-[side=bottom]:slide-in-from-top-2 data-[side=top]:slide-in-from-bottom-2 dark:border-zinc-700 dark:bg-zinc-900/75 dark:text-zinc-400',
+        'z-50 min-w-[8rem] overflow-hidden rounded-sm border border-zinc-300 bg-white/75 backdrop-blur-xl p-1 text-zinc-700 shadow-md animate-in data-[side=right]:slide-in-from-left-2 data-[side=left]:slide-in-from-right-2 data-[side=bottom]:slide-in-from-top-2 data-[side=top]:slide-in-from-bottom-2 dark:border-zinc-700 dark:bg-zinc-900/75 dark:text-zinc-400',
         className
       )}
       {...props}

@@ -34,7 +34,7 @@ export default function CookieBanner() {
                         ${
                           cookieConsent != null ? "hidden" : "flex"
                         } p-3 md:p-5 justify-between items-center flex-col gap-5 bg-zinc-100
-                        dark:bg-zinc-900 rounded-lg shadow z-[9999] border border-zinc-900 dark:border-zinc-100`}
+                        dark:bg-zinc-900 rounded-sm shadow z-[9999] border border-zinc-900 dark:border-zinc-100`}
     >
       <div className="text-center">
         <KPParagraph className="text-zinc-900 dark:text-zinc-100">
