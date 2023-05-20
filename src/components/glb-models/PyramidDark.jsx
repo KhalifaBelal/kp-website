@@ -17,7 +17,7 @@ function Model(props) {
       Math.sin(t / 4) / 15
     );
     ref.current.position.y = -(3 + Math.cos(t / 2)) / 7;
-    ref.current.position.x = -.2;
+    ref.current.position.x = -0.2;
   });
 
   return (
@@ -26,7 +26,7 @@ function Model(props) {
       scale={1}
       ref={ref}
       {...props}
-      rotation={[0.3, Math.PI / 1.6, 0]}
+      rotation={[0, Math.PI / 1.2, 2]}
     />
   );
 }
@@ -42,27 +42,23 @@ function PyramidDark() {
       }}
       camera={{ position: [0, 0, 4], fov: 40 }}
     >
-      <ambientLight intensity={3} color={"#ffffff"} />
-      <directionalLight intensity={3} color={"#ffffff"} />
-      <pointLight position={[1, 2, 1]} intensity={1} color={"#ffffff"} />
+      <pointLight position={[10, 15, 10]} intensity={2.5} color={"#ffffff"} />
       <spotLight
-        intensity={0.5}
-        angle={0.1}
+        intensity={0.9}
+        angle={1}
         penumbra={1}
-        position={[10, 15, -5]}
-        castShadow
-        color="#ffffff"
+        position={[-7, 9, -2]}
+        color={"#ffffff"}
       />
       <ContactShadows
-        color={"#000000"}
-        resolution={512}
+        color={"#000"}
+        resolution={500}
         position={[0, -0.8, 0]}
         opacity={1}
         scale={10}
-        blur={3}
+        blur={2.5}
         far={0.8}
       />
-
       <Suspense fallback={null}>
         <Model rotation={[0.3, Math.PI / 1.6, 0]} />
       </Suspense>

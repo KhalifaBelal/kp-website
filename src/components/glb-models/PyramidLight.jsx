@@ -26,7 +26,7 @@ function Model(props) {
       scale={1}
       ref={ref}
       {...props}
-      rotation={[0.3, Math.PI / 1.6, 0]}
+      rotation={[0, Math.PI / 1.2, 2]}
     />
   );
 }
@@ -42,27 +42,24 @@ function PyramidLight() {
       }}
       camera={{ position: [0, 0, 4], fov: 40 }}
     >
-      <ambientLight intensity={3} color={"#fff"} />
-      <directionalLight intensity={3} color={"#fff"} />
-      <pointLight position={[1, 2, 1]} intensity={1} color={"#fff"} />
+      <pointLight position={[10, 15, 10]} intensity={2.5} color={"#f3f3f3"} />
       <spotLight
-        intensity={0.5}
-        angle={0.1}
+        intensity={0.9}
+        angle={1}
         penumbra={1}
-        position={[10, 15, -5]}
+        position={[-7, 9, -2]}
         castShadow
-        color="#ffffff"
+        color={"#f3f3f3"}
       />
       <ContactShadows
-        color={"#ffffff"}
-        resolution={512}
+        color={"#000"}
+        resolution={500}
         position={[0, -0.8, 0]}
         opacity={1}
         scale={10}
-        blur={3}
+        blur={2.5}
         far={0.8}
       />
-
       <Suspense fallback={null}>
         <Model rotation={[0.3, Math.PI / 1.6, 0]} />
       </Suspense>

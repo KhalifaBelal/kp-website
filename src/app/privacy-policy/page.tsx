@@ -532,12 +532,11 @@ export default function page() {
         <KPParagraph className="seal">
           <a
             href="https://datenschutz-generator.de/"
-            title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
+            title="Für weitere Informationen bitte anklicken."
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
-            Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
-            Schwenke
+            Erstellt mit Datenschutz-Generator.de.
           </a>
         </KPParagraph>
       </KPRow>

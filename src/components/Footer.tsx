@@ -26,7 +26,7 @@ export default function Navbar() {
           outstanding personalities and supporting them with our know-how,
           network and capital.
         </KPParagraph>
-        <div className="flex items-center gap-2 flex-1">
+        <div className="flex flex-col md:flex-row items-center gap-2 flex-1">
           <Link
             className={kpButtonVariants({ variant: "staticThemeLink" })}
             href="/"
