@@ -10,7 +10,7 @@ import {
 import { useTheme } from "next-themes";
 
 function Model({ model }) {
-  const currentTheme = useTheme().theme;
+  const currentTheme = useTheme().systemTheme;
   const [theme, setTheme] = useState();
 
   useEffect(() => {
@@ -40,7 +40,7 @@ function Model({ model }) {
 }
 
 function StrategyModelDark({ model }) {
-  const currentTheme = useTheme().theme;
+  const currentTheme = useTheme().systemTheme;
   const [theme, setTheme] = useState();
 
   useEffect(() => {

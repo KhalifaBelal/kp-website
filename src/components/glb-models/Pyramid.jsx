@@ -7,7 +7,7 @@ import { Euler } from "three";
 import { useTheme } from "next-themes";
 
 function Model(props) {
-  const currentTheme = useTheme().theme;
+  const currentTheme = useTheme().systemTheme;
   const [theme, setTheme] = useState();
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function Model(props) {
 }
 
 function Pyramid() {
-  const currentTheme = useTheme().theme;
+  const currentTheme = useTheme().systemTheme;
   const [theme, setTheme] = useState();
 
   useEffect(() => {

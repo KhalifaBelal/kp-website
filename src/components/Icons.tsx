@@ -1,8 +1,6 @@
 import {
   LinkIcon,
   LayoutDashboardIcon,
-  Moon,
-  Sun,
   TextIcon,
   ShieldCheckIcon,
   LucideMenu,
@@ -10,8 +8,6 @@ import {
 } from "lucide-react";
 
 export const Icons = {
-  Sun,
-  Moon,
   LinkIcon,
   LayoutDashboardIcon,
   TextIcon,

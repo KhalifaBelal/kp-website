@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { kpButtonVariants } from "@/ui/KPButton";
 import MobileMenu from "@/components/MobileMenu";
 
@@ -40,12 +39,10 @@ export default function Navbar() {
         </div>
 
         <div className="md:hidden flex items-center gap-3">
-          <ThemeToggle />
           <MobileMenu />
         </div>
 
         <div className="hidden md:flex gap-4">
-          <ThemeToggle />
           <Link className={kpButtonVariants({ variant: "ghost" })} href="/">
             Home
           </Link>
