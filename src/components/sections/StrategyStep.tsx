@@ -2,8 +2,7 @@ import KPHeading from "../ui/KPHeading";
 import KPParagraph from "../ui/KPParagraph";
 import KPRow from "../ui/KPRow";
 import KPSection from "../ui/KPSection";
-import StrategyModelLight from "@/glb-models/StrategyModelLight";
-import StrategyModelDark from "@/glb-models/StrategyModelDark";
+import StrategyModel from "@/glb-models/StrategyModel";
 
 interface StrategyStepProps {
   title: string;
@@ -25,11 +24,8 @@ function StrategyStep({ title, text, model }: StrategyStepProps) {
           </KPHeading>
           <KPParagraph>{text}</KPParagraph>
         </KPRow>
-        <div className="relative w-full aspect-square dark:hidden">
-          <StrategyModelDark model={model} />
-        </div>
-        <div className="relative w-full aspect-square hidden dark:block">
-          <StrategyModelLight model={model} />
+        <div className="relative w-full aspect-square">
+          <StrategyModel model={model} />
         </div>
       </KPRow>
     </KPSection>

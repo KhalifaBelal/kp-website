@@ -1,8 +1,7 @@
 import KPHeading from "@/components/ui/KPHeading";
 import KPRow from "@/ui/KPRow";
 import KPParagraph from "@/ui/KPParagraph";
-import PyramidDark from "@/glb-models/PyramidDark";
-import PyramidLight from "@/components/glb-models/PyramidLight";
+import Pyramid from "@/components/glb-models/Pyramid";
 import KPSection from "@/ui/KPSection";
 
 function Concept() {
@@ -24,11 +23,8 @@ function Concept() {
             prepare you for the management of your company.
           </KPParagraph>
         </KPRow>
-        <div className="relative w-full aspect-square dark:hidden">
-          <PyramidDark />
-        </div>
-        <div className="relative w-full aspect-square hidden dark:block">
-          <PyramidLight />
+        <div className="relative w-full aspect-square">
+          <Pyramid />
         </div>
       </KPRow>
     </KPSection>

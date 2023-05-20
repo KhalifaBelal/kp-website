@@ -1,19 +1,33 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import React, { Suspense } from "react";
+import React, { Suspense, useState, useEffect } from "react";
 import {
   useGLTF,
   PresentationControls,
   OrbitControls,
 } from "@react-three/drei";
+import { useTheme } from "next-themes";
 
 function Model({ model }) {
-  const models = [
-    "/glb-assets/sparring-model_dark.glb",
-    "/glb-assets/strategicplan-model_dark.glb",
-    "/glb-assets/offer-model_dark.glb",
-  ];
+  const currentTheme = useTheme().resolvedTheme;
+  const [theme, setTheme] = useState();
+
+  useEffect(() => {
+    setTheme(currentTheme);
+  });
+  const models =
+    theme === "dark"
+      ? [
+          "/glb-assets/sparring-model_light.glb",
+          "/glb-assets/strategicplan-model_light.glb",
+          "/glb-assets/offer-model_light.glb",
+        ]
+      : [
+          "/glb-assets/sparring-model_dark.glb",
+          "/glb-assets/strategicplan-model_dark.glb",
+          "/glb-assets/offer-model_dark.glb",
+        ];
   let { scene } = useGLTF(models[model]);
   return (
     <primitive
@@ -25,6 +39,12 @@ function Model({ model }) {
 }
 
 function StrategyModelDark({ model }) {
+  const currentTheme = useTheme().resolvedTheme;
+  const [theme, setTheme] = useState();
+
+  useEffect(() => {
+    setTheme(currentTheme);
+  });
   return (
     <Canvas
       dpr={[1, 2]}
