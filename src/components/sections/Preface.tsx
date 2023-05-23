@@ -15,7 +15,7 @@ function Preface({ title, text, withCta = false, ctaText }: PrefaceProps) {
   return (
     <KPSection>
       <KPRow variant="intro" flexDirection="col">
-        <KPHeading size="default" className="text-black dark:text-white">
+        <KPHeading size="default" className="text-white">
           {title}
         </KPHeading>
         <KPHeading size="sm" fontWeight="normal">

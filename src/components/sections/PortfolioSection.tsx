@@ -25,7 +25,7 @@ function PortfolioSection({
           flexDirection="col"
           alignItems="start"
         >
-          <KPHeading size="default" className="text-black dark:text-white">
+          <KPHeading size="default" className="text-white">
             {title}
           </KPHeading>
           <KPParagraph>{text}</KPParagraph>

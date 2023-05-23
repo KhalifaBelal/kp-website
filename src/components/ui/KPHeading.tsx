@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 
 const kpHeadingVariants = cva(
-  "text-black dark:text-white leading-tight tracking-tighter",
+  "text-white leading-tight tracking-tighter",
   {
     variants: {
       size: {

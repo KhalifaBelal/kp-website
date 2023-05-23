@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import Providers from "@/components/Providers";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -30,12 +29,10 @@ export default function RootLayout({
       className={cn("bg-white text-zinc-900 antialiased", montserrat.className)}
     >
       <GoogleAnalytics GA_MEASUREMENT_ID="G-KG3VJEPD33" />
-      <body className="min-h-screen bg-zinc-50 dark:bg-zinc-900 antialiased">
-        <Providers>
-          <CookieBanner />
-          <Navbar />
-          <main>{children}</main>
-        </Providers>
+      <body className="min-h-screen bg-zinc-900 antialiased">
+        <CookieBanner />
+        <Navbar />
+        {children}
       </body>
     </html>
   );

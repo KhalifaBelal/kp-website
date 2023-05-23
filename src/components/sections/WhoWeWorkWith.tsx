@@ -16,13 +16,23 @@ function WhoWeWorkWith() {
         <KPHeading>
           Who We <br /> Work With
         </KPHeading>
-        <KPRow flexDirection="col" alignItems="start" wrapperContainer="disable">
+        <KPRow
+          flexDirection="col"
+          alignItems="start"
+          wrapperContainer="disable"
+        >
           <KPHeading size="sm">
-            People with <span className="text-kp-red">{wwww}</span>
+            {wwww === "investors" ? (
+              <span className="text-kp-red capitalize">{wwww}</span>
+            ) : (
+              <span>
+                People with <span className="text-kp-red">{wwww}</span>
+              </span>
+            )}
           </KPHeading>
           <KPRow
             wrapperContainer="disable"
-            className="flex-row rounded-sm border-b border-zinc-300 dark:border-zinc-700 shadow-lg w-auto mx-0"
+            className="flex-row rounded-sm border-b border-zinc-700 shadow-lg w-auto mx-0"
           >
             {Data.map((_wwww, index) => (
               <KPButton

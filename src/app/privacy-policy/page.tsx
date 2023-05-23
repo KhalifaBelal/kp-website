@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <KPSection className="text-black dark:text-white">
+    <KPSection className="text-white">
       <KPRow flexDirection="col" alignItems="start">
         <KPHeading>Datenschutzerklärung</KPHeading>
         <KPParagraph>Stand: 16. Mai 2023</KPParagraph>

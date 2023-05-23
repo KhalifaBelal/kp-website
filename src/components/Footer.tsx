@@ -26,26 +26,23 @@ export default function Footer() {
           network and capital.
         </KPParagraph>
         <div className="flex flex-col md:flex-row items-center gap-2 flex-1">
-          <Link
-            className={kpButtonVariants({ variant: "staticThemeLink" })}
-            href="/"
-          >
+          <Link className={kpButtonVariants({ variant: "link" })} href="/">
             Home
           </Link>
           <Link
-            className={kpButtonVariants({ variant: "staticThemeLink" })}
+            className={kpButtonVariants({ variant: "link" })}
             href="/privacy-policy"
           >
             Privacy Policy
           </Link>
           <Link
-            className={kpButtonVariants({ variant: "staticThemeLink" })}
+            className={kpButtonVariants({ variant: "link" })}
             href="/imprint"
           >
             Imprint
           </Link>
           <Link
-            className={kpButtonVariants({ variant: "staticThemeLink" })}
+            className={kpButtonVariants({ variant: "link" })}
             href="https://linktr.ee/baselkhalifa"
             rel="noreferrer"
             target="_blank"
@@ -53,7 +50,7 @@ export default function Footer() {
             Contact
           </Link>
           <Link
-            className={kpButtonVariants({ variant: "staticThemeLink" })}
+            className={kpButtonVariants({ variant: "link" })}
             href="/portfolio"
           >
             Portfolio

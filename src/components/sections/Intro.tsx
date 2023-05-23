@@ -19,7 +19,7 @@ function Intro() {
           height={150}
           className="aspect-square"
         />
-        <KPHeading className="text-black dark:text-white">
+        <KPHeading className="text-white">
           We diversify our Portfolio by building companies with outstanding
           personalities and supporting them with our know-how, network and
           capital.

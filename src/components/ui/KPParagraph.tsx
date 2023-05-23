@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils'
 import { HTMLAttributes, forwardRef } from 'react'
 
 export const kpParagraphVariants = cva(
-  'max-w-prose text-zinc-700 dark:text-zinc-300 mb-2',
+  'max-w-prose text-zinc-300 mb-2',
   {
     variants: {
       size: {

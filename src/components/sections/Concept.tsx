@@ -13,7 +13,7 @@ function Concept() {
           flexDirection="col"
           alignItems="start"
         >
-          <KPHeading className="text-black dark:text-white">Concept</KPHeading>
+          <KPHeading className="text-white">Concept</KPHeading>
           <KPParagraph>
             Our business model consists of founding a company together with you
             and supporting you strategically and operationally in the areas of

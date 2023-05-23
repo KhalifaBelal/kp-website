@@ -2,24 +2,12 @@
 
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, ContactShadows } from "@react-three/drei";
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import React, { Suspense, useRef } from "react";
 import { Euler } from "three";
-import { useTheme } from "next-themes";
 
 function Model(props) {
-  const currentTheme = useTheme().systemTheme;
-  const [theme, setTheme] = useState();
-
-  useEffect(() => {
-    setTheme(currentTheme);
-  });
-
   const ref = useRef({ rotation: new Euler() });
-  let { scene } = useGLTF(
-    theme === "dark"
-      ? "/glb-assets/pyramid_light.glb"
-      : "/glb-assets/pyramid_dark.glb"
-  );
+  let { scene } = useGLTF("/glb-assets/pyramid_light.glb");
 
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
@@ -44,13 +32,6 @@ function Model(props) {
 }
 
 function Pyramid() {
-  const currentTheme = useTheme().systemTheme;
-  const [theme, setTheme] = useState();
-
-  useEffect(() => {
-    setTheme(currentTheme);
-  });
-
   return (
     <Canvas
       eventPrefix="client"
@@ -61,18 +42,14 @@ function Pyramid() {
       }}
       camera={{ position: [0, 0, 4], fov: 40 }}
     >
-      <pointLight
-        position={[10, 15, 10]}
-        intensity={2.5}
-        color={theme === "dark" ? "#f3f3f3" : "#ffffff"}
-      />
+      <pointLight position={[10, 15, 10]} intensity={2.5} color={"#f3f3f3"} />
       <spotLight
         intensity={0.9}
         angle={1}
         penumbra={1}
         position={[-7, 9, -2]}
         castShadow
-        color={theme === "dark" ? "#f3f3f3" : "#ffffff"}
+        color={"#f3f3f3"}
       />
       <ContactShadows
         color={"#000"}
