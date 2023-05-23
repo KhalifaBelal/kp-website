@@ -24,7 +24,7 @@ export default function MobileMenu() {
           <Icons.LucideMenu className="ml-2 h-5 w-5" />
         </KPButton>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 mr-6">
         <DropdownMenuGroup onClick={() => setOpen(false)}>
           <DropdownMenuItem asChild>
             <Link className="w-full flex items-center gap-1.5" href="/">

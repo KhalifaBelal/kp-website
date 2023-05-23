@@ -1,8 +1,8 @@
 import Intro from "@/components/sections/Intro";
 import dynamic from "next/dynamic";
 const Preface = dynamic(() => import("@/components/sections/Preface"));
-const WhoWeWorkWith = dynamic(
-  () => import("@/components/sections/WhoWeWorkWith")
+const WeWorkWith = dynamic(
+  () => import("@/components/sections/WeWorkWith")
 );
 const Concept = dynamic(() => import("@/components/sections/Concept"));
 const StrategyStep = dynamic(
@@ -17,7 +17,7 @@ export default function Home() {
     <div className="relative h-screen overflow-x-hidden">
       <Intro />
       <Concept />
-      <WhoWeWorkWith />
+      <WeWorkWith />
       <Preface title={prefaceData[0].title} text={prefaceData[0].text} />
       {Data.map((step, index) => (
         <StrategyStep
