@@ -1,7 +1,7 @@
 export const weWorkWithData = [
   {
-    key: "entrpreneurs",
-    title: "Entrpreneurs",
+    key: "entrepreneurs",
+    title: "Entrepreneurs",
     text: "We have proven validation strategies for all forms of business ideas. Together with you, we can calculate and further develop the potential of your idea and finance your idea once it reaches a certain level of maturity.",
   },
   {

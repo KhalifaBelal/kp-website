@@ -5,7 +5,7 @@ import KPSection from "@/ui/KPSection";
 
 function Intro() {
   return (
-    <KPSection layout="intro">
+    <KPSection>
       <KPRow flexDirection="col" alignItems="end">
         <Image
           priority
