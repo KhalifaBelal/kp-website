@@ -43,16 +43,8 @@ export default function CookieBanner() {
 
       <div className="flex flex-col gap-2">
         <div className="flex gap-2">
-          <KPButton
-            className={kpButtonVariants({ variant: "outline" })}
-            onClick={() => setCookieConsent(false)}
-          >
-            Decline
-          </KPButton>
-          <KPButton
-            className={kpButtonVariants({ variant: "outline" })}
-            onClick={() => setCookieConsent(true)}
-          >
+          <KPButton onClick={() => setCookieConsent(false)}>Decline</KPButton>
+          <KPButton onClick={() => setCookieConsent(true)}>
             Allow Cookies
           </KPButton>
         </div>
