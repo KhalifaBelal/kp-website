@@ -1,9 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { kpButtonVariants } from "@/ui/KPButton";
 import MobileMenu from "@/components/MobileMenu";
+import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const router = usePathname();
+  const hideNavbar = !router.includes("weworkwith"); // Adjust the condition based on your specific routes
+
+  if (!hideNavbar) {
+    return null; // Don't render the Navbar on certain routes
+  }
+
   return (
     <div className="fixed backdrop-blur-sm bg-zinc-900/75 z-50 top-0 left-0 right-0 h-20 border-b border-zinc-700 shadow-sm flex items-center justify-between">
       <div className="container max-w-6xl mx-auto w-full flex justify-between items-center">

@@ -1,5 +1,4 @@
 import KPHeading from "@/components/ui/KPHeading";
-import { FC } from "react";
 import KPSection from "@/components/ui/KPSection";
 import KPRow from "@/components/ui/KPRow";
 import KPParagraph from "@/components/ui/KPParagraph";

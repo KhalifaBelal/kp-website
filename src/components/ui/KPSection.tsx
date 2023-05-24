@@ -11,7 +11,7 @@ export const kpSectionVariants = cva(
         col: "flex-col",
       },
       layout: {
-        default: "pt-20",
+        default: "py-32",
       },
     },
     defaultVariants: { flexDirection: "default", layout: "default" },

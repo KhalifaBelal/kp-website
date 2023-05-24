@@ -12,3 +12,39 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.glassMorphismDark {
+  background: rgba(24, 24, 27, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(24, 24, 27, 1);
+}
+
+.glassMorphismLight {
+  background: rgba(244, 244, 245, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(244, 244, 245, 1);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+  width: 100%;
+}
+
+:root {
+  --swiper-theme-color: #c1272d !important;
+  --swiper-navigation-size: 1.75rem !important;
+}
