@@ -21,7 +21,7 @@ function WeWorkWith() {
             {Data.map((_www, index) => (
               <TabsTrigger
                 key={index}
-                value={_www.key}
+                value={Data[index].key}
                 onClick={() => setCurrentItem(Data[index].key)}
               >
                 {_www.title}
@@ -29,7 +29,7 @@ function WeWorkWith() {
             ))}
           </TabsList>
           {Data.map((_www, index) => (
-            <TabsContent key={index} value={_www.key}>
+            <TabsContent key={index} value={Data[index].key}>
               {_www.text}
             </TabsContent>
           ))}
