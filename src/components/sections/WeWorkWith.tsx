@@ -7,7 +7,7 @@ import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";
 import { kpButtonVariants } from "@/ui/KPButton";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function WeWorkWith() {
   const [currentItem, setCurrentItem] = useState("entrepreneurs");
@@ -35,7 +35,7 @@ function WeWorkWith() {
           ))}
         </Tabs>
         <Link
-          href={`/weworkwith/${currentItem}`}
+          href={`/weworkwith/${currentItem}/`}
           className={kpButtonVariants({ variant: "default" })}
         >
           <span>

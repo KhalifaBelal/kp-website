@@ -22,7 +22,7 @@ function HowToInvest() {
         <KPParagraph>
           Our Three-Step Investment Plan Investing in Khalifa Partners is a
           gateway to a world of exciting opportunities and the potential for
-          significant returns. We`&apos;`ve designed a simple, three-step plan
+          significant returns. We&apos;ve designed a simple, three-step plan
           to guide you through the investment process, ensuring a seamless and
           rewarding experience.
         </KPParagraph>
@@ -30,7 +30,7 @@ function HowToInvest() {
 
       <div className="md:hidden">
         <KPRow flexDirection="col" alignItems="start">
-          <KPHeading size="sm">Here`&apos;`s how it works:</KPHeading>
+          <KPHeading size="sm">Here&apos;s how it works:</KPHeading>
           {Data.map((_swipe, index) => (
             <KPRow key={index} wrapperContainer="disable">
               <KPHeading size="sm" fontWeight="normal">
@@ -44,7 +44,7 @@ function HowToInvest() {
 
       <div className="w-full hidden md:flex flex-col px-10 gap-16">
         <KPHeading fontWeight="normal" className="text-center" size="sm">
-          Here`&apos;`s how it works:
+          Here&apos;s how it works:
         </KPHeading>
         <Swiper
           navigation={true}

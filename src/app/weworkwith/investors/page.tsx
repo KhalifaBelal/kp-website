@@ -3,7 +3,6 @@ import WhyInvest from "@/components/sections/investors/WhyInvest";
 import HowToInvest from "@/components/sections/investors/HowToInvest";
 
 import type { Metadata } from "next";
-import KPParagraph from "@/components/ui/KPParagraph";
 
 export const metadata: Metadata = {
   title: "For Investors",

@@ -9,7 +9,7 @@ function WhyInvest() {
     <KPSection className="bg-zinc-100">
       <KPRow flexDirection="col" alignItems="start" className="gap-16">
         <KPHeading className="text-black">
-          Why Invest in Khalifa Partners`&apos;` Investment Fund?
+          Why Invest in Khalifa Partners&apos; Investment Fund?
         </KPHeading>
 
         <KPRow
