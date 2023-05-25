@@ -7,6 +7,7 @@ import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";
 import Link from "next/link";
 import { useState } from "react";
+import { kpButtonVariants } from "../ui/KPButton";
 
 function WeWorkWith() {
   const [currentItem, setCurrentItem] = useState("entrepreneurs");
@@ -20,21 +21,27 @@ function WeWorkWith() {
             {Data.map((_www, index) => (
               <TabsTrigger
                 key={index}
-                value={Data[index].key}
-                onClick={() => setCurrentItem(Data[index].key)}
+                value={_www.key}
+                onClick={() => setCurrentItem(_www.key)}
               >
                 {_www.title}
               </TabsTrigger>
             ))}
           </TabsList>
           {Data.map((_www, index) => (
-            <TabsContent key={index} value={Data[index].key}>
+            <TabsContent key={index} value={_www.key}>
               {_www.text}
             </TabsContent>
           ))}
         </Tabs>
-        <Link href={`/weworkwith/${currentItem}/`}>
-          Our plan for <span className="capitalize">{currentItem}</span>
+        <Link
+          href={`/weworkwith/${currentItem}/`}
+          className={kpButtonVariants()}
+        >
+          <span>
+            Our plan for
+            <span className="capitalize"> {currentItem}</span>
+          </span>
         </Link>
       </KPRow>
     </KPSection>
