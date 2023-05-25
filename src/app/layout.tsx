@@ -5,6 +5,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+const Footer = dynamic(() => import("@/components/Footer"));
 const CookieBanner = dynamic(() => import("@/components/CookieBanner"), {
   loading: () => <div>Loading...</div>,
   ssr: false,
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-zinc-900 antialiased">
         <CookieBanner />
         <Navbar />
+        <Footer />
         {children}
       </body>
     </html>

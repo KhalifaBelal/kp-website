@@ -8,7 +8,6 @@ const Concept = dynamic(() => import("@/components/sections/Concept"));
 const StrategyStep = dynamic(
   () => import("@/components/sections/StrategyStep")
 );
-const Footer = dynamic(() => import("@/components/Footer"));
 import { strategyStepData as Data } from "@/lib/strategyStepData";
 import { prefaceData } from "@/lib/prefaceData";
 
@@ -34,7 +33,6 @@ export default function Home() {
         withCta
         ctaText="Portfolio"
       />
-      <Footer />
     </div>
   );
 }
