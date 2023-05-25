@@ -1,8 +1,8 @@
+import { WhyInvestAccordion } from "@/components/WhyInvestAccordion";
 import KPHeading from "@/components/ui/KPHeading";
 import KPParagraph from "@/components/ui/KPParagraph";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
-import { whyInvestData as Data } from "@/lib/investors/whyInvestData";
 
 function WhyInvest() {
   return (
@@ -11,28 +11,7 @@ function WhyInvest() {
         <KPHeading className="text-black">
           Why Invest in Khalifa Partners&apos; Investment Fund?
         </KPHeading>
-
-        <KPRow
-          wrapperContainer="disable"
-          flexDirection="col"
-          alignItems="start"
-        >
-          {Data.map((_investItem, index) => (
-            <KPRow
-              key={index}
-              wrapperContainer="disable"
-              flexDirection="col"
-              alignItems="start"
-            >
-              <KPHeading key={index} size="sm" className="text-black">
-                {_investItem.title}
-              </KPHeading>
-              <KPParagraph className="text-slate-700">
-                {_investItem.text}
-              </KPParagraph>
-            </KPRow>
-          ))}
-        </KPRow>
+        <WhyInvestAccordion />
       </KPRow>
     </KPSection>
   );
