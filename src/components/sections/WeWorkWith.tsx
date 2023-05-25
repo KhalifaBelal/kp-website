@@ -41,7 +41,7 @@ function WeWorkWith() {
         >
           <span>
             Our plan for
-            <span className="capitalize"> {currentItem}</span>
+            <span className="capitalize">{" " + currentItem}</span>
           </span>
         </Link>
       </KPRow>

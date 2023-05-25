@@ -21,7 +21,7 @@ export function WhyInvestAccordion() {
         className="w-full"
       >
         {Data.map((_investItem, index) => (
-          <AccordionItem value={`item-${index + 1}`}>
+          <AccordionItem key={index} value={`item-${index + 1}`}>
             <KPRow
               key={index}
               wrapperContainer="disable"
