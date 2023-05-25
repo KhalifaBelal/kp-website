@@ -1,5 +1,4 @@
 import SubNavbar from "@/components/SubNavbar";
-import KPSection from "@/components/ui/KPSection";
 
 import type { Metadata } from "next";
 
@@ -14,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <KPSection>
+    <>
       <SubNavbar />
       {children}
-    </KPSection>
+    </>
   );
 }
