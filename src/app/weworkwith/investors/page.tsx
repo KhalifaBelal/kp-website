@@ -1,3 +1,5 @@
+import dynamic from "next/dynamic";
+const Footer = dynamic(() => import("@/components/Footer"));
 import InvestIntro from "@/components/sections/investors/InvestIntro";
 import WhyInvest from "@/components/sections/investors/WhyInvest";
 import HowToInvest from "@/components/sections/investors/HowToInvest";
@@ -15,6 +17,8 @@ export default function page() {
       <InvestIntro />
       <WhyInvest />
       <HowToInvest />
+
+      <Footer />
       {/* <KPParagraph>
         Our dedicated portfolio managers will provide regular updates,
         performance reports, and insights on your investments, ensuring you have

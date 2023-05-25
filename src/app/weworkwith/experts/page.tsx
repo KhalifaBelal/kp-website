@@ -1,3 +1,6 @@
+import dynamic from "next/dynamic";
+const Footer = dynamic(() => import("@/components/Footer"));
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,5 +9,9 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
-  return <div></div>;
+  return (
+    <div>
+      <Footer />
+    </div>
+  );
 }
