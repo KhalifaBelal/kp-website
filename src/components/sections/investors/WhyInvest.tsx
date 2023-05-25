@@ -16,7 +16,6 @@ function WhyInvest() {
           wrapperContainer="disable"
           flexDirection="col"
           alignItems="start"
-          className="gap-10"
         >
           {Data.map((_investItem, index) => (
             <KPRow

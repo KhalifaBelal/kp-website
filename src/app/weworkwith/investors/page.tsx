@@ -1,21 +1,21 @@
-import WhyInvestIntro from "@/components/sections/investors/WhyInvestIntro";
+import InvestIntro from "@/components/sections/investors/InvestIntro";
 import WhyInvest from "@/components/sections/investors/WhyInvest";
-import HowToInvestIntro from "@/components/sections/investors/HowToInvestIntro";
+import HowToInvest from "@/components/sections/investors/HowToInvest";
 
 import type { Metadata } from "next";
 import KPParagraph from "@/components/ui/KPParagraph";
 
 export const metadata: Metadata = {
   title: "For Investors",
-  description: "",
+  description: "Coming soon...",
 };
 
 export default function page() {
   return (
     <div>
-      <WhyInvestIntro />
+      <InvestIntro />
       <WhyInvest />
-      <HowToInvestIntro />
+      <HowToInvest />
       {/* <KPParagraph>
         Our dedicated portfolio managers will provide regular updates,
         performance reports, and insights on your investments, ensuring you have

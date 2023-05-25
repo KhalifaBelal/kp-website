@@ -3,12 +3,12 @@ import KPParagraph from "@/components/ui/KPParagraph";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
 
-function WhyInvestIntro() {
+function InvestIntro() {
   return (
     <KPSection>
-      <KPRow flexDirection="col">
+      <KPRow variant="intro" flexDirection="col">
         <KPParagraph>We work with investors</KPParagraph>
-        <KPHeading className="text-center" size="sm" fontWeight="normal">
+        <KPHeading size="sm" fontWeight="normal">
           <span className="font-semibold">Unlocking Potential:</span> Invest in
           the Khalifa Partners Investment Fund Are you ready to be part of a
           transformative journey, fueling the growth of innovative startups and
@@ -22,4 +22,4 @@ function WhyInvestIntro() {
   );
 }
 
-export default WhyInvestIntro;
+export default InvestIntro;
