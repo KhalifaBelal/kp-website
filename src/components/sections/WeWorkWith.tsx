@@ -35,7 +35,8 @@ function WeWorkWith() {
           ))}
         </Tabs>
         <Link
-          href={`/weworkwith/${currentItem}/`}
+          href={`/weworkwith/${currentItem}`}
+          passHref
           className={kpButtonVariants()}
         >
           <span>
