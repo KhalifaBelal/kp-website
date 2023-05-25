@@ -22,7 +22,7 @@ function WeWorkWith() {
               <TabsTrigger
                 key={index}
                 value={_www.key}
-                onClick={() => setCurrentItem(_www.key)}
+                onClick={() => setCurrentItem(Data[index].key)}
               >
                 {_www.title}
               </TabsTrigger>
