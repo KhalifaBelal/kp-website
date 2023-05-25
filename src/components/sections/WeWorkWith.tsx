@@ -5,7 +5,6 @@ import { weWorkWithData as Data } from "@/lib/weWorkWithData";
 import KPHeading from "@/ui/KPHeading";
 import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";
-import { kpButtonVariants } from "@/ui/KPButton";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -34,12 +33,8 @@ function WeWorkWith() {
             </TabsContent>
           ))}
         </Tabs>
-        <Link
-          href={`/weworkwith/${currentItem}/`}
-        >
-          <span>
-            Our plan for <span className="capitalize">{currentItem}</span>
-          </span>
+        <Link href={`/weworkwith/${currentItem}/`}>
+          Our plan for <span className="capitalize">{currentItem}</span>
         </Link>
       </KPRow>
     </KPSection>
