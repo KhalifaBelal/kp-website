@@ -36,7 +36,6 @@ function WeWorkWith() {
         </Tabs>
         <Link
           href={`/weworkwith/${currentItem}/`}
-          className={kpButtonVariants({ variant: "default" })}
         >
           <span>
             Our plan for <span className="capitalize">{currentItem}</span>
