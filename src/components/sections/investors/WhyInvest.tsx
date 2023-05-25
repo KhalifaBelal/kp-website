@@ -9,7 +9,7 @@ function WhyInvest() {
     <KPSection className="bg-zinc-100">
       <KPRow flexDirection="col" alignItems="start" className="gap-16">
         <KPHeading className="text-black">
-          Why Invest in Khalifa Partners' Investment Fund?
+          Why Invest in Khalifa Partners`&apos;` Investment Fund?
         </KPHeading>
 
         <KPRow
@@ -19,6 +19,7 @@ function WhyInvest() {
         >
           {Data.map((_investItem, index) => (
             <KPRow
+              key={index}
               wrapperContainer="disable"
               flexDirection="col"
               alignItems="start"
