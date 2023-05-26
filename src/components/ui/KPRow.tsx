@@ -18,6 +18,7 @@ export const kpRowVariants = cva("relative flex max-w-6xl w-full", {
       default: "justify-center",
       start: "justify-start",
       end: "justify-end",
+      between: "justify-between",
     },
     wrapperContainer: { default: "container mx-auto", disable: "" },
   },

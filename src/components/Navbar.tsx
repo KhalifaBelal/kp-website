@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 import { kpButtonVariants } from "@/ui/KPButton";
 import MobileMenu from "@/components/MobileMenu";
-import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
+import React from "react";
 
 export default function Navbar() {
   const router = usePathname();
@@ -36,34 +37,14 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex gap-4">
-          <Link className={kpButtonVariants({ variant: "ghost" })} href="/">
-            Home
-          </Link>
+          <Link className={kpButtonVariants({ variant: "link" })} href="/portfolio">Portfolio</Link>
           <Link
-            className={kpButtonVariants({ variant: "ghost" })}
-            href="/privacy-policy"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            className={kpButtonVariants({ variant: "ghost" })}
-            href="/imprint"
-          >
-            Imprint
-          </Link>
-          <Link
-            className={kpButtonVariants({ variant: "ghost" })}
+            className={kpButtonVariants({ variant: "outline" })}
             href="https://linktr.ee/baselkhalifa"
             rel="noreferrer"
             target="_blank"
           >
-            Contact
-          </Link>
-          <Link
-            className={kpButtonVariants({ variant: "outline" })}
-            href="/portfolio"
-          >
-            Portfolio
+            Get in touch
           </Link>
         </div>
       </div>

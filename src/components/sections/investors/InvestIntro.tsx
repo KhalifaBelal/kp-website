@@ -1,8 +1,7 @@
 "use client";
 
 import KPHeading from "@/components/ui/KPHeading";
-import KPParagraph from "@/components/ui/KPParagraph";
-import { AnimatedParagraph } from "@/components/ui/AnimatedParagraph";
+import AnimatedParagraph from "@/components/ui/AnimatedParagraph";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
 import { motion } from "framer-motion";

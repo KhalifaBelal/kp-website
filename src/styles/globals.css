@@ -13,6 +13,11 @@
   scrollbar-width: none; /* Firefox */
 }
 
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
