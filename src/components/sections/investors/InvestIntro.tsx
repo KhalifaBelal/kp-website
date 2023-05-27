@@ -17,7 +17,7 @@ function InvestIntro() {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
         >
-          <AnimatedParagraph title="We work with investors"></AnimatedParagraph>
+          <AnimatedParagraph title="We work with investors" />
         </motion.div>
 
         <KPHeading size="sm" fontWeight="normal">

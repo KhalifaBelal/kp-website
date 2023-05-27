@@ -25,9 +25,16 @@
       "@/lib/*": ["./src/lib/*"],
       "@/components/*": ["./src/components/*"],
       "@/ui/*": ["./src/components/ui/*"],
-      "@/glb-models/*": ["./src/components/glb-models/*"],
+      "@/glb-models/*": ["./src/components/glb-models/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/weworkwith/entrepreneurs/page.jsx", "src/app/weworkwith/entrepreneurs/page.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/weworkwith/leaders/page.jsx",
+    "src/app/weworkwith/leaders/page.js"
+  ],
   "exclude": ["node_modules"]
 }

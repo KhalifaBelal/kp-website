@@ -7,7 +7,7 @@ export const portfolioData = [
   },
   {
     title: "Orderant",
-    text: "Orderant aims to solve the on-site ordering process and the associated problems in the catering industry with a digital solution using QR codes. The company's goal is to reduce the waiting times of customers, avoid errors when taking orders and thus increase the satisfaction of restaurateurs and restaurant visitors.",
+    text: "Orderant aims to solve the on-site ordering process and the associated problems in the catering industry with a digital solution using QR codes. The company&apos;s goal is to reduce the waiting times of customers, avoid errors when taking orders and thus increase the satisfaction of restaurateurs and restaurant visitors.",
     logoPath: "/logos/orderant-logo.png",
     logoName: "orderant-logo",
   },
@@ -19,7 +19,7 @@ export const portfolioData = [
   },
   {
     title: "Elevate",
-    text: "Elevate is a recruiting agency and with its 'Guerilla Marketing' method specialises in filling missing positions in the job market within a few days to weeks.",
+    text: "Elevate is a recruiting agency and with its &apos;Guerilla Marketing&apos; method specialises in filling missing positions in the job market within a few days to weeks.",
     logoPath: "/logos/elevate-logo.png",
     logoName: "elevate-logo",
   },

@@ -8,7 +8,7 @@ import ContactApproach from "@/components/weWorkWith/contactApproach";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "For Experts",
+  title: "Our Concept",
   description: "In progress...",
 };
 

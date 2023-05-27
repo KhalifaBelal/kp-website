@@ -21,10 +21,10 @@ export const whyInvestData = [
   },
   {
     title: "Commitment to Transparency and Communication",
-    text: "We believe in fostering trust and maintaining transparent communication with our investors. As a valued partner, you will receive regular updates on fund performance, portfolio progress, and emerging opportunities. Our dedicated investor relations team ensures that you are well-informed and have a clear understanding of your investment's progress, enabling you to make informed decisions and track your investment's growth.",
+    text: "We believe in fostering trust and maintaining transparent communication with our investors. As a valued partner, you will receive regular updates on fund performance, portfolio progress, and emerging opportunities. Our dedicated investor relations team ensures that you are well-informed and have a clear understanding of your investment&apos;s progress, enabling you to make informed decisions and track your investment&apos;s growth.",
   },
   {
     title: "Join the Khalifa Partners Investment Fund",
-    text: "Investing in Khalifa Partners' investment fund is more than just a financial opportunity—it's an opportunity to be part of an exciting journey that unlocks the potential of game-changing startups and businesses. Your investment can shape the future and deliver attractive returns. Contact us today to learn more about the investment fund and how you can become a vital part of our mission to support innovation, drive growth, and create lasting impact. Together, let's unlock the extraordinary possibilities that lie ahead.",
+    text: "Investing in Khalifa Partners&apos; investment fund is more than just a financial opportunity—it&apos;s an opportunity to be part of an exciting journey that unlocks the potential of game-changing startups and businesses. Your investment can shape the future and deliver attractive returns. Contact us today to learn more about the investment fund and how you can become a vital part of our mission to support innovation, drive growth, and create lasting impact. Together, let&apos;s unlock the extraordinary possibilities that lie ahead.",
   },
 ];

@@ -10,7 +10,7 @@ import { useState } from "react";
 import { kpButtonVariants } from "../ui/KPButton";
 
 function WeWorkWith() {
-  const [currentItem, setCurrentItem] = useState<string>("entrepreneurs");
+  const [currentItem, setCurrentItem] = useState<string>("leaders");
 
   return (
     <KPSection>
@@ -40,7 +40,7 @@ function WeWorkWith() {
           className={kpButtonVariants()}
         >
           <span>
-            Our plan for
+            For
             <span className="capitalize">{" " + currentItem}</span>
           </span>
         </Link>

@@ -9,9 +9,18 @@ import {
 import KPHeading from "@/ui/KPHeading";
 import KPParagraph from "@/ui/KPParagraph";
 import KPRow from "@/ui/KPRow";
-import { whyInvestData as Data } from "@/lib/investors/whyInvestData";
+import { FC } from "react";
+import { whyInvestData as InvestData } from "@/lib/investors/whyInvestData";
+import { skillsLeadersData as LeadersData } from "@/lib/leaders/skillsLeadersData";
+import { whyPartnerData as ExpertsData } from "@/lib/experts/whyPartnerData";
 
-export function WhyInvestAccordion() {
+interface WeWorkWithAccordionProps {
+  item: number;
+}
+
+const WeWorkWithAccordion: FC<WeWorkWithAccordionProps> = ({ item }) => {
+  const Data = [InvestData, LeadersData, ExpertsData];
+
   return (
     <KPRow wrapperContainer="disable" flexDirection="col" alignItems="start">
       <Accordion
@@ -20,7 +29,7 @@ export function WhyInvestAccordion() {
         defaultValue="item-1"
         className="w-full"
       >
-        {Data.map((_investItem, index) => (
+        {Data[item].map((_item, index) => (
           <AccordionItem key={index} value={`item-${index + 1}`}>
             <KPRow
               key={index}
@@ -30,12 +39,12 @@ export function WhyInvestAccordion() {
             >
               <AccordionTrigger>
                 <KPHeading key={index} size="sm" className="text-black">
-                  {_investItem.title}
+                  {_item.title}
                 </KPHeading>
               </AccordionTrigger>
               <AccordionContent>
                 <KPParagraph className="text-slate-700">
-                  {_investItem.text}
+                  {_item.text}
                 </KPParagraph>
               </AccordionContent>
             </KPRow>
@@ -44,4 +53,6 @@ export function WhyInvestAccordion() {
       </Accordion>
     </KPRow>
   );
-}
+};
+
+export default WeWorkWithAccordion;
