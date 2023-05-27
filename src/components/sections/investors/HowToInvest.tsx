@@ -74,7 +74,7 @@ function HowToInvest() {
           <KPParagraph className="text-zinc-700">
             By following our three-step investment plan, you can invest with
             confidence, knowing that you have a trusted partner by your side.
-            We're committed to providing exceptional service, comprehensive
+            We&apos;re committed to providing exceptional service, comprehensive
             support, and access to a world of investment possibilities. Let us
             help you navigate the investment landscape, maximize your returns,
             and achieve your financial goals.
@@ -82,7 +82,7 @@ function HowToInvest() {
           <KPParagraph className="text-zinc-700">
             Our dedicated portfolio managers will provide regular updates,
             performance reports, and insights on your investments, ensuring you
-            have a clear understanding of your portfolio's progress. We'll also
+            have a clear understanding of your portfolio&apos;s progress. We&apos;ll also
             be available to address any questions or concerns you may have,
             offering strategic advice and guidance to optimize your investment
             portfolio.

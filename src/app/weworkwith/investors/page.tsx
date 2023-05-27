@@ -26,7 +26,7 @@ export default function page() {
         </KPHeading>
         <KPParagraph>
           <span className="font-semibold">Contact us</span> today to begin your
-          investment journey with Khalifa Partners. Together, we'll embark on a
+          investment journey with Khalifa Partners. Together, we&apos;ll embark on a
           path of strategic investment, unlocking the potential of
           transformative ventures and creating a brighter future.
         </KPParagraph>
