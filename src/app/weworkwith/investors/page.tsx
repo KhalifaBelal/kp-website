@@ -5,6 +5,7 @@ import WhyInvest from "@/components/sections/investors/WhyInvest";
 import HowToInvest from "@/components/sections/investors/HowToInvest";
 import KPParagraph from "@/components/ui/KPParagraph";
 import KPRow from "@/components/ui/KPRow";
+import KPHeading from "@/components/ui/KPHeading";
 
 import type { Metadata } from "next";
 
@@ -19,12 +20,15 @@ export default function page() {
       <InvestIntro />
       <WhyInvest />
       <HowToInvest />
-      <KPRow>
+      <KPRow flexDirection="default" className="py-32">
+        <KPHeading>
+          People <span className="text-kp-red">First</span>. Business Lasts.
+        </KPHeading>
         <KPParagraph>
-          Contact us today to begin your investment journey with Khalifa
-          Partners. Together, we'll embark on a path of strategic investment,
-          unlocking the potential of transformative ventures and creating a
-          brighter future.
+          <span className="font-semibold">Contact us</span> today to begin your
+          investment journey with Khalifa Partners. Together, we'll embark on a
+          path of strategic investment, unlocking the potential of
+          transformative ventures and creating a brighter future.
         </KPParagraph>
       </KPRow>
 
