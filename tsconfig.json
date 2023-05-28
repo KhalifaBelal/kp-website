@@ -28,13 +28,6 @@
       "@/glb-models/*": ["./src/components/glb-models/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "src/app/weworkwith/leaders/page.jsx",
-    "src/app/weworkwith/leaders/page.js"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

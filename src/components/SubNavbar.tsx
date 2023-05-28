@@ -1,4 +1,3 @@
-import KPParagraph from "@/ui/KPParagraph";
 import Link from "next/link";
 import { kpButtonVariants } from "./ui/KPButton";
 
