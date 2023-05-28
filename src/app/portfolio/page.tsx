@@ -3,7 +3,7 @@ import PortfolioSection from "@/components/sections/PortfolioSection";
 import ContactApproach from "@/components/contactApproach";
 import Footer from "@/components/Footer";
 import KPParagraph from "@/components/ui/KPParagraph";
-import PortfolioIntro from "@/components/sections/portfolioPage/portfolioIntro";
+import PortfolioIntro from "@/components/sections/portfolioPage/PortfolioIntro";
 
 import type { Metadata } from "next";
 
