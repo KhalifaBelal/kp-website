@@ -32,7 +32,7 @@ module.exports = {
       },
       animation: {
         "accordion-down": "accordion-down 0.3s ease-out",
-        "accordion-up": "accordion-up 0.15s ease-out",
+        "accordion-up": "accordion-up 0.3s ease-out",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)", ...fontFamily.sans],

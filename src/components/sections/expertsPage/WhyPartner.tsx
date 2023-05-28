@@ -1,4 +1,4 @@
-import WeWorkWithAccordion from "@/components/weWorkWith/WeWorkWithAccordion";
+import WeWorkWithAccordion from "@/components/DataAccordion";
 import KPHeading from "@/components/ui/KPHeading";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";

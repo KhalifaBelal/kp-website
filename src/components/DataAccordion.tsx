@@ -10,16 +10,25 @@ import KPHeading from "@/ui/KPHeading";
 import KPParagraph from "@/ui/KPParagraph";
 import KPRow from "@/ui/KPRow";
 import { FC } from "react";
-import { whyInvestData as InvestData } from "@/lib/investors/whyInvestData";
-import { skillsLeadersData as LeadersData } from "@/lib/leaders/skillsLeadersData";
-import { whyPartnerData as ExpertsData } from "@/lib/experts/whyPartnerData";
+import { whyInvestData as InvestData } from "@/lib/weWorkWith/investorsPage/whyInvestData";
+import { skillsLeadersData as LeadersData } from "@/lib/weWorkWith/leadersPage/skillsLeadersData";
+import { whyPartnerData as ExpertsData } from "@/lib/weWorkWith/expertsPage/whyPartnerData";
+import { conceptPageData as ConceptData } from "@/lib/conceptPage/conceptPageData";
 
-interface WeWorkWithAccordionProps {
+interface DataAccordionProps {
   item: number;
 }
 
-const WeWorkWithAccordion: FC<WeWorkWithAccordionProps> = ({ item }) => {
-  const Data = [InvestData, LeadersData, ExpertsData];
+const DataAccordion: FC<DataAccordionProps> = ({ item }) => {
+  const FirstConceptData = ConceptData.firstAccordion;
+  const SecondConceptData = ConceptData.secondAccordion;
+  const Data = [
+    InvestData,
+    LeadersData,
+    ExpertsData,
+    FirstConceptData,
+    SecondConceptData,
+  ];
 
   return (
     <KPRow wrapperContainer="disable" flexDirection="col" alignItems="start">
@@ -55,4 +64,4 @@ const WeWorkWithAccordion: FC<WeWorkWithAccordionProps> = ({ item }) => {
   );
 };
 
-export default WeWorkWithAccordion;
+export default DataAccordion;

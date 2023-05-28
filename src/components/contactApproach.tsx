@@ -6,12 +6,14 @@ interface ContactApproachProps extends HTMLAttributes<HTMLElement> {}
 
 const ContactApproach: FC<ContactApproachProps> = ({ children }) => {
   return (
-    <KPRow flexDirection="default" className="py-32">
-      <KPHeading>
-        People <span className="text-kp-red">First</span>. Business Lasts.
-      </KPHeading>
-      {children}
-    </KPRow>
+    <div className="min-w-full bg-black">
+      <KPRow flexDirection="default" className="py-32">
+        <KPHeading>
+          People <span className="text-kp-red">First</span>. Business Lasts.
+        </KPHeading>
+        {children}
+      </KPRow>
+    </div>
   );
 };
 

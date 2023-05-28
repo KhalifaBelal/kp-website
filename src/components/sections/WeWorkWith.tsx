@@ -1,7 +1,7 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/Tabs";
-import { weWorkWithData as Data } from "@/lib/weWorkWithData";
+import { weWorkWithData as Data } from "@/lib/weWorkWith/weWorkWithData";
 import KPHeading from "@/ui/KPHeading";
 import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";

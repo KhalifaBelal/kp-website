@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
-import LeadersIntro from "@/components/sections/leaders/LeadersIntro";
-import SkillsLeaders from "@/components/sections/leaders/SkillsLeaders";
+import LeadersIntro from "@/components/sections/leadersPage/LeadersIntro";
+import SkillsLeaders from "@/components/sections/leadersPage/SkillsLeaders";
 import KPParagraph from "@/components/ui/KPParagraph";
-import ContactApproach from "@/components/weWorkWith/contactApproach";
+import ContactApproach from "@/components/contactApproach";
 
 import type { Metadata } from "next";
 

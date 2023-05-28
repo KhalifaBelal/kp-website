@@ -1,10 +1,10 @@
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
-import InvestIntro from "@/components/sections/investors/InvestIntro";
-import WhyInvest from "@/components/sections/investors/WhyInvest";
-import HowToInvest from "@/components/sections/investors/HowToInvest";
+import InvestIntro from "@/components/sections/investorsPage/InvestIntro";
+import WhyInvest from "@/components/sections/investorsPage/WhyInvest";
+import HowToInvest from "@/components/sections/investorsPage/HowToInvest";
 import KPParagraph from "@/components/ui/KPParagraph";
-import ContactApproach from "@/components/weWorkWith/contactApproach";
+import ContactApproach from "@/components/contactApproach";
 
 import type { Metadata } from "next";
 

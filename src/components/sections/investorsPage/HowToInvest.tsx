@@ -4,7 +4,7 @@ import KPHeading from "@/components/ui/KPHeading";
 import KPParagraph from "@/components/ui/KPParagraph";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
-import { howToInvestData as Data } from "@/lib/investors/howToInvestData";
+import { howToInvestData as Data } from "@/lib/weWorkWith/investorsPage/howToInvestData";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

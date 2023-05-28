@@ -8,13 +8,6 @@ import KPSection from "@/components/ui/KPSection";
 import { staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "For Experts",
-  description: "In progress...",
-};
-
 function ExpertsIntro() {
   return (
     <>

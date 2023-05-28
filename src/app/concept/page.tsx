@@ -1,11 +1,11 @@
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
-import ExpertsIntro from "@/components/sections/experts/ExpertsIntro";
-import WhyPartner from "@/components/sections/experts/WhyPartner";
 import KPParagraph from "@/components/ui/KPParagraph";
-import ContactApproach from "@/components/weWorkWith/contactApproach";
+import ContactApproach from "@/components/contactApproach";
+import ConceptIntro from "@/components/sections/conceptPage/ConceptIntro";
 
 import type { Metadata } from "next";
+import QualificationProcess from "@/components/sections/conceptPage/QualificationProcess";
 
 export const metadata: Metadata = {
   title: "Our Concept",
@@ -15,15 +15,13 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <ExpertsIntro />
-      <WhyPartner />
+      <ConceptIntro />
+      <QualificationProcess />
       <ContactApproach>
         <KPParagraph>
-          <span className="font-semibold">Contact us</span> today to explore
-          partnership opportunities and unleash your potential as an execution
-          partner with Khalifa Partners. Let&apos;s embark on a transformative
-          journey, leveraging our collective expertise to create remarkable
-          digital experiences for our partners.
+          <span className="font-semibold">Contact us</span> today to schedule a
+          consultation and discover how Khalifa Partners can accelerate your
+          journey towards success.
         </KPParagraph>
       </ContactApproach>
 
