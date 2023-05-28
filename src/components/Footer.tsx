@@ -26,7 +26,7 @@ export default function Footer() {
           network and capital.
         </KPParagraph>
         <div className="flex flex-col md:flex-row items-center gap-2 flex-1">
-          <Link className={kpButtonVariants({ variant: "link" })} href="/">
+          <Link className={kpButtonVariants({ variant: "link" })} href="https://staging.khalifapartners.com/">
             Home
           </Link>
           <Link
