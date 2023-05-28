@@ -27,7 +27,7 @@ export default function page() {
       ))}
       <ContactApproach>
         <KPParagraph>
-          As you delve into our portfolio, you'll discover the remarkable
+          As you delve into our portfolio, you&apos;ll discover the remarkable
           innovations and groundbreaking solutions that these companies bring to
           the table. We are committed to nurturing their growth, providing
           strategic guidance, and unlocking their full potential. <br />

@@ -24,7 +24,7 @@ function PortfolioIntro() {
           Invest At Khalifa Partners, our diverse portfolio comprises a
           collection of exceptional companies, each making waves in their
           respective industries. We are proud to present our visionary ventures
-          that are driving innovation, disruption, and growth. Let's explore the
+          that are driving innovation, disruption, and growth. Let&apos;s explore the
           remarkable stories and achievements of each company:
         </KPHeading>
       </KPRow>
