@@ -1,12 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { AnchorHTMLAttributes, FC } from "react";
 
 interface KPScrollLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  sectionId?: string;
+  sectionId: string;
 }
 
 const KPScrollLink: FC<KPScrollLinkProps> = ({
-  sectionId = "",
+  sectionId,
   children,
   className,
   ...props
@@ -15,8 +17,10 @@ const KPScrollLink: FC<KPScrollLinkProps> = ({
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      [console.log("succes")];
     }
   };
+
   return (
     <Link
       href={"/"}
