@@ -8,7 +8,7 @@ import { kpButtonVariants } from "../../ui/KPButton";
 
 function Concept() {
   return (
-    <KPSection>
+    <KPSection id="concept" itemID="concept">
       <KPRow>
         <KPRow
           wrapperContainer="disable"

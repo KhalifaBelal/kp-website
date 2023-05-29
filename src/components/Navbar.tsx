@@ -6,10 +6,11 @@ import { kpButtonVariants } from "@/ui/KPButton";
 import MobileMenu from "@/components/MobileMenu";
 import { usePathname } from "next/navigation";
 import React from "react";
+import KPScrollLink from "./ui/KPScrollLink";
 
 export default function Navbar() {
   const router = usePathname();
-  const hideNavbar = !router.includes("weworkwith"); // Adjust the condition based on your specific routes
+  const hideNavbar = !router.includes("weWorkWith" || "portfolio"); // Adjust the condition based on your specific routes
 
   if (!hideNavbar) {
     return null; // Don't render the Navbar on certain routes
@@ -36,8 +37,18 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex gap-4">
-          <Link className={kpButtonVariants({ variant: "link" })} href="/concept">Concept</Link>
-          <Link className={kpButtonVariants({ variant: "link" })} href="/portfolio">Portfolio</Link>
+          <KPScrollLink
+            className={kpButtonVariants({ variant: "link" })}
+            sectionId="concept"
+          >
+            Concept
+          </KPScrollLink>
+          <KPScrollLink
+            className={kpButtonVariants({ variant: "link" })}
+            sectionId="portfolio"
+          >
+            Portfolio
+          </KPScrollLink>
           <Link
             className={kpButtonVariants({ variant: "outline" })}
             href="https://linktr.ee/baselkhalifa"

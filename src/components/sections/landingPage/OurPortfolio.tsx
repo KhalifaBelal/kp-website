@@ -7,11 +7,8 @@ import { kpButtonVariants } from "@/ui/KPButton";
 
 function OurPortfolio() {
   return (
-    <KPSection>
-      <KPRow
-        flexDirection="col"
-        className="text-center max-w-2xl"
-      >
+    <KPSection id="portfolio">
+      <KPRow flexDirection="col" className="text-center max-w-2xl">
         <KPHeading className="text-white">Our Portfolio</KPHeading>
         <KPParagraph>
           Discover our dynamic portfolio of innovative companies, each driving
