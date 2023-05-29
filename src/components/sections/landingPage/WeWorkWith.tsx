@@ -7,7 +7,7 @@ import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";
 import Link from "next/link";
 import { useState } from "react";
-import { kpButtonVariants } from "../ui/KPButton";
+import { kpButtonVariants } from "@/ui/KPButton";
 
 function WeWorkWith() {
   const [currentItem, setCurrentItem] = useState<string>("leaders");

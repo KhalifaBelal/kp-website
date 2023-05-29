@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 import { kpButtonVariants } from "@/ui/KPButton";
 import MobileMenu from "@/components/MobileMenu";
@@ -37,6 +36,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex gap-4">
+          <Link className={kpButtonVariants({ variant: "link" })} href="/concept">Concept</Link>
           <Link className={kpButtonVariants({ variant: "link" })} href="/portfolio">Portfolio</Link>
           <Link
             className={kpButtonVariants({ variant: "outline" })}

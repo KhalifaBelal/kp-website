@@ -4,11 +4,11 @@ import KPParagraph from "@/ui/KPParagraph";
 import Pyramid from "@/components/glb-models/Pyramid";
 import KPSection from "@/ui/KPSection";
 import Link from "next/link";
-import { kpButtonVariants } from "../ui/KPButton";
+import { kpButtonVariants } from "../../ui/KPButton";
 
 function Concept() {
   return (
-    <KPSection id="concept-section">
+    <KPSection>
       <KPRow>
         <KPRow
           wrapperContainer="disable"

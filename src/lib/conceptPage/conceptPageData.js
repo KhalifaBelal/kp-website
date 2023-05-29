@@ -28,7 +28,7 @@ export const conceptPageData = {
     },
     {
       title: "Join the Khalifa Partners Family:",
-      text: "If you are a startup or business seeking the perfect strategic partner that offers more than just services, we invite you to join the Khalifa Partners family. Experience the power of a partnership that combines digital solutions, funding, and a shared commitment to your success. Let&apos;s revolutionize your business growth together.",
+      text: "If you are a startup or business seeking the perfect strategic partner that offers more than just services, we invite you to join the Khalifa Partners family. Experience the power of a partnership that combines digital solutions, funding, and a shared commitment to your success. Let's revolutionize your business growth together.",
     },
   ],
 };

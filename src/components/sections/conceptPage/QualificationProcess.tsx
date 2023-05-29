@@ -24,20 +24,36 @@ function QualificationProcess() {
     <>
       <KPSection flexDirection="col">
         <KPRow flexDirection="col" alignItems="start" className="py-20">
-          <KPHeading>Our Qualification Process</KPHeading>
-          <KPHeading size="sm" fontWeight="normal">
+          <KPHeading>The 3 Step Concept</KPHeading>
+          <KPHeading size="sm">
+            The Three-Part Plan for Startup Success: Strategy, Execution, and
+            Partnership
+          </KPHeading>
+          <KPParagraph>
             Launching a startup is an exhilarating journey filled with
             opportunities and challenges. To navigate the complexities of the
-            business landscape successfully, it&apos;s crucial to have a well-defined
-            plan. This three-part plan, comprising strategy, execution, and
-            partnership, provides a solid foundation for startups to thrive and
-            achieve their goals. By integrating these elements, entrepreneurs
-            can establish a robust framework that maximizes their chances of
-            success.
-          </KPHeading>
+            business landscape successfully, it&apos;s crucial to have a
+            well-defined plan. This three-part plan, comprising strategy,
+            execution, and partnership, provides a solid foundation for startups
+            to thrive and achieve their goals. By integrating these elements,
+            entrepreneurs can establish a robust framework that maximizes their
+            chances of success.
+          </KPParagraph>
         </KPRow>
 
         <Preface title={prefaceData[0].title} text={prefaceData[0].text} />
+
+        <KPRow className="py-20">
+          <KPHeading>Our Qualification Process</KPHeading>
+          <KPParagraph>
+            At Khalifa Partners, we have a rigorous qualification process in
+            place to ensure that we select the most suitable individuals to join
+            our team as General Managers for our companies. We believe that
+            finding the right partners is crucial for our collective success.
+            Here&apos;s an overview of our three-step qualification process
+          </KPParagraph>
+        </KPRow>
+
         <div className="md:hidden">
           {Data.map((step, index) => (
             <StrategyStep
@@ -74,6 +90,12 @@ function QualificationProcess() {
           </Swiper>
         </div>
         <Preface title={prefaceData[1].title} text={prefaceData[1].text} />
+        <Preface
+          title={prefaceData[2].title}
+          text={prefaceData[2].text}
+          withCta
+          ctaText="Portfolio"
+        />
       </KPSection>
     </>
   );
