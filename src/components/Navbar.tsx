@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <div className="fixed backdrop-blur-sm bg-zinc-900/75 z-50 top-0 left-0 right-0 h-20 border-b border-zinc-700 shadow-sm flex items-center justify-between">
       <div className="container max-w-6xl mx-auto w-full flex justify-between items-center">
-        <Link href="https://staging.khalifapartners.com/">
+        <Link href="/" replace>
           <Image
             typeof="image"
             rel="preload"
@@ -38,16 +38,24 @@ export default function Navbar() {
         <div className="hidden md:flex gap-4">
           <Link
             href="/"
+            replace
             className={kpButtonVariants({ variant: "link" })}
-            onClick={() => document.getElementById("concept")?.scrollIntoView({behavior: "smooth"})}
+            onClick={() =>
+              document
+                .getElementById("concept")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
           >
             Concept
           </Link>
           <Link
             href="/"
+            replace
             className={kpButtonVariants({ variant: "link" })}
             onClick={() =>
-              document.getElementById("portfolio")?.scrollIntoView({behavior: "smooth"})
+              document
+                .getElementById("portfolio")
+                ?.scrollIntoView({ behavior: "smooth" })
             }
           >
             Portfolio
