@@ -45,6 +45,7 @@ export default function MobileMenu() {
               onClick={() =>
                 document.getElementById("portfolio")?.scrollIntoView()
               }
+              replace
             >
               <Icons.LayoutDashboardIcon className="mr-2 h-5 w-5" />
               <span>Portfolio</span>
@@ -54,7 +55,7 @@ export default function MobileMenu() {
           <DropdownMenuItem asChild>
             <Link
               className="w-full flex items-center gap-1.5"
-              href="/"
+              href=""
               onClick={() =>
                 document.getElementById("concept")?.scrollIntoView()
               }
