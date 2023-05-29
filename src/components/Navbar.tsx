@@ -6,7 +6,6 @@ import { kpButtonVariants } from "@/ui/KPButton";
 import MobileMenu from "@/components/MobileMenu";
 import { usePathname } from "next/navigation";
 import React from "react";
-import KPScrollLink from "./ui/KPScrollLink";
 
 export default function Navbar() {
   const router = usePathname();
@@ -37,18 +36,22 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex gap-4">
-          <KPScrollLink
+          <Link
+            href="/"
             className={kpButtonVariants({ variant: "link" })}
-            sectionId="concept"
+            onClick={() => document.getElementById("concept")?.scrollIntoView({behavior: "smooth"})}
           >
             Concept
-          </KPScrollLink>
-          <KPScrollLink
+          </Link>
+          <Link
+            href="/"
             className={kpButtonVariants({ variant: "link" })}
-            sectionId="portfolio"
+            onClick={() =>
+              document.getElementById("portfolio")?.scrollIntoView({behavior: "smooth"})
+            }
           >
             Portfolio
-          </KPScrollLink>
+          </Link>
           <Link
             className={kpButtonVariants({ variant: "outline" })}
             href="https://linktr.ee/baselkhalifa"

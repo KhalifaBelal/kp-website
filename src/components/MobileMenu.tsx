@@ -12,7 +12,6 @@ import {
   DropdownMenuTrigger,
 } from "@/ui/DropdownMenu";
 import Icons from "@/components/Icons";
-import KPScrollLink from "./ui/KPScrollLink";
 
 export default function MobileMenu() {
   const [open, setOpen] = useState<boolean>(false);
@@ -40,23 +39,29 @@ export default function MobileMenu() {
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
-            <KPScrollLink
+            <Link
               className="w-full flex items-center gap-1.5"
-              sectionId="portfolio"
+              href="/"
+              onClick={() =>
+                document.getElementById("portfolio")?.scrollIntoView()
+              }
             >
               <Icons.LayoutDashboardIcon className="mr-2 h-5 w-5" />
               <span>Portfolio</span>
-            </KPScrollLink>
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
-            <KPScrollLink
+            <Link
               className="w-full flex items-center gap-1.5"
-              sectionId="concept"
+              href="/"
+              onClick={() =>
+                document.getElementById("concept")?.scrollIntoView()
+              }
             >
-              <Icons.LayoutDashboardIcon className="mr-2 h-5 w-5" />
+              <Icons.TriangleIcon className="mr-2 h-5 w-5" />
               <span>Concept</span>
-            </KPScrollLink>
+            </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>

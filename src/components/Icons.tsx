@@ -5,6 +5,7 @@ import {
   ShieldCheckIcon,
   LucideMenu,
   HomeIcon,
+  TriangleIcon
 } from "lucide-react";
 
 export const Icons = {
@@ -14,6 +15,7 @@ export const Icons = {
   ShieldCheckIcon,
   LucideMenu,
   HomeIcon,
+  TriangleIcon
 };
 
 export default Icons;
