@@ -4,35 +4,31 @@ import KPSection from "@/ui/KPSection";
 import { kpButtonVariants } from "@/ui/KPButton";
 import Link from "next/link";
 import KPParagraph from "../ui/KPParagraph";
+import DataAccordion from "../DataAccordion";
 
 interface PrefaceProps {
   title: string;
-  text: string;
+  introText: string;
   withCta?: boolean;
   ctaText?: string;
-  wrapperDisable?: boolean;
+  phase: number;
 }
 
 function Preface({
   title,
-  text,
+  introText,
   withCta = false,
   ctaText,
-  wrapperDisable,
+  phase,
 }: PrefaceProps) {
   return (
-    <div className="min-h-screen w-full overflow-hidden flex py-32 flex-col items-start justify-center">
-      <KPRow
-        variant="intro"
-        flexDirection="col"
-        alignItems="start"
-        wrapperContainer={wrapperDisable ? "disable" : "default"}
-        className="text-left"
-      >
-        <KPHeading size="default" className="text-white">
-          {title}
+    <KPSection className="bg-zinc-100">
+      <KPRow flexDirection="col" alignItems="start" className="text-left">
+        <KPHeading className="text-black">{title}</KPHeading>
+        <KPHeading className="text-black" size="sm" fontWeight="normal">
+          {introText}
         </KPHeading>
-        <KPParagraph>{text}</KPParagraph>
+        <DataAccordion item={phase} />
         {withCta ? (
           <Link
             href="/portfolio"
@@ -42,7 +38,7 @@ function Preface({
           </Link>
         ) : null}
       </KPRow>
-    </div>
+    </KPSection>
   );
 }
 

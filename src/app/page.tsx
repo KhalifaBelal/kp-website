@@ -8,6 +8,7 @@ const Concept = dynamic(
 const Footer = dynamic(() => import("@/components/Footer"));
 import Intro from "@/components/sections/landingPage/Intro";
 import OurPortfolio from "@/components/sections/landingPage/OurPortfolio";
+import QualificationProcess from "@/components/sections/conceptPage/QualificationProcess";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Intro />
       <Concept />
       <WeWorkWith />
+      <QualificationProcess />
       <OurPortfolio />
       <Footer />
     </div>
