@@ -95,10 +95,6 @@ export const conceptPageData = {
       },
       {
         title: "Transparency and Accountability:",
-        text: "Our team of seasoned professionals specializes in digital marketing and software development. We work closely with you to develop customized strategies tailored to your business needs, ensuring maximum impact and ROI.",
-      },
-      {
-        title: "Access to Capital:",
         text: "We prioritize transparency and accountability, providing regular performance reports and analytics. You'll have full visibility into the effectiveness of our strategies and the value we bring to your startup. Choose Khalifa Partners as your strategic partner and unlock the full potential of your startup. Together, we'll navigate the challenges, capitalize on opportunities, and achieve remarkable success.",
       },
     ],

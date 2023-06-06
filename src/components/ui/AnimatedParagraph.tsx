@@ -16,7 +16,6 @@ const AnimatedParagraph: FC<AnimatedParagraphProps> = ({
   return (
     <KPParagraph>
       <motion.span variants={textContainer} className={className}>
-        {"| "}
         {Array.from(title).map((letter, index) => (
           <motion.span variants={textVariant2} key={index}>
             {letter === " " ? "\u00A0" : letter}

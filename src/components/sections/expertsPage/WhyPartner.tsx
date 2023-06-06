@@ -8,7 +8,7 @@ function WhyPartner() {
     <KPSection className="bg-zinc-100">
       <KPRow flexDirection="col" alignItems="start" className="gap-16">
         <KPHeading className="text-black">
-          Why Invest in Khalifa Partners&apos; Investment Fund?
+          Why Partner with Khalifa Partners?
         </KPHeading>
         <WeWorkWithAccordion item={2} />
       </KPRow>

@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
+import ContactApproach from "@/components/contactApproach";
 import ExpertsIntro from "@/components/sections/expertsPage/ExpertsIntro";
 import WhyPartner from "@/components/sections/expertsPage/WhyPartner";
 import KPParagraph from "@/components/ui/KPParagraph";
-import ContactApproach from "@/components/contactApproach";
 
 import type { Metadata } from "next";
 

@@ -3,7 +3,6 @@ const Footer = dynamic(() => import("@/components/Footer"));
 import KPParagraph from "@/components/ui/KPParagraph";
 import ContactApproach from "@/components/contactApproach";
 import ConceptIntro from "@/components/sections/conceptPage/ConceptIntro";
-import QualificationProcess from "@/components/sections/conceptPage/QualificationProcess";
 import ConceptSteps from "@/components/sections/conceptPage/ConceptSteps";
 
 export default function page() {

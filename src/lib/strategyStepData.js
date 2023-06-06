@@ -1,12 +1,12 @@
 export const strategyStepData = [
   {
-    title: "Step 1: 1:1 Sparring",
+    title: "Step 1: Sparring",
     text: "We begin by conducting a 1:1 Sparring session with you. This session allows us to identify your personal and professional skills, as well as assess your alignment with our values and vision. We engage in open discussions to gain insights into your background, experience, leadership abilities, and strategic thinking.",
     model: 0,
   },
   {
     title: "Step 2: Strategic Plan",
-    text: "After the 1:1 Sparring session, our Board of Directors comes together to discuss the results and insights gathered. They carefully evaluate your qualifications, expertise, track record, leadership qualities, and cultural fit. The Board assesses how your skills align with our company's objectives and long-term strategy.",
+    text: "After the Sparring session, our Board of Directors comes together to discuss the results and insights gathered. They carefully evaluate your qualifications, expertise, track record, leadership qualities, and cultural fit. The Board assesses how your skills align with our company's objectives and long-term strategy.",
     model: 1,
   },
   {

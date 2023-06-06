@@ -25,7 +25,7 @@ function Concept() {
             and capital. That&apos;s why we&apos;ve developed a unique business
             model that goes beyond traditional service providers.
           </KPParagraph>
-          <Link href="/concept" className={kpButtonVariants({variant: "outline"})} >More to the Business Model</Link>
+          <Link href="/concept" className={kpButtonVariants({variant: "outline"})} >About the Business Model</Link>
         </KPRow>
         <div className="relative w-full aspect-square">
           <Pyramid />
