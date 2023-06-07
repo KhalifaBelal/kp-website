@@ -1,27 +1,33 @@
-import { FC, HTMLAttributes } from "react";
+import { FC, HTMLAttributes, ReactNode } from "react";
 import "./ui.css";
 import KPHeading from "./KPHeading";
 import { cn } from "@/lib/utils";
-import { skillsData as Data } from "@/lib/weWorkWith/expertsPage/skillsData";
+import KPParagraph from "./KPParagraph";
+import KPRow from "./KPRow";
 
-interface KPAnimBlurbProps extends HTMLAttributes<HTMLDivElement> {
+interface BlurbProps extends HTMLAttributes<HTMLDivElement> {
   title: string;
   description: string;
-  iconIndex: number;
+  icon: ReactNode;
 }
 
-const KPAnimBlurb: FC<KPAnimBlurbProps> = ({
+const Blurb: FC<BlurbProps> = ({
   title,
   description,
-  iconIndex,
+  icon,
   className,
   ...props
 }) => {
   return (
-    <div className={cn("card min-w-[320px]", className)} {...props}>
-      <span className="icon">{Data[iconIndex].icon}</span>
-      <KPHeading size="sm">{title}</KPHeading>
-      <p>{description}</p>
+    <div
+      className={cn("card flex-1", className)}
+      {...props}
+    >
+      <KPRow alignItems="start" flexDirection="col" wrapperContainer="disable">
+        <span className="icon">{icon}</span>
+        <KPHeading size="sm">{title}</KPHeading>
+        <KPParagraph>{description}</KPParagraph>
+      </KPRow>
       <div className="shine" />
       <div className="background">
         <div className="tiles">
@@ -47,4 +53,4 @@ const KPAnimBlurb: FC<KPAnimBlurbProps> = ({
   );
 };
 
-export default KPAnimBlurb;
+export default Blurb;

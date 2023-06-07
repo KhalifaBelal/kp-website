@@ -1,4 +1,4 @@
-import {svgIcons as Data} from "@/components/SvgIcons"
+import { svgIcons as Data } from "@/components/SvgIcons";
 
 export const skillsData = [
   {
