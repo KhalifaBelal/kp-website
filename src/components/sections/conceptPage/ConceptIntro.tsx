@@ -1,12 +1,9 @@
 "use client";
 
-import AnimatedParagraph from "@/components/ui/AnimatedParagraph";
 import KPHeading from "@/components/ui/KPHeading";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
 import WeWorkWithAccordion from "@/components/DataAccordion";
-import { staggerContainer } from "@/utils/motion";
-import { motion } from "framer-motion";
 
 function ConceptIntro() {
   return (
@@ -21,17 +18,9 @@ function ConceptIntro() {
       </KPSection>
       <KPSection>
         <KPRow variant="intro" flexDirection="col" alignItems="start">
-          <motion.div
-            variants={staggerContainer(0.1, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
-          >
-            <AnimatedParagraph
-              className="text-left"
-              title="From initial strategy to meticulous execution"
-            />
-          </motion.div>
+          <KPHeading size="sm" className="text-left">
+            From initial strategy to meticulous execution
+          </KPHeading>
 
           <KPHeading className="text-left" size="sm" fontWeight="normal">
             Our team of experts collaborates closely with you to ensure our

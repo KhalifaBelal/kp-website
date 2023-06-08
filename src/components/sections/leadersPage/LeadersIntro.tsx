@@ -1,11 +1,8 @@
 "use client";
 
 import KPHeading from "@/components/ui/KPHeading";
-import AnimatedParagraph from "@/components/ui/AnimatedParagraph";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
-import { motion } from "framer-motion";
-import { staggerContainer } from "@/utils/motion";
 import KPParagraph from "@/components/ui/KPParagraph";
 
 function LeadersIntro() {
@@ -13,17 +10,9 @@ function LeadersIntro() {
     <>
       <KPSection>
         <KPRow variant="intro" flexDirection="col" alignItems="start">
-          <motion.div
-            variants={staggerContainer(0.1, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
-          >
-            <AnimatedParagraph
-              className="text-left"
-              title="Attention, Visionary Entrepreneurs and Savvy Managers"
-            ></AnimatedParagraph>
-          </motion.div>
+          <KPHeading className="text-left">
+            Attention, Visionary Entrepreneurs and Savvy Managers
+          </KPHeading>
 
           <KPHeading className="text-left" size="sm" fontWeight="normal">
             Are you ready to embark on a groundbreaking journey, armed with a

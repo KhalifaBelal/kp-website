@@ -53,7 +53,7 @@ body.toggle .grid * {
       var(--card-box-shadow-2),
     0 0 0 1px var(--card-border-color);
   padding: 56px 16px 16px 16px;
-  border-radius: 15px;
+  border-radius: 15px; 
   cursor: pointer;
   position: relative;
   transition: box-shadow 0.25s;

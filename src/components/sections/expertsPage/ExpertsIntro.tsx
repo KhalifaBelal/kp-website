@@ -1,14 +1,10 @@
 "use client";
 
-import AnimatedParagraph from "@/components/ui/AnimatedParagraph";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
-import { staggerContainer } from "@/utils/motion";
-import { motion } from "framer-motion";
 import { skillsData as Data } from "@/lib/weWorkWith/expertsPage/skillsData";
 import Blurb from "@/components/ui/Blurb";
 import KPHeading from "@/components/ui/KPHeading";
-import Icons from "@/components/Icons";
 
 function ExpertsIntro() {
   const dataSliceOne = Data.slice(0, 4);
@@ -19,7 +15,7 @@ function ExpertsIntro() {
       <KPRow className="gap-10" flexDirection="col">
         <KPHeading>The skills we are looking for</KPHeading>
         <KPRow flexDirection="col" wrapperContainer="disable">
-          <KPRow wrapperContainer="disable" >
+          <KPRow wrapperContainer="disable">
             {dataSliceOne.map((_skill, index) => (
               <Blurb
                 key={index}

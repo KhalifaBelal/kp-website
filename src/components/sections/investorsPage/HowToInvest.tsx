@@ -34,7 +34,7 @@ function HowToInvest() {
             <KPHeading size="sm">Here&apos;s how it works:</KPHeading>
             {Data.map((_swipe, index) => (
               <KPRow key={index} wrapperContainer="disable">
-                <KPHeading size="sm" fontWeight="normal">
+                <KPHeading className="text-left" size="sm" fontWeight="normal">
                   {_swipe.title}
                 </KPHeading>
                 <KPParagraph>{_swipe.text}</KPParagraph>
