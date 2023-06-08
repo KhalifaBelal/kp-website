@@ -1,19 +1,5 @@
 export const conceptPageData = {
-  firstAccordion: [
-    {
-      title: "Our Approach:",
-      text: "At Khalifa Partners, we believe in a collaborative approach that aligns our success with yours. We offer our digital solutions and expertise in exchange for equity in your company, creating a true partnership that drives mutual growth. By taking a vested interest in your success, we are fully committed to delivering exceptional results and providing the necessary resources to help your business thrive.",
-    },
-    {
-      title: "Digital Solutions for Growth:",
-      text: "Our team of seasoned professionals specializes in digital marketing and software development, with a deep understanding of the latest trends, tools, and strategies. We work closely with you to develop a customized digital strategy that aligns with your business goals and target audience. From creating engaging websites and mobile applications to implementing data-driven marketing campaigns, we leverage our expertise to optimize your online presence and drive tangible results.",
-    },
-    {
-      title: "Introducing Our Comprehensive Digital Solutions:",
-      text: "At Khalifa Partners, we are committed to helping businesses thrive in the digital landscape. We understand the evolving needs of modern businesses and offer a range of comprehensive digital solutions designed to elevate your brand, expand your reach, and drive tangible results. From strategic planning to execution, our digital solutions encompass various key aspects to create a holistic approach to your online presence.",
-    },
-  ],
-  secondAccordion: [
+  introAccordion: [
     {
       title: "Access to Capital:",
       text: "In addition to our digital solutions, we offer a unique advantage—access to capital. We understand that funding is a critical aspect of business growth, especially for startups. Through our business model, we provide capital investment to fuel your growth, helping you overcome financial hurdles and seize opportunities that propel your business forward. With our strategic partnership, you gain not only the necessary resources but also the financial backing to drive innovation and expand your market reach.",

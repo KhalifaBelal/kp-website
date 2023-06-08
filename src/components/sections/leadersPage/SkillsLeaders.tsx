@@ -1,4 +1,4 @@
-import WeWorkWithAccordion from "@/components/DataAccordion";
+import DataAccordion from "@/components/DataAccordion";
 import KPHeading from "@/components/ui/KPHeading";
 import KPParagraph from "@/components/ui/KPParagraph";
 import KPRow from "@/components/ui/KPRow";
@@ -30,7 +30,7 @@ function SkillsLeaders() {
           </KPParagraph>
         </KPRow>
 
-        <WeWorkWithAccordion item={1} />
+        <DataAccordion item={1} />
       </KPRow>
     </KPSection>
   );

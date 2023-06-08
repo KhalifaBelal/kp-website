@@ -1,4 +1,4 @@
-import WeWorkWithAccordion from "@/components/DataAccordion";
+import DataAccordion from "@/components/DataAccordion";
 import KPHeading from "@/components/ui/KPHeading";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
@@ -10,7 +10,7 @@ function WhyInvest() {
         <KPHeading className="text-black">
           Why Invest in Khalifa Partners&apos; Investment Fund?
         </KPHeading>
-        <WeWorkWithAccordion item={0} />
+        <DataAccordion item={0} />
       </KPRow>
     </KPSection>
   );

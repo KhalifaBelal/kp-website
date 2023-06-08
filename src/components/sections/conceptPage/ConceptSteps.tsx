@@ -36,19 +36,19 @@ function ConceptSteps() {
       <Preface
         title={prefaceData[0].title}
         introText={prefaceData[0].text}
-        phase={5}
+        phase={4}
       />
       <Preface
         title={prefaceData[1].title}
         introText={prefaceData[1].text}
-        phase={6}
+        phase={5}
       />
       <Preface
         title={prefaceData[2].title}
         introText={prefaceData[2].text}
         withCta
         ctaText="Portfolio"
-        phase={7}
+        phase={6}
       />
     </>
   );

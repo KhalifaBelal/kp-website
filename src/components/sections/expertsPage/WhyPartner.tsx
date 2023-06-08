@@ -1,4 +1,4 @@
-import WeWorkWithAccordion from "@/components/DataAccordion";
+import DataAccordion from "@/components/DataAccordion";
 import KPHeading from "@/components/ui/KPHeading";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
@@ -10,7 +10,7 @@ function WhyPartner() {
         <KPHeading className="text-black">
           Why Partner with Khalifa Partners?
         </KPHeading>
-        <WeWorkWithAccordion item={2} />
+        <DataAccordion item={2} />
       </KPRow>
     </KPSection>
   );

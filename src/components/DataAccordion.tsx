@@ -21,14 +21,12 @@ interface DataAccordionProps {
 }
 
 const DataAccordion: FC<DataAccordionProps> = ({ item }) => {
-  const FirstConceptData = ConceptData.firstAccordion;
-  const SecondConceptData = ConceptData.secondAccordion;
+  const IntroConceptData = ConceptData.introAccordion;
   const Data = [
     InvestData,
     LeadersData,
     ExpertsData,
-    FirstConceptData,
-    SecondConceptData,
+    IntroConceptData,
     conceptPageData.phase.strategy,
     conceptPageData.phase.execution,
     conceptPageData.phase.partnership,
