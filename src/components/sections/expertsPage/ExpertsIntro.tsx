@@ -12,9 +12,9 @@ function ExpertsIntro() {
 
   return (
     <KPSection>
-      <KPRow className="gap-10" flexDirection="col">
+      <KPRow flexDirection="col">
         <KPHeading>The skills we are looking for</KPHeading>
-        <div className="flex flex-col items-center justify-center gap-5 aspect-square">
+        <KPRow flexDirection="col">
           <KPRow wrapperContainer="disable">
             {dataSliceOne.map((_skill, index) => (
               <Blurb
@@ -22,6 +22,7 @@ function ExpertsIntro() {
                 title={_skill.skill}
                 icon={_skill.icon}
                 description={_skill.description}
+                className="aspect-square"
               />
             ))}
           </KPRow>
@@ -32,10 +33,11 @@ function ExpertsIntro() {
                 title={_skill.skill}
                 icon={_skill.icon}
                 description={_skill.description}
+                className="aspect-square"
               />
             ))}
           </KPRow>
-        </div>
+        </KPRow>
       </KPRow>
     </KPSection>
   );
