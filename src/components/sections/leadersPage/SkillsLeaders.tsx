@@ -66,9 +66,6 @@ function SkillsLeaders() {
         </KPRow>
       </KPRow>
       <div className="w-full hidden md:flex flex-col px-10 gap-16">
-        <KPHeading fontWeight="normal" className="text-center" size="sm">
-          Here&apos;s how it works:
-        </KPHeading>
         <Swiper
           navigation={true}
           pagination={{ type: "progressbar" }}
