@@ -61,6 +61,18 @@ export default function Navbar() {
             Portfolio
           </Link>
           <Link
+            href="/"
+            replace
+            className={kpButtonVariants({ variant: "link" })}
+            onClick={() =>
+              document
+                .getElementById("philosophy")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Philosophy
+          </Link>
+          <Link
             className={kpButtonVariants({ variant: "outline" })}
             href="https://linktr.ee/baselkhalifa"
             rel="noreferrer"

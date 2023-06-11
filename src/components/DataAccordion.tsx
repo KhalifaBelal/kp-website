@@ -15,6 +15,7 @@ import { skillsLeadersData as LeadersData } from "@/lib/weWorkWith/leadersPage/s
 import { whyPartnerData as ExpertsData } from "@/lib/weWorkWith/expertsPage/whyPartnerData";
 import { conceptPageData as ConceptData } from "@/lib/conceptPage/conceptPageData";
 import { conceptPageData } from "@/lib/conceptPage/conceptPageData";
+import { philosophyData as philosophy } from "@/lib/philosophy/philosophyData";
 
 interface DataAccordionProps {
   item: number;
@@ -30,6 +31,7 @@ const DataAccordion: FC<DataAccordionProps> = ({ item }) => {
     conceptPageData.phase.strategy,
     conceptPageData.phase.execution,
     conceptPageData.phase.partnership,
+    philosophy,
   ];
 
   return (

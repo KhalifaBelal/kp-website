@@ -5,6 +5,9 @@ const WeWorkWith = dynamic(
 const Concept = dynamic(
   () => import("@/components/sections/landingPage/Concept")
 );
+const Philosophy = dynamic(
+  () => import("@/components/sections/landingPage/Philosophy")
+);
 const Footer = dynamic(() => import("@/components/Footer"));
 import Intro from "@/components/sections/landingPage/Intro";
 import OurPortfolio from "@/components/sections/landingPage/OurPortfolio";
@@ -18,6 +21,7 @@ export default function Home() {
       <WeWorkWith />
       <QualificationProcess />
       <OurPortfolio />
+      <Philosophy />
       <Footer />
     </div>
   );
