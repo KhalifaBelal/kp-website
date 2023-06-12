@@ -6,10 +6,7 @@ import {
   LucideMenu,
   HomeIcon,
   TriangleIcon,
-  GhostIcon,
-  SquareAsterisk,
-  Triangle,
-  BrainIcon
+  BrainIcon,
 } from "lucide-react";
 
 export const Icons = {
@@ -19,10 +16,8 @@ export const Icons = {
   ShieldCheckIcon,
   LucideMenu,
   HomeIcon,
-  TriangleIcon,SquareAsterisk,
-  GhostIcon,
-  Triangle,
-  BrainIcon
+  TriangleIcon,
+  BrainIcon,
 };
 
 export default Icons;
