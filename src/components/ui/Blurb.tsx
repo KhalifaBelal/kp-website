@@ -20,7 +20,7 @@ const Blurb: FC<BlurbProps> = ({
 }) => {
   return (
     <div
-      className={cn("card ", className)}
+      className={cn("card min-h-full", className)}
       {...props}
     >
       <KPRow alignItems="start" flexDirection="col" wrapperContainer="disable">

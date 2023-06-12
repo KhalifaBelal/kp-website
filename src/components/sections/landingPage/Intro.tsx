@@ -20,9 +20,10 @@ function Intro() {
           className="aspect-square"
         />
         <KPHeading className="text-white">
-          We diversify our Portfolio by building companies with outstanding
-          personalities and supporting them with our know-how, network and
-          capital.
+          We diversify our <span className="text-kp-red">Portfolio</span> by
+          building companies with{" "}
+          <span className="text-kp-red">outstanding personalities</span> and
+          supporting them with our know-how, network and capital.
         </KPHeading>
       </KPRow>
     </KPSection>

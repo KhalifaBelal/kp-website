@@ -38,7 +38,7 @@ body {
 body.toggle .grid * {
   transition-duration: 0s !important;
 }
-.grid {
+.grids {
   display: grid;
   grid-template-columns: repeat(2, 240px);
   grid-gap: 32px;
@@ -57,9 +57,9 @@ body.toggle .grid * {
   cursor: pointer;
   position: relative;
   transition: box-shadow 0.25s;
+  min-width: 25%;
   width: 100%;
-  max-width: 500px;
-  aspect-ratio: calc(1 / 1);
+  min-height: 100%;
 }
 .card::before {
   content: "";

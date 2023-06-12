@@ -29,7 +29,8 @@ function ConceptIntro() {
       <KPSection flexDirection="col" className="gap-10">
         <KPRow flexDirection="col" alignItems="start">
           <KPHeading className="text-left">
-            Introducing our comprehensive digital solutions
+            Introducing our comprehensive{" "}
+            <span className="text-kp-red">digital solutions</span>
           </KPHeading>
 
           <KPParagraph className="text-left ">
@@ -44,25 +45,23 @@ function ConceptIntro() {
         </KPRow>
         <KPRow flexDirection="col">
           <KPRow flexDirection="col" wrapperContainer="disable">
-            <KPRow wrapperContainer="disable">
+            <KPRow wrapperContainer="disable" className="items-stretch">
               {dataSliceOne.map((_skill, index) => (
                 <Blurb
                   key={index}
                   title={_skill.skill}
                   icon={_skill.icon}
                   description={_skill.description}
-                  className="aspect-square"
                 />
               ))}
             </KPRow>
-            <KPRow wrapperContainer="disable">
+            <KPRow wrapperContainer="disable" className="items-stretch">
               {dataSliceTwo.map((_skill, index) => (
                 <Blurb
                   key={index}
                   title={_skill.skill}
                   icon={_skill.icon}
                   description={_skill.description}
-                  className="aspect-square"
                 />
               ))}
             </KPRow>

@@ -18,7 +18,7 @@ export default function page() {
     <>
       <KPSection>
         <KPRow flexDirection="col" alignItems="start" className="gap-16">
-          <KPHeading>Our Businessphilosophy</KPHeading>
+          <KPHeading>Our Business Philosophy</KPHeading>
           <KPParagraph>
             At Khalifa Partners, our business philosophy is rooted in the
             timeless wisdom and engineering marvels of the ancient Egyptian

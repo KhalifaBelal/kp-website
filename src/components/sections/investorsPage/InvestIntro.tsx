@@ -8,7 +8,7 @@ function InvestIntro() {
   return (
     <KPSection>
       <KPRow variant="intro" flexDirection="col" alignItems="start">
-        <KPHeading className="text-left">We work with investors</KPHeading>
+        <KPHeading className="text-left">We work with Investors</KPHeading>
 
         <KPHeading size="sm" fontWeight="normal" className="text-left">
           <span className="font-semibold">Unlocking Potential:</span> Invest in

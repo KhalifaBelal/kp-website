@@ -6,11 +6,9 @@ import { skillsData as Data } from "@/lib/weWorkWith/expertsPage/skillsData";
 import Blurb from "@/components/ui/Blurb";
 import KPHeading from "@/components/ui/KPHeading";
 import KPParagraph from "@/components/ui/KPParagraph";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper";
 
 function SkillsLeaders() {
   const dataSliceOne = Data.slice(0, 4);
@@ -40,51 +38,29 @@ function SkillsLeaders() {
             responsibilities:
           </KPParagraph>
         </KPRow>
-        <KPRow flexDirection="col" className="md:hidden">
-          <KPRow wrapperContainer="disable">
+        <KPRow flexDirection="col">
+          <KPRow wrapperContainer="disable" className="items-stretch">
             {dataSliceOne.map((_skill, index) => (
               <Blurb
                 key={index}
                 title={_skill.skill}
                 icon={_skill.icon}
                 description={_skill.description}
-                className="aspect-square"
               />
             ))}
           </KPRow>
-          <KPRow wrapperContainer="disable">
+          <KPRow wrapperContainer="disable" className="items-stretch">
             {dataSliceTwo.map((_skill, index) => (
               <Blurb
                 key={index}
                 title={_skill.skill}
                 icon={_skill.icon}
                 description={_skill.description}
-                className="aspect-square"
               />
             ))}
           </KPRow>
         </KPRow>
       </KPRow>
-      <div className="w-full hidden md:flex flex-col px-10 gap-16">
-        <Swiper
-          navigation={true}
-          pagination={{ type: "progressbar" }}
-          watchSlidesProgress
-          modules={[Navigation, Pagination]}
-          slidesPerView={1.175}
-        >
-          {Data.map((_swipe, index) => (
-            <SwiperSlide key={index}>
-              <KPRow flexDirection="col" alignItems="start">
-                <KPHeading size="sm" fontWeight="normal">
-                  {_swipe.skill}
-                </KPHeading>
-                <KPParagraph>{_swipe.description}</KPParagraph>
-              </KPRow>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
     </KPSection>
   );
 }
