@@ -15,25 +15,23 @@ function ExpertsIntro() {
       <KPRow flexDirection="col">
         <KPHeading>The skills we are looking for</KPHeading>
         <KPRow flexDirection="col">
-          <KPRow wrapperContainer="disable">
+          <KPRow wrapperContainer="disable" className="items-stretch">
             {dataSliceOne.map((_skill, index) => (
               <Blurb
                 key={index}
                 title={_skill.skill}
                 icon={_skill.icon}
                 description={_skill.description}
-                className="aspect-square"
               />
             ))}
           </KPRow>
-          <KPRow wrapperContainer="disable">
+          <KPRow wrapperContainer="disable" className="items-stretch">
             {dataSliceTwo.map((_skill, index) => (
               <Blurb
                 key={index}
                 title={_skill.skill}
                 icon={_skill.icon}
                 description={_skill.description}
-                className="aspect-square"
               />
             ))}
           </KPRow>

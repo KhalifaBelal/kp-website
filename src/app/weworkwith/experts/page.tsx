@@ -8,8 +8,7 @@ import KPParagraph from "@/components/ui/KPParagraph";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "For Experts",
-  description: "In progress...",
+  title: "For Experts"
 };
 
 export default function page() {

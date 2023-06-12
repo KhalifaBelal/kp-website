@@ -9,7 +9,6 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "For Leaders",
-  description: "In progress...",
 };
 
 export default function page() {

@@ -6,13 +6,6 @@ import DataAccordion from "@/components/DataAccordion";
 import KPHeading from "@/components/ui/KPHeading";
 import KPRow from "@/components/ui/KPRow";
 
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Khalifa Partners | Philosophy",
-  description: "Discover our Hall of Partners.",
-};
-
 export default function page() {
   return (
     <>

@@ -5,13 +5,6 @@ import Footer from "@/components/Footer";
 import KPParagraph from "@/components/ui/KPParagraph";
 import PortfolioIntro from "@/components/sections/portfolioPage/PortfolioIntro";
 
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Khalifa Partners | Portfolio",
-  description: "Discover our Hall of Partners.",
-};
-
 export default function page() {
   return (
     <>
