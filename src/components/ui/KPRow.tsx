@@ -4,7 +4,7 @@ import { FC, HTMLAttributes } from "react";
 
 export const kpRowVariants = cva("relative flex max-w-6xl w-full", {
   variants: {
-    variant: { default: "gap-5", intro: "gap-10 max-w-2xl text-center" },
+    variant: { default: "gap-5", intro: "gap-10 text-center" },
     flexDirection: {
       default: "flex-col lg:flex-row",
       col: "flex-col",
@@ -18,6 +18,7 @@ export const kpRowVariants = cva("relative flex max-w-6xl w-full", {
       default: "justify-center",
       start: "justify-start",
       end: "justify-end",
+      between: "justify-between",
     },
     wrapperContainer: { default: "container mx-auto", disable: "" },
   },

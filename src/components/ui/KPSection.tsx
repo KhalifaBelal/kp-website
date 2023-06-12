@@ -3,19 +3,30 @@ import { cva, VariantProps } from "class-variance-authority";
 import { HTMLAttributes, FC } from "react";
 
 export const kpSectionVariants = cva(
-  "relative min-h-screen items-center justify-center overflow-hidden",
+  "relative min-h-screen overflow-hidden flex py-32",
   {
     variants: {
       flexDirection: {
-        default: "flex",
+        default: "flex-col lg:flex-row",
         col: "flex-col",
       },
-      layout: {
-        default: "pt-32",
-        intro: "pt-10",
+      alignItems: {
+        default: "items-center",
+        start: "items-start",
+        end: "items-end",
+      },
+      justifyContent: {
+        default: "justify-center",
+        start: "justify-start",
+        end: "justify-end",
+        between: "justify-between",
       },
     },
-    defaultVariants: { flexDirection: "default", layout: "default" },
+    defaultVariants: {
+      flexDirection: "default",
+      alignItems: "default",
+      justifyContent: "default",
+    },
   }
 );
 
@@ -26,7 +37,8 @@ export interface KPSectionProps
 const KPSection: FC<KPSectionProps> = ({
   className,
   flexDirection,
-  layout,
+  alignItems,
+  justifyContent,
   children,
   ...props
 }) => {
@@ -36,7 +48,8 @@ const KPSection: FC<KPSectionProps> = ({
         kpSectionVariants({
           className,
           flexDirection,
-          layout,
+          alignItems,
+          justifyContent,
         })
       )}
       {...props}

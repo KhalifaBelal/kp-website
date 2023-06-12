@@ -3,24 +3,32 @@ import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";
 import { kpButtonVariants } from "@/ui/KPButton";
 import Link from "next/link";
+import KPParagraph from "../ui/KPParagraph";
+import DataAccordion from "../DataAccordion";
 
 interface PrefaceProps {
   title: string;
-  text: string;
+  introText: string;
   withCta?: boolean;
   ctaText?: string;
+  phase: number;
 }
 
-function Preface({ title, text, withCta = false, ctaText }: PrefaceProps) {
+function Preface({
+  title,
+  introText,
+  withCta = false,
+  ctaText,
+  phase,
+}: PrefaceProps) {
   return (
-    <KPSection>
-      <KPRow variant="intro" flexDirection="col">
-        <KPHeading size="default" className="text-white">
-          {title}
+    <KPSection className="bg-zinc-100">
+      <KPRow flexDirection="col" alignItems="start" className="text-left">
+        <KPHeading className="text-black">{title}</KPHeading>
+        <KPHeading className="text-black" size="sm" fontWeight="normal">
+          {introText}
         </KPHeading>
-        <KPHeading size="sm" fontWeight="normal">
-          {text}
-        </KPHeading>
+        <DataAccordion item={phase} />
         {withCta ? (
           <Link
             href="/portfolio"

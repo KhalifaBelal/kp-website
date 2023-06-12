@@ -24,32 +24,8 @@ export default function MobileMenu() {
           <Icons.LucideMenu className="ml-2 h-5 w-5" />
         </KPButton>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 mr-6">
         <DropdownMenuGroup onClick={() => setOpen(false)}>
-          <DropdownMenuItem asChild>
-            <Link className="w-full flex items-center gap-1.5" href="/">
-              <Icons.HomeIcon className="mr-2 h-5 w-5" />
-              <span>Home</span>
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem asChild>
-            <Link
-              className="w-full flex items-center gap-1.5"
-              href="/privacy-policy"
-            >
-              <Icons.ShieldCheckIcon className="mr-2 h-5 w-5" />
-              <span>Privacy Policy</span>
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem asChild>
-            <Link className="w-full flex items-center gap-1.5" href="/imprint">
-              <Icons.TextIcon className="mr-2 h-5 w-5" />
-              <span>Imprint</span>
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
             <Link
               className="w-full flex items-center gap-1.5"
@@ -58,17 +34,35 @@ export default function MobileMenu() {
               target="_blank"
             >
               <Icons.LinkIcon className="mr-2 h-5 w-5" />
-              <span>Contact</span>
+              <span>Get in Touch</span>
             </Link>
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
             <Link
               className="w-full flex items-center gap-1.5"
-              href="/portfolio"
+              href="/"
+              replace
+              onClick={() =>
+                document.getElementById("portfolio")?.scrollIntoView()
+              }
             >
               <Icons.LayoutDashboardIcon className="mr-2 h-5 w-5" />
               <span>Portfolio</span>
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem asChild>
+            <Link
+              className="w-full flex items-center gap-1.5"
+              href="/"
+              replace
+              onClick={() =>
+                document.getElementById("concept")?.scrollIntoView()
+              }
+            >
+              <Icons.TriangleIcon className="mr-2 h-5 w-5" />
+              <span>Concept</span>
             </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>

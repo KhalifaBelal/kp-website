@@ -1,39 +1,27 @@
-import Intro from "@/components/sections/Intro";
 import dynamic from "next/dynamic";
-const Preface = dynamic(() => import("@/components/sections/Preface"));
-const WhoWeWorkWith = dynamic(
-  () => import("@/components/sections/WhoWeWorkWith")
+const WeWorkWith = dynamic(
+  () => import("@/components/sections/landingPage/WeWorkWith")
 );
-const Concept = dynamic(() => import("@/components/sections/Concept"));
-const StrategyStep = dynamic(
-  () => import("@/components/sections/StrategyStep")
+const Concept = dynamic(
+  () => import("@/components/sections/landingPage/Concept")
+);
+const Philosophy = dynamic(
+  () => import("@/components/sections/landingPage/Philosophy")
 );
 const Footer = dynamic(() => import("@/components/Footer"));
-import { strategyStepData as Data } from "@/lib/strategyStepData";
-import { prefaceData } from "@/lib/prefaceData";
+import Intro from "@/components/sections/landingPage/Intro";
+import OurPortfolio from "@/components/sections/landingPage/OurPortfolio";
+import QualificationProcess from "@/components/sections/conceptPage/QualificationProcess";
 
 export default function Home() {
   return (
     <div className="relative h-screen overflow-x-hidden">
       <Intro />
       <Concept />
-      <WhoWeWorkWith />
-      <Preface title={prefaceData[0].title} text={prefaceData[0].text} />
-      {Data.map((step, index) => (
-        <StrategyStep
-          key={index}
-          model={index}
-          title={step.title}
-          text={step.text}
-        />
-      ))}
-      <Preface title={prefaceData[1].title} text={prefaceData[1].text} />
-      <Preface
-        title={prefaceData[2].title}
-        text={prefaceData[2].text}
-        withCta
-        ctaText="Portfolio"
-      />
+      <WeWorkWith />
+      <QualificationProcess />
+      <OurPortfolio />
+      <Philosophy />
       <Footer />
     </div>
   );
