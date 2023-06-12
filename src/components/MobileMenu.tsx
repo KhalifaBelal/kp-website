@@ -29,12 +29,14 @@ export default function MobileMenu() {
           <DropdownMenuItem asChild>
             <Link
               className="w-full flex items-center gap-1.5"
-              href="https://linktr.ee/baselkhalifa"
-              rel="noreferrer"
-              target="_blank"
+              href="/"
+              replace
+              onClick={() =>
+                document.getElementById("concept")?.scrollIntoView()
+              }
             >
-              <Icons.LinkIcon className="mr-2 h-5 w-5" />
-              <span>Get in Touch</span>
+              <Icons.TriangleIcon className="mr-2 h-5 w-5" />
+              <span>Concept</span>
             </Link>
           </DropdownMenuItem>
           <DropdownMenuSeparator />
@@ -58,11 +60,23 @@ export default function MobileMenu() {
               href="/"
               replace
               onClick={() =>
-                document.getElementById("concept")?.scrollIntoView()
+                document.getElementById("philosophy")?.scrollIntoView()
               }
             >
-              <Icons.TriangleIcon className="mr-2 h-5 w-5" />
-              <span>Concept</span>
+              <Icons.BrainIcon className="mr-2 h-5 w-5" />
+              <span>Philosophy</span>
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem asChild>
+            <Link
+              className="w-full flex items-center gap-1.5"
+              href="https://linktr.ee/baselkhalifa"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Icons.LinkIcon className="mr-2 h-5 w-5" />
+              <span>Get in Touch</span>
             </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>
