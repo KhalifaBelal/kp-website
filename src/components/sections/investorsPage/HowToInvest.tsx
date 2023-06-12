@@ -33,7 +33,7 @@ function HowToInvest() {
           <KPRow flexDirection="col" alignItems="start">
             <KPHeading size="sm">Here&apos;s how it works:</KPHeading>
             {Data.map((_swipe, index) => (
-              <KPRow key={index} wrapperContainer="disable">
+              <KPRow key={index} wrapperContainer="disable" alignItems="start">
                 <KPHeading className="text-left" size="sm" fontWeight="normal">
                   {_swipe.title}
                 </KPHeading>
