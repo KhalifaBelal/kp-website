@@ -14,7 +14,7 @@ function ExpertsIntro() {
     <KPSection>
       <KPRow flexDirection="col">
         <KPHeading>The skills we are looking for</KPHeading>
-        <KPRow flexDirection="col">
+        <KPRow wrapperContainer="disable" flexDirection="col">
           <KPRow wrapperContainer="disable" className="items-stretch">
             {dataSliceOne.map((_skill, index) => (
               <Blurb
