@@ -8,7 +8,6 @@ export default function Footer() {
     <div className="bg-black py-20 border-t border-kp-red flex items-center justify-between">
       <div className="container max-w-xl mx-auto w-full flex flex-col gap-10 justify-center items-center">
         <Image
-          priority
           quality={100}
           typeof="image"
           rel="preload"

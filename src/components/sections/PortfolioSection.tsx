@@ -31,7 +31,6 @@ function PortfolioSection({
           <KPParagraph>{text}</KPParagraph>
         </KPRow>
           <Image
-            priority
             quality={100}
             typeof="image"
             rel="preload"

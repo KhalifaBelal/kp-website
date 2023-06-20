@@ -30,7 +30,6 @@ function Philosophy() {
       </KPRow>
       <div className="relative w-[100%] lg:flex-[1.5] aspect-square">
         <Image
-          priority
           quality={100}
           typeof="image"
           rel="preload"
