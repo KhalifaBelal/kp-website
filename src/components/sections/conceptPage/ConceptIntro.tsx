@@ -4,7 +4,7 @@ import KPHeading from "@/components/ui/KPHeading";
 import KPParagraph from "@/components/ui/KPParagraph";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
-import { skillsData as Data } from "@/lib/weWorkWith/expertsPage/skillsData";
+import { skillsData as Data } from "@/lib/weWorkWith/skillsData";
 import Blurb from "@/components/ui/Blurb";
 
 function ConceptIntro() {

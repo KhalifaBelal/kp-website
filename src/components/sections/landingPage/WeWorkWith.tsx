@@ -10,19 +10,31 @@ import { useState } from "react";
 import { kpButtonVariants } from "@/ui/KPButton";
 
 function WeWorkWith() {
-  const [currentItem, setCurrentItem] = useState<string>("leaders");
+  const [currentItem, setCurrentItem] = useState<string>(
+    "lack Of Sufficient Funding"
+  );
+  const [ctaText, setCtaText] = useState<string>("Explore Sufficient Funding");
 
   return (
     <KPSection>
       <KPRow flexDirection="col" alignItems="start">
-        <KPHeading>We work with</KPHeading>
+        <KPHeading>Problems Entrepreneurs Face and Our Solutions:</KPHeading>
         <Tabs defaultValue={Data[0].key} className="max-w-xl w-full">
           <TabsList>
             {Data.map((_www, index) => (
               <TabsTrigger
-                key={_www.key}
+                key={index}
                 value={_www.key}
-                onClick={() => setCurrentItem(_www.key)}
+                onClick={ () => {
+                   setCurrentItem(_www.key);
+                  setCtaText(
+                    currentItem == "lack Of Sufficient Funding"
+                      ? "Explore Sufficient Funding"
+                      : currentItem == "marketing-softwaredev"
+                      ? "Marketing/Software Solutions"
+                      : "Monitoring and Guidance"
+                  );
+                }}
               >
                 {_www.title}
               </TabsTrigger>
@@ -35,14 +47,11 @@ function WeWorkWith() {
           ))}
         </Tabs>
         <Link
-          href={`/weworkwith/${encodeURIComponent(currentItem)}`}
+          href={`/solutions/${currentItem}}`}
           passHref
           className={kpButtonVariants()}
         >
-          <span>
-            For
-            <span className="capitalize">{" " + currentItem}</span>
-          </span>
+          <span className="capitalize">{ctaText}</span>
         </Link>
       </KPRow>
     </KPSection>

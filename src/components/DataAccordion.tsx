@@ -10,9 +10,7 @@ import KPHeading from "@/ui/KPHeading";
 import KPParagraph from "@/ui/KPParagraph";
 import KPRow from "@/ui/KPRow";
 import { FC } from "react";
-import { whyInvestData as InvestData } from "@/lib/weWorkWith/investorsPage/whyInvestData";
 import { skillsLeadersData as LeadersData } from "@/lib/weWorkWith/leadersPage/skillsLeadersData";
-import { whyPartnerData as ExpertsData } from "@/lib/weWorkWith/expertsPage/whyPartnerData";
 import { conceptPageData as ConceptData } from "@/lib/conceptPage/conceptPageData";
 import { conceptPageData } from "@/lib/conceptPage/conceptPageData";
 import { philosophyData as philosophy } from "@/lib/philosophy/philosophyData";
@@ -24,9 +22,7 @@ interface DataAccordionProps {
 const DataAccordion: FC<DataAccordionProps> = ({ item }) => {
   const IntroConceptData = ConceptData.introAccordion;
   const Data = [
-    InvestData,
-    LeadersData,
-    ExpertsData,
+    LeadersData,LeadersData,
     IntroConceptData,
     conceptPageData.phase.strategy,
     conceptPageData.phase.execution,
