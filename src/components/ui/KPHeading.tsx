@@ -11,7 +11,7 @@ const kpHeadingVariants = cva("text-white leading-tight tracking-tight", {
       sm: "text-2xl md:text-3xl lg:text-4xl",
     },
     fontWeight: {
-      default: "font-bold",
+      default: "font-semibold",
       normal: "font-normal",
     },
   },

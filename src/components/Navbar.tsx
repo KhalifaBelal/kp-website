@@ -54,6 +54,18 @@ export default function Navbar() {
             className={kpButtonVariants({ variant: "link" })}
             onClick={() =>
               document
+                .getElementById("solutions")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Solutions
+          </Link>
+          <Link
+            href="/"
+            replace
+            className={kpButtonVariants({ variant: "link" })}
+            onClick={() =>
+              document
                 .getElementById("portfolio")
                 ?.scrollIntoView({ behavior: "smooth" })
             }

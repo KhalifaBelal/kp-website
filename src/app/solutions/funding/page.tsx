@@ -7,7 +7,7 @@ import ContactApproach from "@/components/contactApproach";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Solutions",
+  title: "How we Fund Projects",
 };
 
 export default function page() {
