@@ -1,8 +1,11 @@
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
-import SkillsLeaders from "@/components/sections/leadersPage/SkillsLeaders";
 import KPParagraph from "@/components/ui/KPParagraph";
 import ContactApproach from "@/components/contactApproach";
+import Intro from "@/components/sections/solutions/funding/Intro";
+import About from "@/components/sections/solutions/funding/About";
+import FundingAdvantage from "@/components/sections/solutions/funding/FundingAdvantage";
+import FundingSolutions from "@/components/sections/solutions/funding/FundingsSolutions";
 
 import type { Metadata } from "next";
 
@@ -13,7 +16,10 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <SkillsLeaders />
+      <Intro />
+      <About />
+      <FundingAdvantage />
+      <FundingSolutions />
       <ContactApproach>
         <KPParagraph>
           In exchange for these invaluable skills and resources, we propose a
@@ -35,3 +41,6 @@ export default function page() {
     </>
   );
 }
+
+
+
