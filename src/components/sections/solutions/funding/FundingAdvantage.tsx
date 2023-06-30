@@ -18,7 +18,7 @@ function FundingAdvantage() {
             financing. Our unique funding advantage sets us apart:
           </span>
           <br />
-          Access our pool of funds to support your venture's growth Leverage our
+          Access our pool of funds to support your venture&apos;s growth Leverage our
           extensive network of investors for optimal funding opportunities Gain
           expert guidance from industry veterans, entrepreneurs, and financial
           experts

@@ -8,6 +8,9 @@ import FundingAdvantage from "@/components/sections/solutions/funding/FundingAdv
 import FundingSolutions from "@/components/sections/solutions/funding/FundingsSolutions";
 
 import type { Metadata } from "next";
+import Management from "@/components/sections/solutions/funding/Management";
+import Community from "@/components/sections/solutions/funding/Community";
+import LetsMakeAnImpact from "@/components/sections/solutions/funding/LetsMakeAnImpact";
 
 export const metadata: Metadata = {
   title: "How we Fund Projects",
@@ -20,6 +23,9 @@ export default function page() {
       <About />
       <FundingAdvantage />
       <FundingSolutions />
+      <Management />
+      <Community />
+      <LetsMakeAnImpact />
       <ContactApproach>
         <KPParagraph>
           In exchange for these invaluable skills and resources, we propose a
@@ -41,6 +47,3 @@ export default function page() {
     </>
   );
 }
-
-
-

@@ -13,8 +13,8 @@ function About() {
           flexDirection="col"
           alignItems="start"
         >
-          <KPHeading className="font-extrabold">About Khalifa Partners</KPHeading>
-          <KPHeading className="font-extrabold" size="sm">
+          <KPHeading>About Khalifa Partners</KPHeading>
+          <KPHeading size="sm">
             At Khalifa Partners, we fuel innovation by connecting ventures with
             funding opportunities. Our extensive investor network and flexible
             funding options empower entrepreneurs like you to focus on what
