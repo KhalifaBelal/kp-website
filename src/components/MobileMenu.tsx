@@ -46,6 +46,20 @@ export default function MobileMenu() {
               href="/"
               replace
               onClick={() =>
+                document.getElementById("solutions")?.scrollIntoView()
+              }
+            >
+              <Icons.KeyIcon className="mr-2 h-5 w-5" />
+              <span>Solutions</span>
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem asChild>
+            <Link
+              className="w-full flex items-center gap-1.5"
+              href="/"
+              replace
+              onClick={() =>
                 document.getElementById("portfolio")?.scrollIntoView()
               }
             >

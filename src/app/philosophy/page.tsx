@@ -27,7 +27,7 @@ export default function page() {
       </KPSection>
       <KPSection className="bg-zinc-100">
         <KPRow flexDirection="col" alignItems="start" className="gap-16">
-          <DataAccordion item={7} />
+          <DataAccordion item={5} />
         </KPRow>
       </KPSection>
       <ContactApproach>

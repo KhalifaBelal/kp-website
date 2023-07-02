@@ -7,7 +7,7 @@ function Intro() {
   return (
     <KPSection>
       <KPRow flexDirection="col" alignItems="end">
-        <Image
+      <Image
           priority
           quality={100}
           src="/square.png"

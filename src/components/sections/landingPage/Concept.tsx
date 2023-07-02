@@ -3,12 +3,10 @@ import KPRow from "@/ui/KPRow";
 import KPParagraph from "@/ui/KPParagraph";
 import Pyramid from "@/components/glb-models/Pyramid";
 import KPSection from "@/ui/KPSection";
-import Link from "next/link";
-import { kpButtonVariants } from "../../ui/KPButton";
 
 function Concept() {
   return (
-    <KPSection id="concept" itemID="concept">
+    <KPSection id="concept">
       <KPRow>
         <KPRow
           wrapperContainer="disable"
@@ -17,15 +15,15 @@ function Concept() {
         >
           <KPHeading className="text-white">Concept</KPHeading>
           <KPParagraph>
-            Welcome to Khalifa Partners, where we revolutionize the way startups
-            and businesses grow by offering comprehensive digital solutions in
-            marketing, software development, and funding. We understand that
-            building and scaling a successful business requires more than just
-            great ideas; it demands access to the right resources, expertise,
-            and capital. That&apos;s why we&apos;ve developed a unique business
-            model that goes beyond traditional service providers.
+            At Khalifa Partners, our unique business model revolves around
+            identifying and partnering with exceptional individuals who possess
+            the drive, vision, and leadership to create successful companies. We
+            believe that outstanding personalities are the driving force behind
+            transformative ventures. By providing these individuals with the
+            necessary financial support, resources and mentorship in exchange
+            for equity, we empower them to turn their ideas into thriving
+            businesses.
           </KPParagraph>
-          <Link href="/concept" className={kpButtonVariants({variant: "outline"})} >About the Business Model</Link>
         </KPRow>
         <div className="relative w-full aspect-square">
           <Pyramid />

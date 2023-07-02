@@ -1,21 +1,18 @@
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
-import LeadersIntro from "@/components/sections/leadersPage/LeadersIntro";
 import SkillsLeaders from "@/components/sections/leadersPage/SkillsLeaders";
-import KPParagraph from "@/components/ui/KPParagraph";
-import ContactApproach from "@/components/contactApproach";
 
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "For Leaders",
+  title: "Our Solutions",
 };
 
 export default function page() {
   return (
     <>
       <SkillsLeaders />
-      <ContactApproach>
+      {/* <ContactApproach>
         <KPParagraph>
           In exchange for these invaluable skills and resources, we propose a
           partnership based on equity. This mutually beneficial arrangement
@@ -30,7 +27,7 @@ export default function page() {
           confidently drive growth and achieve long-term success while we
           contribute our specialized resources and skills.
         </KPParagraph>
-      </ContactApproach>
+      </ContactApproach> */}
 
       <Footer />
     </>

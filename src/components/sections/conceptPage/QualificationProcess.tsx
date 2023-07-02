@@ -1,8 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-const Preface = dynamic(() => import("@/components/sections/Preface"));
-
 const StrategyStep = dynamic(
   () => import("@/components/sections/StrategyStep")
 );

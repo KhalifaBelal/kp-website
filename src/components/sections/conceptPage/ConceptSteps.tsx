@@ -16,7 +16,7 @@ function ConceptSteps() {
     <>
       <KPSection flexDirection="col">
         <KPRow flexDirection="col" alignItems="start" className="py-20">
-          <KPHeading>The 3 Step Concept</KPHeading>
+          <KPHeading>Our Executive Program</KPHeading>
           <KPHeading size="sm">
             The Three-Part Plan for Startup Success: Strategy, Execution, and
             Partnership
