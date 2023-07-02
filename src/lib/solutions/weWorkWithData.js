@@ -11,7 +11,7 @@ export const weWorkWithData = [
     path: "marketing-softwaredev",
     ctaText: "Our Software Solutions",
     title: "Limited Marketing and Software Development Resources",
-    text: "To support our partners in the day-to-day business of our portfolio companies, we are constantly looking for capable professionals in the areas of management, software developement, marketing and sales.",
+    text: "Entrepreneurs can leverage our expertise in marketing and software development to create robust digital strategies that drive brand visibility, customer acquisition, and retention.",
   },
   {
     index: 2,

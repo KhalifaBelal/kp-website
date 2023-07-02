@@ -13,8 +13,6 @@ import { FC } from "react";
 import { skillsLeadersData as LeadersData } from "@/lib/solutions/leadersPage/skillsLeadersData";
 import { conceptPageData as ConceptData } from "@/lib/conceptPage/conceptPageData";
 import { conceptPageData } from "@/lib/conceptPage/conceptPageData";
-import { philosophyData as philosophy } from "@/lib/philosophy/philosophyData";
-import { fundingData } from "@/lib/solutions/fundingData";
 
 interface DataAccordionProps {
   item: number;
@@ -29,7 +27,6 @@ const DataAccordion: FC<DataAccordionProps> = ({ item }) => {
     conceptPageData.phase.strategy,
     conceptPageData.phase.execution,
     conceptPageData.phase.partnership,
-    philosophy
   ];
 
   return (

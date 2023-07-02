@@ -7,7 +7,7 @@ function Intro() {
   return (
     <KPSection>
       <KPRow flexDirection="col" alignItems="end">
-      <Image
+        <Image
           priority
           quality={100}
           src="/square.png"
@@ -22,8 +22,7 @@ function Intro() {
         <KPHeading className="text-white">
           We diversify our <span className="text-kp-red">Portfolio</span> by
           building companies with{" "}
-          <span className="text-kp-red">outstanding personalities</span> and
-          supporting them with our know-how, network and capital.
+          <span className="text-kp-red">outstanding personalities</span>.
         </KPHeading>
       </KPRow>
     </KPSection>
