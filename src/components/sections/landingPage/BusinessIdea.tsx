@@ -4,6 +4,7 @@ import KPParagraph from "@/ui/KPParagraph";
 import Pyramid from "@/components/glb-models/Pyramid";
 import KPSection from "@/ui/KPSection";
 import { KPButton, kpButtonVariants } from "@/components/ui/KPButton";
+import Link from "next/link";
 
 function BusinessIdea() {
   return (
@@ -29,9 +30,14 @@ function BusinessIdea() {
             it into a thriving venture. Get in touch with us today and
             let&apos;s embark on this exciting journey together.
           </KPParagraph>
-          <KPButton className={kpButtonVariants({ variant: "outline" })}>
+          <Link
+            className={kpButtonVariants({ variant: "outline" })}
+            href="https://linktr.ee/baselkhalifa"
+            rel="noreferrer"
+            target="_blank"
+          >
             Let&apos;s Talk
-          </KPButton>
+          </Link>
         </KPRow>
       </KPRow>
     </KPSection>
