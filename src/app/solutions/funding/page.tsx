@@ -1,3 +1,5 @@
+"use client"
+
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
 import KPParagraph from "@/components/ui/KPParagraph";
@@ -8,24 +10,17 @@ import FundingAdvantage from "@/components/sections/solutions/funding/FundingAdv
 import FundingSolutions from "@/components/sections/solutions/funding/FundingsSolutions";
 
 import type { Metadata } from "next";
-import Management from "@/components/sections/solutions/funding/Management";
-import Community from "@/components/sections/solutions/funding/Community";
-import LetsMakeAnImpact from "@/components/sections/solutions/funding/LetsMakeAnImpact";
+import KPHeading from "@/components/ui/KPHeading";
+import KPRow from "@/components/ui/KPRow";
+import MainPage from "@/components/sections/solutions/funding/MainPage";
 
-export const metadata: Metadata = {
-  title: "How we Fund Projects",
-};
 
 export default function page() {
   return (
     <>
       <Intro />
       <About />
-      <FundingAdvantage />
-      <FundingSolutions />
-      <Management />
-      <Community />
-      <LetsMakeAnImpact />
+      <MainPage />
       <ContactApproach>
         <KPParagraph>
           In exchange for these invaluable skills and resources, we propose a

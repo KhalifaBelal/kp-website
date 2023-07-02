@@ -5,10 +5,10 @@ import KPSection from "@/ui/KPSection";
 
 function Intro() {
   return (
-    <KPSection>
+    <KPSection className="bg-zinc-100">
       <KPRow flexDirection="col">
-        <KPHeading className="text-center">Welcome</KPHeading>
-        <KPHeading size="sm" className="text-center">
+        <KPHeading className="text-center text-black">Welcome</KPHeading>
+        <KPHeading size="sm" className="text-center text-black">
           Transform your Vision into Reality
         </KPHeading>
       </KPRow>

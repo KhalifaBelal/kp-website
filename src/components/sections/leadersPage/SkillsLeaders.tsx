@@ -2,7 +2,7 @@
 
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
-import { skillsData as Data } from "@/lib/weWorkWith/skillsData";
+import { skillsData as Data } from "@/lib/solutions/skillsData";
 import Blurb from "@/components/ui/Blurb";
 import KPHeading from "@/components/ui/KPHeading";
 import KPParagraph from "@/components/ui/KPParagraph";
