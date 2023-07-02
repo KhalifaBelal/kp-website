@@ -16,11 +16,6 @@ export const portfolioData = [
     text: "There are about 300,000 financial and insurance advisors in Germany. Clartus helps you stand out from the crowd by creating an individual personal or corporate brand to best convince your target group of your offer.",
     logoPath: "/logos/clartus-logo.png",
     logoName: "clartus-logo",
-  },
-  {
-    title: "Elevate",
-    text: "Elevate is a recruiting agency and with its 'Guerilla Marketing' method specialises in filling missing positions in the job market within a few days to weeks.",
-    logoPath: "/logos/elevate-logo.png",
-    logoName: "elevate-logo",
+    websiteUrl: "https://clartus.com/",
   },
 ];

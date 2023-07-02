@@ -16,6 +16,7 @@ export default function page() {
           text={section.text}
           logoPath={section.logoPath}
           logoName={section.logoName}
+          websiteUrl={section.websiteUrl}
         />
       ))}
       <ContactApproach>
