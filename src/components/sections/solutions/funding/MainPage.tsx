@@ -13,7 +13,7 @@ function MainPage() {
     <KPSection className="bg-zinc-100">
       <div className="md:hidden">
         {Data.map((step, index) => (
-          <div className="py-10">{step.object}</div>
+          <div key={index} className="py-10">{step.object}</div>
         ))}
       </div>
       <div className="w-full hidden md:flex flex-col px-10 gap-16">
