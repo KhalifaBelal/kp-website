@@ -27,6 +27,7 @@ const DataAccordion: FC<DataAccordionProps> = ({ item }) => {
     conceptPageData.phase.strategy,
     conceptPageData.phase.execution,
     conceptPageData.phase.partnership,
+    conceptPageData.phase.partnership,
   ];
 
   return (
