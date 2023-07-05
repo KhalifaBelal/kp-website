@@ -22,8 +22,7 @@ function Solutions() {
     <KPSection id="solutions">
       <KPRow flexDirection="col" alignItems="start">
         <KPHeading>
-          Problems Entrepreneurs Face and{" "}
-          <span className="text-kp-red">Our Solutions</span>
+          Our Digital <span className="text-kp-red">Solutions</span>
         </KPHeading>
         <Tabs defaultValue={Data[0].title} className="max-w-[40rem] w-full">
           <TabsList>

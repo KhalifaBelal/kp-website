@@ -5,14 +5,12 @@ const Solutions = dynamic(
 const Concept = dynamic(
   () => import("@/components/sections/landingPage/Concept")
 );
-const Philosophy = dynamic(
-  () => import("@/components/sections/landingPage/Philosophy")
-);
 import Intro from "@/components/sections/landingPage/Intro";
 import OurPortfolio from "@/components/sections/landingPage/OurPortfolio";
 import QualificationProcess from "@/components/sections/conceptPage/QualificationProcess";
 import BusinessIdea from "@/components/sections/landingPage/BusinessIdea";
 import Footer from "@/components/Footer";
+import Philosophy from "@/components/sections/landingPage/Philosophy";
 
 export default function Home() {
   return (
