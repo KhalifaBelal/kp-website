@@ -15,8 +15,8 @@ function Philosophy() {
           as the pyramids were meticulously designed and built to stand the test
           of time, we believe in constructing enduring companies that leave a
           lasting impact. The pyramid is not only our logo, it symbolizes our
-          founders&apos; Egyptian heritage and serves as a powerful metaphor for our
-          approach to business. Like the pyramid builders of old, we
+          founders&apos; Egyptian heritage and serves as a powerful metaphor for
+          our approach to business. Like the pyramid builders of old, we
           meticulously plan, strategize, and execute each step of building
           successful companies.
         </KPParagraph>
@@ -30,6 +30,7 @@ function Philosophy() {
           fill
           src="/philosophy.png"
           alt="philosophy"
+          priority
         />
       </div>
     </KPSection>

@@ -27,6 +27,7 @@ export default function Navbar() {
             height={120}
             src="/logos/kp-logo-light.png"
             alt="kp-logo"
+            priority
             className="aspect-square"
           />
         </Link>
