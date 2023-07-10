@@ -1,4 +1,4 @@
-export const weWorkWithData = [
+export const digitalSolutionsData = [
   {
     index: 0,
     path: "funding",

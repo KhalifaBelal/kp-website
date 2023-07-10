@@ -29,7 +29,7 @@ export default function MobileMenu() {
           <DropdownMenuItem asChild>
             <Link
               className="w-full flex items-center gap-1.5"
-              href="/"
+              href="/kp-entrepreneurs"
               replace
               onClick={() =>
                 document.getElementById("concept")?.scrollIntoView()
@@ -43,7 +43,7 @@ export default function MobileMenu() {
           <DropdownMenuItem asChild>
             <Link
               className="w-full flex items-center gap-1.5"
-              href="/"
+              href="/kp-entrepreneurs"
               replace
               onClick={() =>
                 document.getElementById("solutions")?.scrollIntoView()
@@ -57,7 +57,7 @@ export default function MobileMenu() {
           <DropdownMenuItem asChild>
             <Link
               className="w-full flex items-center gap-1.5"
-              href="/"
+              href="/kp-entrepreneurs"
               replace
               onClick={() =>
                 document.getElementById("portfolio")?.scrollIntoView()
@@ -71,7 +71,7 @@ export default function MobileMenu() {
           <DropdownMenuItem asChild>
             <Link
               className="w-full flex items-center gap-1.5"
-              href="/"
+              href="/kp-entrepreneurs"
               replace
               onClick={() =>
                 document.getElementById("philosophy")?.scrollIntoView()

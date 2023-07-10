@@ -7,7 +7,7 @@ import KPSection from "@/components/ui/KPSection";
 function PortfolioIntro() {
   return (
     <KPSection>
-      <KPRow variant="intro" flexDirection="col" alignItems="start">
+      <KPRow flexDirection="col" alignItems="start">
         <KPHeading className="text-left">
           Indroducing our portfolio of companies
         </KPHeading>

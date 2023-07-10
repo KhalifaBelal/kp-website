@@ -16,49 +16,50 @@ function SkillsLeaders() {
 
   return (
     <KPSection flexDirection="col" className="gap-10">
-      <KPRow flexDirection="col">
+      <KPRow flexDirection="col" alignItems="start">
+        <KPHeading>
+          Khalifa Partners - Where Innovation Meets Ambition
+        </KPHeading>
+        <KPHeading size="sm">
+          Take the leap, seize the opportunity, and let us empower you to
+          redefine success.
+        </KPHeading>
+        <KPParagraph>
+          At Khalifa Partners, we believe in empowering managers to focus on the
+          daily operations of their business without the burden of managing
+          specific fields of work. That&apos;s why we provide a unique
+          opportunity where our resources are dedicated to offering the
+          following skills, allowing you to excel in your core responsibilities:
+        </KPParagraph>
+      </KPRow>
+      <KPRow flexDirection="col" variant="fullWidth">
         <KPRow
           wrapperContainer="disable"
-          flexDirection="col"
-          alignItems="start"
+          variant="fullWidth"
+          className="items-stretch"
         >
-          <KPHeading>
-            Khalifa Partners - Where Innovation Meets Ambition
-          </KPHeading>
-          <KPHeading size="sm">
-            Take the leap, seize the opportunity, and let us empower you to
-            redefine success.
-          </KPHeading>
-          <KPParagraph>
-            At Khalifa Partners, we believe in empowering managers to focus on
-            the daily operations of their business without the burden of
-            managing specific fields of work. That&apos;s why we provide a
-            unique opportunity where our resources are dedicated to offering the
-            following skills, allowing you to excel in your core
-            responsibilities:
-          </KPParagraph>
+          {dataSliceOne.map((_skill, index) => (
+            <Blurb
+              key={index}
+              title={_skill.skill}
+              icon={_skill.icon}
+              description={_skill.description}
+            />
+          ))}
         </KPRow>
-        <KPRow wrapperContainer="disable" flexDirection="col">
-          <KPRow wrapperContainer="disable" className="items-stretch">
-            {dataSliceOne.map((_skill, index) => (
-              <Blurb
-                key={index}
-                title={_skill.skill}
-                icon={_skill.icon}
-                description={_skill.description}
-              />
-            ))}
-          </KPRow>
-          <KPRow wrapperContainer="disable" className="items-stretch">
-            {dataSliceTwo.map((_skill, index) => (
-              <Blurb
-                key={index}
-                title={_skill.skill}
-                icon={_skill.icon}
-                description={_skill.description}
-              />
-            ))}
-          </KPRow>
+        <KPRow
+          wrapperContainer="disable"
+          variant="fullWidth"
+          className="items-stretch"
+        >
+          {dataSliceTwo.map((_skill, index) => (
+            <Blurb
+              key={index}
+              title={_skill.skill}
+              icon={_skill.icon}
+              description={_skill.description}
+            />
+          ))}
         </KPRow>
       </KPRow>
     </KPSection>

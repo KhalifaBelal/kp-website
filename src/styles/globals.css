@@ -35,3 +35,25 @@ html {
   --swiper-theme-color: #c1272d !important;
   --swiper-navigation-size: 1.75rem !important;
 }
+
+#glassDarkMorph {
+  /* From https://css.glass */
+  background: rgba(244, 244, 245, 0.30);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(24, 24, 27, 0.3);
+  padding: 1.5rem 3.5rem;
+}
+
+#glassLightMorph {
+  /* From https://css.glass */
+  background: rgba(24, 24, 27, 0.30);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(244, 244, 245, 0.3);
+  padding: 1.5rem 3.5rem;
+}

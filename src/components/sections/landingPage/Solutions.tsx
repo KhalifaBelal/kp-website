@@ -1,7 +1,7 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/Tabs";
-import { weWorkWithData as Data } from "@/lib/solutions/weWorkWithData";
+import { digitalSolutionsData as Data } from "@/lib/solutions/digitalSolutionsData";
 import KPHeading from "@/ui/KPHeading";
 import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";
@@ -45,7 +45,7 @@ function Solutions() {
           ))}
         </Tabs>
         <Link
-          href={`/solutions/${decodeURIComponent(currentItem.path)}`}
+          href={`/kp-entrepreneurs/solutions/${decodeURIComponent(currentItem.path)}`}
           passHref
           className={kpButtonVariants()}
         >

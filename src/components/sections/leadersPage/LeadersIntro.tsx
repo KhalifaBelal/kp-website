@@ -9,7 +9,7 @@ function LeadersIntro() {
   return (
     <>
       <KPSection>
-        <KPRow variant="intro" flexDirection="col" alignItems="start">
+        <KPRow flexDirection="col" alignItems="start">
           <KPHeading className="text-left">
             Attention, Visionary Entrepreneurs and Savvy Managers
           </KPHeading>

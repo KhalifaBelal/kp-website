@@ -11,10 +11,12 @@ import QualificationProcess from "@/components/sections/conceptPage/Qualificatio
 import BusinessIdea from "@/components/sections/landingPage/BusinessIdea";
 import Footer from "@/components/Footer";
 import Philosophy from "@/components/sections/landingPage/Philosophy";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div className="relative h-screen overflow-x-hidden">
+      <Navbar />
       <Intro />
       <Concept />
       <Solutions />
