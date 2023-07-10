@@ -12,7 +12,7 @@ import { kpButtonVariants } from "@/components/ui/KPButton";
 const animateChart = () => {
   const path = document.getElementById("chartLine");
   const length = path.getTotalLength();
-  const colorTransitionDuration = 500; // Transition duration in milliseconds
+  const colorTransitionDuration = 1000; // Transition duration in milliseconds
   const initialColor = "#c1272d";
   const finalColor = "#3f3f4633";
 
@@ -43,9 +43,9 @@ const animateBox = () => {
   const path = document.getElementById("lightbulbbox");
   const length = path.getTotalLength();
   const colorTransitionDuration = 1000; // Transition duration in milliseconds
-  const initialColor = "#c1272d";
+  const initialColor = "white";
   const finalColor = "#3f3f4633";
-  const animationDuration = 6000; // Total animation duration in milliseconds
+  const animationDuration = 4000; // Total animation duration in milliseconds
 
   path.style.strokeDasharray = length;
   path.style.strokeDashoffset = length;
@@ -75,13 +75,11 @@ export default function Home() {
 
   useEffect(() => {
     animateChart();
-    setTimeout(() => {
-      animateBox();
-    }, 800);
+    animateBox();
   }, []);
 
   return (
-    <KPSection className="p-0 rounded-3xl border-zinc-100 border-2">
+    <KPSection className="p-0 overflow-hidden">
       <div className="p-6 text-center flex-1 bg-gradient-to-br from-gray-300 to-zinc-500 via-white flex flex-col items-start justify-center w-full lg:min-h-screen min-h-full relative">
         <svg
           viewBox="0 20 100 100"
@@ -113,7 +111,6 @@ export default function Home() {
           </Link>
         </KPRow>
       </div>
-
       <div className="p-6 text-center flex-1 bg-gradient-to-br from-[#111] to-[#222] via-black flex flex-col items-start justify-center w-full lg:min-h-screen min-h-full relative">
         <svg
           xmlns="http://www.w3.org/2000/svg"
