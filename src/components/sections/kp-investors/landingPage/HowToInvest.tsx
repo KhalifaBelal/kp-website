@@ -14,7 +14,7 @@ const investmentSteps = [
 
 function HowToInvest() {
   return (
-    <div className="w-full p-10 bg-gradient-to-r from-kp-red via-zinc-900 to-zinc-100">
+    <div className="w-full p-10 bg-gradient-to-r from-kp-red via-red-900 to-zinc-800">
       <KPRow>
         <KPHeading size="lg" fontWeight="normal">Take the first step!</KPHeading>
         <KPRow flexDirection="col" alignItems="start" wrapperContainer="disable">
