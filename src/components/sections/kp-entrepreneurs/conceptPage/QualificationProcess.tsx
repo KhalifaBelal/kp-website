@@ -9,7 +9,7 @@ import KPParagraph from "@/components/ui/KPParagraph";
 import KPRow from "@/components/ui/KPRow";
 import KPSection from "@/components/ui/KPSection";
 import { strategyStepData as Data } from "@/lib/strategyStepData";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";

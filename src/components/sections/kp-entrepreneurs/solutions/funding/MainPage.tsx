@@ -2,7 +2,7 @@ import KPHeading from "@/ui/KPHeading";
 import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";
 import { fundingData as Data } from "@/lib/solutions/fundingData";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,7 +13,9 @@ function MainPage() {
     <KPSection className="bg-zinc-100">
       <div className="md:hidden">
         {Data.map((step, index) => (
-          <div key={index} className="py-10">{step.object}</div>
+          <div key={index} className="py-10">
+            {step.object}
+          </div>
         ))}
       </div>
       <div className="w-full hidden md:flex flex-col px-10 gap-16">

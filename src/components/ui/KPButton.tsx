@@ -1,10 +1,6 @@
 import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
-import {
-  ButtonHTMLAttributes,
-  forwardRef,
-  MouseEventHandler,
-} from "react";
+import { ButtonHTMLAttributes, forwardRef, MouseEventHandler } from "react";
 
 const kpButtonVariants = cva(
   "active:scale-95 inline-flex items-center justify-center rounded-sm text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 focus:ring-zinc-400 disabled:pointer-events-none focus:ring-offset-zinc-900",
@@ -24,10 +20,15 @@ const kpButtonVariants = cva(
         sm: "h-9 px-2 rounded-sm",
         lg: "h-11 px-8 rounded-sm",
       },
+      fullWidth: {
+        default: "",
+        enabled: "w-full",
+      },
     },
     defaultVariants: {
       variant: "default",
       size: "default",
+      fullWidth: "default",
     },
   }
 );
@@ -39,11 +40,16 @@ export interface KPButtonProps
 }
 
 const KPButton = forwardRef<HTMLButtonElement, KPButtonProps>(
-  ({ className, onClick, children, variant, size, ...props }, ref) => {
+  (
+    { className, onClick, children, variant, size, fullWidth, ...props },
+    ref
+  ) => {
     return (
       <button
         onClick={onClick}
-        className={cn(kpButtonVariants({ variant, size, className }))}
+        className={cn(
+          kpButtonVariants({ variant, size, fullWidth, className })
+        )}
         ref={ref}
         {...props}
       >

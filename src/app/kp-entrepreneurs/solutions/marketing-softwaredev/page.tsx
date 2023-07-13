@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
-import SkillsLeaders from "@/components/sections/leadersPage/SkillsLeaders";
+import SkillsLeaders from "@/components/sections/kp-entrepreneurs/solutions/marketing-softwaredev/Intro";
 import ContactApproach from "@/components/contactApproach";
 import KPParagraph from "@/components/ui/KPParagraph";
 
@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Our Solutions",
 };
-  
+
 export default function page() {
   return (
     <>

@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
-import ConceptSteps from "@/components/sections/conceptPage/ConceptSteps";
+import ConceptSteps from "@/components/sections/kp-entrepreneurs/conceptPage/ConceptSteps";
 
 import type { Metadata } from "next";
 

@@ -4,15 +4,15 @@ import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("@/components/Footer"));
 import KPParagraph from "@/components/ui/KPParagraph";
 import ContactApproach from "@/components/contactApproach";
-import Intro from "@/components/sections/solutions/funding/Intro";
-import About from "@/components/sections/solutions/funding/About";
-import FundingAdvantage from "@/components/sections/solutions/funding/FundingAdvantage";
-import FundingSolutions from "@/components/sections/solutions/funding/FundingsSolutions";
+import Intro from "@/components/sections/kp-entrepreneurs/solutions/funding/Intro";
+import About from "@/components/sections/kp-entrepreneurs/solutions/funding/About";
+import FundingAdvantage from "@/components/sections/kp-entrepreneurs/solutions/funding/FundingAdvantage";
+import FundingSolutions from "@/components/sections/kp-entrepreneurs/solutions/funding/FundingsSolutions";
 
 import type { Metadata } from "next";
 import KPHeading from "@/components/ui/KPHeading";
 import KPRow from "@/components/ui/KPRow";
-import MainPage from "@/components/sections/solutions/funding/MainPage";
+import MainPage from "@/components/sections/kp-entrepreneurs/solutions/funding/MainPage";
 
 
 export default function page() {

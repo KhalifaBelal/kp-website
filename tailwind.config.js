@@ -39,7 +39,7 @@ module.exports = {
       },
       colors: {
         ...colors,
-        "kp-red": "#C1272D",
+        "kp-red": "#C1272D"
       },
     },
   },

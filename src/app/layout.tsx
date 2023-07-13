@@ -40,7 +40,7 @@ export default function RootLayout({
           data-next-font="size-adjust"
         />
       </Head>
-      <body className="min-h-screen bg-zinc-900 antialiased">
+      <body className="min-h-screen antialiased">
         <CookieBanner />
         {children}
       </body>

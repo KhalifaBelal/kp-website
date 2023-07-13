@@ -8,6 +8,7 @@ import {
   TriangleIcon,
   BrainIcon,
   KeyIcon,
+  LineChart
 } from "lucide-react";
 
 export const Icons = {
@@ -19,7 +20,8 @@ export const Icons = {
   HomeIcon,
   TriangleIcon,
   BrainIcon,
-  KeyIcon
+  KeyIcon,
+  LineChart
 };
 
 export default Icons;

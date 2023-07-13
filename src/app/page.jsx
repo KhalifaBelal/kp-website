@@ -79,7 +79,7 @@ export default function Home() {
   }, []);
 
   return (
-    <KPSection className="p-0 overflow-hidden">
+    <KPSection className="p-0 overflow-x-hidden">
       <div className="p-6 text-center flex-1 bg-gradient-to-br from-gray-300 to-zinc-500 via-white flex flex-col items-start justify-center w-full lg:min-h-screen min-h-full relative">
         <svg
           viewBox="0 20 100 100"
