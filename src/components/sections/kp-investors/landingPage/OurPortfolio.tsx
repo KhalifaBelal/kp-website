@@ -17,7 +17,7 @@ function OurPortfolio() {
           innovation, and impact. Join us in shaping the future of business.
         </KPParagraph>
         <Link
-          href="/kp-entrepreneurs/portfolio"
+          href="/kp-investors/portfolio"
           className={kpButtonVariants({ variant: "outline" })}
         >
           Our Portfolio
