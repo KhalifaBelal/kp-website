@@ -24,7 +24,6 @@ export default function Home() {
       <InvestorsPortalTeaser />
       <InvestorResources />
       <FAQ />
-      <Calculator />
       <Footer />
     </div>
   );
