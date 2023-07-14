@@ -8,7 +8,7 @@ function InvestorsPortalTeaser() {
   return (
     <div className="w-full py-10 bg-zinc-100">
       <KPRow flexDirection="col" alignItems="start">
-        <KPHeading className="text-black" size="lg">COMMING SOON</KPHeading>
+        <KPHeading className="text-black" size="lg">COMING SOON</KPHeading>
         <KPHeading className="text-black">Investors Portal</KPHeading>
         <KPParagraph className="text-zinc-700">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

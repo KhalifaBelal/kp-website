@@ -2,6 +2,7 @@ import { KPButton, kpButtonVariants } from "@/components/ui/KPButton";
 import {
   Card,
   CardContent,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/KPCard";
@@ -22,17 +23,12 @@ function InvestorResources() {
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
             <Card className="relative">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <KPRow wrapperContainer="disable">
-                  <CardTitle className="text-sm font-medium">
-                    Artikel
-                  </CardTitle>
+                <KPRow wrapperContainer="disable" justifyContent="between">
+                  <CardTitle className="text-sm font-medium">Artikel Titel</CardTitle>
                   <KPButton
-                    className={
-                      (kpButtonVariants({
-                        variant: "link",
-                      }),
-                      "text-slate-700 w-full")
-                    }
+                    className={kpButtonVariants({
+                      variant: "outline",
+                    })}
                   >
                     Aufruf zu Aktion
                   </KPButton>
@@ -52,19 +48,14 @@ function InvestorResources() {
                 />
               </CardContent>
             </Card>
-            <Card className="relative">
+             <Card className="relative">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <KPRow wrapperContainer="disable">
-                  <CardTitle className="text-sm font-medium">
-                    Artikel
-                  </CardTitle>
+                <KPRow wrapperContainer="disable" justifyContent="between">
+                  <CardTitle className="text-sm font-medium">Artikel Titel</CardTitle>
                   <KPButton
-                    className={
-                      (kpButtonVariants({
-                        variant: "link",
-                      }),
-                      "text-slate-700 w-full")
-                    }
+                    className={kpButtonVariants({
+                      variant: "outline",
+                    })}
                   >
                     Aufruf zu Aktion
                   </KPButton>
@@ -84,19 +75,14 @@ function InvestorResources() {
                 />
               </CardContent>
             </Card>
-            <Card className="relative">
+             <Card className="relative">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <KPRow wrapperContainer="disable">
-                  <CardTitle className="text-sm font-medium">
-                    Artikel
-                  </CardTitle>
+                <KPRow wrapperContainer="disable" justifyContent="between">
+                  <CardTitle className="text-sm font-medium">Artikel Titel</CardTitle>
                   <KPButton
-                    className={
-                      (kpButtonVariants({
-                        variant: "link",
-                      }),
-                      "text-slate-700 w-full")
-                    }
+                    className={kpButtonVariants({
+                      variant: "outline",
+                    })}
                   >
                     Aufruf zu Aktion
                   </KPButton>
@@ -118,19 +104,14 @@ function InvestorResources() {
             </Card>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
-            <Card className="relative">
+             <Card className="relative">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <KPRow wrapperContainer="disable">
-                  <CardTitle className="text-sm font-medium">
-                    Artikel
-                  </CardTitle>
+                <KPRow wrapperContainer="disable" justifyContent="between">
+                  <CardTitle className="text-sm font-medium">Artikel Titel</CardTitle>
                   <KPButton
-                    className={
-                      (kpButtonVariants({
-                        variant: "link",
-                      }),
-                      "text-slate-700 w-full")
-                    }
+                    className={kpButtonVariants({
+                      variant: "outline",
+                    })}
                   >
                     Aufruf zu Aktion
                   </KPButton>
@@ -150,19 +131,14 @@ function InvestorResources() {
                 />
               </CardContent>
             </Card>
-            <Card className="relative">
+             <Card className="relative">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <KPRow wrapperContainer="disable">
-                  <CardTitle className="text-sm font-medium">
-                    Artikel
-                  </CardTitle>
+                <KPRow wrapperContainer="disable" justifyContent="between">
+                  <CardTitle className="text-sm font-medium">Artikel Titel</CardTitle>
                   <KPButton
-                    className={
-                      (kpButtonVariants({
-                        variant: "link",
-                      }),
-                      "text-slate-700 w-full")
-                    }
+                    className={kpButtonVariants({
+                      variant: "outline",
+                    })}
                   >
                     Aufruf zu Aktion
                   </KPButton>
@@ -182,19 +158,14 @@ function InvestorResources() {
                 />
               </CardContent>
             </Card>
-            <Card className="relative">
+             <Card className="relative">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <KPRow wrapperContainer="disable">
-                  <CardTitle className="text-sm font-medium">
-                    Artikel
-                  </CardTitle>
+                <KPRow wrapperContainer="disable" justifyContent="between">
+                  <CardTitle className="text-sm font-medium">Artikel Titel</CardTitle>
                   <KPButton
-                    className={
-                      (kpButtonVariants({
-                        variant: "link",
-                      }),
-                      "text-slate-700 w-full")
-                    }
+                    className={kpButtonVariants({
+                      variant: "outline",
+                    })}
                   >
                     Aufruf zu Aktion
                   </KPButton>

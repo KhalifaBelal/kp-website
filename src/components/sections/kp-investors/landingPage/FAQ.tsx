@@ -1,23 +1,20 @@
 import DataAccordion from "@/components/DataAccordion";
-import { InvestmentStepsCard } from "@/components/InvestmentStepsCard";
-import { KPButton, kpButtonVariants } from "@/components/ui/KPButton";
-import { Card, CardContent, CardTitle } from "@/components/ui/KPCard";
-import KPParagraph from "@/components/ui/KPParagraph";
+import { kpButtonVariants } from "@/components/ui/KPButton";
 import KPHeading from "@/ui/KPHeading";
 import KPRow from "@/ui/KPRow";
 import Link from "next/link";
 
 function FAQ() {
   return (
-    <div className="w-full p-10 flex flex-col gap-10">
-      <KPRow flexDirection="col">
+    <div className="w-full p-10 flex flex-col gap-20">
+      <KPRow flexDirection="col" alignItems="start">
         <KPHeading className="text-black">
           FAQ
         </KPHeading>
         <DataAccordion item={2} />
       </KPRow>
-      <KPRow flexDirection="col">
-        <KPHeading size="lg" className="text-black">
+      <KPRow>
+        <KPHeading className="text-black">
           Still got questions?
         </KPHeading>
         <Link
