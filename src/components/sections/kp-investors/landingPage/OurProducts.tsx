@@ -30,29 +30,34 @@ const cards = [
 
 const passiveIncomeInfo = [
   {
-    title: "Irgendwelche infos",
-    description: "Lorem Ipsum Dolor sit amet.",
+    title: "Unlock Financial Freedom: Steady Cash Flow",
+    description:
+      "Experience the power of passive income - a reliable money stream that requires minimal daily involvement. Watch your revenue grow steadily, covering expenses, building savings, and paving the way for endless opportunities.",
   },
   {
-    title: "Irgendwelche infos",
-    description: "Lorem Ipsum Dolor sit amet.",
+    title: "Embrace Time Freedom: Pursue Your Passions",
+    description:
+      "With passive income, liberate your time for what truly matters. Focus on ventures, passions, or cherished moments with loved ones. Embrace flexibility and break free from the constraints of constant active effort.",
   },
   {
-    title: "Irgendwelche infos",
-    description: "Lorem Ipsum Dolor sit amet.",
+    title: "Build Wealth, Ensure Security",
+    description:
+      "Passive income nurtures long-term wealth and financial security. Accumulate assets, create a safety net, and achieve your goals with confidence. Reduce stress and reliance on traditional jobs with the power of passive income.",
   },
 ];
 const highROIInfo = [
   {
-    title: "Kleine infos",
-    description: "Lorem Ipsum Dolor sit amet.",
+    title: "Yearly Profits: Your Path to Financial Success",
+    description:
+      "Discover the power of yearly profits - a proven path to financial success. Embrace longer-term growth potential and witness your investments appreciate steadily. With Khalifa Partners, let your wealth multiply over time and work towards achieving your dreams.",
   },
   {
-    title: "Wichtige infos",
-    description: "Lorem Ipsum Dolor sit amet.",
+    title: "Maximize Returns: High ROI Yearly Investments",
+    description:
+      "Unlock remarkable returns with high ROI yearly investments. Minimize risks through meticulous research and validation. Join our community of investors, big and small, and experience the advantage of collective funding for substantial profits.",
   },
   {
-    title: "Neger infos",
+    title: "Secure Your Future: Invest with Confidence",
     description: "Lorem Ipsum it amet.",
   },
 ];
@@ -81,7 +86,7 @@ function OurProducts() {
             Discover Marketplace
           </Link>
         </KPRow>
-        <KPRow>
+        <KPRow alignItems="start">
           <ProductCards
             cardTitle={"Passive Income"}
             cardDescription={"Discover our Passive Income Models"}

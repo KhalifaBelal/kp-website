@@ -14,7 +14,7 @@ type CardProps = React.ComponentProps<typeof Card>;
 interface CardCustomProps extends CardProps {
   cardTitle: string;
   cardDescription: string;
-  productsInfo: Array<{ title: string; description: string }>;
+  productsInfo: Array<{ title: string; description?: string }>;
 }
 
 export function ProductCards({

@@ -6,12 +6,12 @@ import Link from "next/link";
 
 function FAQ() {
   return (
-    <div className="w-full p-10 flex flex-col gap-20">
+    <div className="w-full py-10 flex flex-col gap-20">
       <KPRow flexDirection="col" alignItems="start">
         <KPHeading className="text-black">
           FAQ
         </KPHeading>
-        <DataAccordion item={2} />
+        <DataAccordion item={3} />
       </KPRow>
       <KPRow>
         <KPHeading className="text-black">

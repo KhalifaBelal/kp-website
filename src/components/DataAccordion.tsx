@@ -11,6 +11,7 @@ import KPParagraph from "@/ui/KPParagraph";
 import KPRow from "@/ui/KPRow";
 import { FC } from "react";
 import { conceptPageData } from "@/lib/conceptPage/conceptPageData";
+import { faqData } from "@/lib/kp-invest/faqData";
 
 interface DataAccordionProps {
   item: number;
@@ -21,6 +22,7 @@ const DataAccordion: FC<DataAccordionProps> = ({ item }) => {
     conceptPageData.strategy,
     conceptPageData.execution,
     conceptPageData.partnership,
+    faqData,
   ];
 
   return (

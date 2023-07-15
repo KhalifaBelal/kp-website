@@ -1,4 +1,5 @@
 import { InvestmentStepsCard } from "@/components/InvestmentStepsCard";
+import { ProductCards } from "@/components/ProductCards";
 import { kpButtonVariants } from "@/components/ui/KPButton";
 import { Card, CardContent, CardTitle } from "@/components/ui/KPCard";
 import KPParagraph from "@/components/ui/KPParagraph";
@@ -14,13 +15,20 @@ const investmentSteps = [
 
 function HowToInvest() {
   return (
-    <div className="w-full p-10 bg-gradient-to-r from-kp-red via-red-900 to-zinc-800">
+    <div className="w-full py-10">
       <KPRow>
-        <KPHeading size="lg" fontWeight="normal">Take the first step!</KPHeading>
-        <KPRow flexDirection="col" alignItems="start" wrapperContainer="disable">
-          <InvestmentStepsCard
+        <KPHeading size="lg" fontWeight="normal" className="text-black">
+          Take the first step!
+        </KPHeading>
+        <KPRow
+          flexDirection="col"
+          alignItems="start"
+          wrapperContainer="disable"
+        >
+          <ProductCards
             cardTitle={"How to Invest after choosing your project?"}
-            investmentSteps={investmentSteps}
+            cardDescription={""}
+            productsInfo={investmentSteps}
           />
         </KPRow>
       </KPRow>
