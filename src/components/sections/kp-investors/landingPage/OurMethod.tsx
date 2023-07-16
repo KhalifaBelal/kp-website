@@ -19,12 +19,12 @@ function OurMethod() {
             proposition (USP) lies in empowering small investors to join forces,
             making it easier to gather substantial funds for exceptional
             ventures.
-            <br />
+            <br /><br />
             With us, you have the chance to invest alongside others, leveling
             the playing field. No longer limited by individual financial
             capacity, you can now access the same profitable opportunities as
             larger investors.
-            <br />
+            <br /><br />
             Our marketplace showcases carefully studied and validated ventures,
             providing a secure path to remarkable returns. Calculate your
             profits beforehand, choose the investment product that suits you

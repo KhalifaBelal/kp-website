@@ -9,6 +9,7 @@ import HowToInvest from "@/components/sections/kp-investors/landingPage/HowToInv
 import InvestorsPortalTeaser from "@/components/sections/kp-investors/landingPage/InvestorsPortalTeaser";
 import InvestorResources from "@/components/sections/kp-investors/landingPage/InvestorResources";
 import FAQ from "@/components/sections/kp-investors/landingPage/FAQ";
+import SecurityFund from "@/components/sections/kp-investors/landingPage/SecurityFunds";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Marketplace />
       <LatestInvestments />
       <OurPortfolio />
+      <SecurityFund />
       <HowToInvest />
       <InvestorsPortalTeaser />
       <InvestorResources />

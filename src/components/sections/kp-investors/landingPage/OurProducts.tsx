@@ -58,7 +58,7 @@ const highROIInfo = [
   },
   {
     title: "Secure Your Future: Invest with Confidence",
-    description: "Lorem Ipsum it amet.",
+    description: "Invest with confidence in Khalifa Partners' carefully selected ventures. Our transparent approach guarantees profits beforehand, reducing uncertainty. Build a prosperous future with our innovative marketplace and trusted investment opportunities.",
   },
 ];
 
