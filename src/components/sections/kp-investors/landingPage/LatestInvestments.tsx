@@ -12,7 +12,7 @@ function LatestInvestments() {
           Stay Ahead of Opportunities: <br /> Subscribe to Our Newsletter
         </KPHeading>
         <KPParagraph className="text-zinc-700">
-          Ready to stay ahead of the investment game? Don't miss out on the
+          Ready to stay ahead of the investment game? Don&apos;t miss out on the
           latest and most lucrative opportunities! Subscribe to our newsletter
           and be the first to know about exciting new investments. Stay
           informed, make informed decisions, and unlock your path to financial
