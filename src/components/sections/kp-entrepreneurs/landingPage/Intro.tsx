@@ -26,12 +26,16 @@ const Intro: FC<IntroProps> = ({ investors }) => {
           className="aspect-square"
         />
         {investors ? (
-          <KPRow wrapperContainer="disable" flexDirection="col" alignItems="start">
+          <KPRow
+            wrapperContainer="disable"
+            flexDirection="col"
+            alignItems="start"
+          >
             <KPHeading className="text-black" size="lg">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+              Unite for Success: Building Businesses, Sharing Rewards.
             </KPHeading>
             <KPButton className={kpButtonVariants({ variant: "default" })}>
-              Aufruf zur Aktion
+              Our Method
             </KPButton>
           </KPRow>
         ) : (
