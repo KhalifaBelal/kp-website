@@ -13,9 +13,8 @@ import KPHeading from "@/ui/KPHeading";
 import KPRow from "@/ui/KPRow";
 import { useState } from "react";
 import { marketplaceData as Data } from "@/lib/kp-invest/marketplaceData";
-import KPParagraph from "@/components/ui/KPParagraph";
-import FlippableCard from "@/components/flippable-card"
-import AnimatedCard from "@/components/card/Card";
+import AnimatedCard from "@/components/card/AnimatedCard";
+import KPSection from "@/components/ui/KPSection";
 
 function Marketplace() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -24,15 +23,50 @@ function Marketplace() {
     setIsDialogOpen(true);
   };
 
+  const dataSliceOne = Data.slice(0, 2);
+  const dataSliceTwo = Data.slice(2, 4);
+
   return (
-    <div className="w-full py-20 bg-zinc-100" id="marketplace">
-      <KPRow flexDirection="col" alignItems="start">
+    <KPSection
+      className="w-full bg-gradient-to-b from-zinc-100 via-zinc-200 to-zinc-100"
+      id="marketplace"
+    >
+      <KPRow flexDirection="col" alignItems="start" className="gap-20">
         <KPHeading className="text-black">Marketplace</KPHeading>
-        <AnimatedCard />
+        <KPRow justifyContent="start" className="gap-10">
+          {dataSliceOne.map((card, index) => (
+            <AnimatedCard
+              key={index}
+              icon={card.icon}
+              title={card.title}
+              investmentTarget={card.investmentTarget}
+              minimumInvestment={card.minimumInvestment}
+              investmentType={card.investmentType}
+              investmentReturn={card.return}
+              duration={card.duration}
+              payout={card.payout}
+            />
+          ))}
+        </KPRow>
+        <KPRow justifyContent="start" className="gap-10">
+          {dataSliceTwo.map((card, index) => (
+            <AnimatedCard
+              key={index}
+              icon={card.icon}
+              title={card.title}
+              investmentTarget={card.investmentTarget}
+              minimumInvestment={card.minimumInvestment}
+              investmentType={card.investmentType}
+              investmentReturn={card.return}
+              duration={card.duration}
+              payout={card.payout}
+            />
+          ))}
+        </KPRow>
       </KPRow>
 
       <CalcDialog open={isDialogOpen} />
-    </div>
+    </KPSection>
   );
 }
 
