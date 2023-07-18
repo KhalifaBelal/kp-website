@@ -31,9 +31,13 @@ function Marketplace() {
       className="w-full bg-gradient-to-b from-zinc-100 via-zinc-200 to-zinc-100"
       id="marketplace"
     >
-      <KPRow flexDirection="col" alignItems="start" className="gap-20">
+      <KPRow flexDirection="col" alignItems="start" className="gap-10">
         <KPHeading className="text-black">Marketplace</KPHeading>
-        <KPRow justifyContent="start" className="gap-10">
+        <KPRow
+          wrapperContainer="disable"
+          justifyContent="start"
+          className="gap-10"
+        >
           {dataSliceOne.map((card, index) => (
             <AnimatedCard
               key={index}
@@ -45,23 +49,37 @@ function Marketplace() {
               investmentReturn={card.return}
               duration={card.duration}
               payout={card.payout}
+              showPassiveIncomeCalc={true}
             />
           ))}
         </KPRow>
-        <KPRow justifyContent="start" className="gap-10">
-          {dataSliceTwo.map((card, index) => (
-            <AnimatedCard
-              key={index}
-              icon={card.icon}
-              title={card.title}
-              investmentTarget={card.investmentTarget}
-              minimumInvestment={card.minimumInvestment}
-              investmentType={card.investmentType}
-              investmentReturn={card.return}
-              duration={card.duration}
-              payout={card.payout}
-            />
-          ))}
+        <KPRow
+          wrapperContainer="disable"
+          justifyContent="start"
+          className="gap-10"
+        >
+          <AnimatedCard
+            icon={Data[2].icon}
+            title={Data[2].title}
+            investmentTarget={Data[2].investmentTarget}
+            minimumInvestment={Data[2].minimumInvestment}
+            investmentType={Data[2].investmentType}
+            investmentReturn={Data[2].return}
+            duration={Data[2].duration}
+            payout={Data[2].payout}
+            showYearlyPayoutCalc={true}
+          />
+          <AnimatedCard
+            icon={Data[3].icon}
+            title={Data[3].title}
+            investmentTarget={Data[3].investmentTarget}
+            minimumInvestment={Data[3].minimumInvestment}
+            investmentType={Data[3].investmentType}
+            investmentReturn={Data[3].return}
+            duration={Data[3].duration}
+            payout={Data[3].payout}
+            showActiveIncomeCalc={true}
+          />
         </KPRow>
       </KPRow>
 

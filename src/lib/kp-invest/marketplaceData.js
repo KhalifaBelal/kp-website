@@ -51,7 +51,7 @@ export const marketplaceData = [
     investmentTarget: "225.000€",
     minimumInvestment: "10.000€",
     investmentType: "Active",
-    return: "30% (per year)",
+    return: "90%",
     payout: "After 3 Years",
     icon: (
       <Icons.KeyIcon

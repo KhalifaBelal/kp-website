@@ -16,10 +16,12 @@ import {
 } from "@/components/ui/KPCard";
 import { KPInput } from "@/components/ui/KPInput";
 
-import { FC, useState } from "react";
+import { FC, HTMLAttributes, useState } from "react";
 import { KPLabel } from "@/components/ui/KPLabel";
 
-const Calculator: FC = ({}) => {
+interface CalculatorProps extends HTMLAttributes<HTMLElement> {}
+
+const Calculator: FC<CalculatorProps> = ({}) => {
   const [investmentSum, setInvestmentSum] = useState(0);
   const months = 6 * 12;
   const roi = 0.33;
@@ -39,8 +41,8 @@ const Calculator: FC = ({}) => {
   };
 
   return (
-    <KPRow>
-      <Card className="w-[350px]">
+    <KPRow wrapperContainer="disable">
+      <Card className="">
         <CardHeader>
           <CardTitle>Calculate your profits</CardTitle>
           <CardDescription>
@@ -69,7 +71,7 @@ const Calculator: FC = ({}) => {
           <KPButton onClick={handleChange}>Calculate</KPButton>
         </CardFooter>
       </Card>
-      <Card className="w-[350px]">
+      {/* <Card className="w-[350px]">
         <CardHeader>
           <CardTitle>Your numbers</CardTitle>
         </CardHeader>
@@ -88,7 +90,7 @@ const Calculator: FC = ({}) => {
             </div>
           </form>
         </CardContent>
-      </Card>
+      </Card> */}
     </KPRow>
   );
 };
