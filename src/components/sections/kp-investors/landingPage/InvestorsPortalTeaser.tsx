@@ -2,7 +2,6 @@ import { kpButtonVariants } from "@/components/ui/KPButton";
 import KPParagraph from "@/components/ui/KPParagraph";
 import KPHeading from "@/ui/KPHeading";
 import KPRow from "@/ui/KPRow";
-import Link from "next/link";
 
 function InvestorsPortalTeaser() {
   return (
