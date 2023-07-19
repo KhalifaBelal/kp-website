@@ -71,6 +71,7 @@ function OurProducts() {
           wrapperContainer="disable"
           flexDirection="col"
           alignItems="start"
+          className="min-w-max"
         >
           <KPHeading className="text-black">Our Products</KPHeading>
           <Link
