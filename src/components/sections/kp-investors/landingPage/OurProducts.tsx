@@ -87,18 +87,18 @@ function OurProducts() {
             Discover Marketplace
           </Link>
         </KPRow>
-        <KPRow alignItems="start">
+        <KPRow alignItems="start" wrapperContainer="disable">
           <ProductCards
             cardTitle={"Passive Income"}
             cardDescription={"Discover our Passive Income Models"}
             productsInfo={passiveIncomeInfo}
-            className="min-h-full"
+            className="max-w-full w-max"
           />
           <ProductCards
             cardTitle={"High ROI"}
             cardDescription={"Discover our High ROI Models"}
             productsInfo={highROIInfo}
-            className="min-h-full"
+            className="max-w-full w-max"
           />
         </KPRow>
       </KPRow>

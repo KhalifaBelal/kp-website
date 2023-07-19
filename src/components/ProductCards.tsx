@@ -25,7 +25,7 @@ export function ProductCards({
   ...props
 }: CardCustomProps) {
   return (
-    <Card className={cn("w-[380px]", className)} {...props}>
+    <Card className={cn(className)} {...props}>
       <CardHeader>
         <CardTitle>{cardTitle}</CardTitle>
         <CardDescription>{cardDescription}</CardDescription>
@@ -39,9 +39,7 @@ export function ProductCards({
             >
               <span className="flex h-2 w-2 translate-y-1 rounded-full bg-kp-red" />
               <div className="space-y-1">
-                <p className="text-sm font-medium leading-none">
-                  {info.title}
-                </p>
+                <p className="text-sm font-medium leading-none">{info.title}</p>
                 <p className="text-sm text-muted-foreground">
                   {info.description}
                 </p>
