@@ -50,11 +50,11 @@ export function ProductCards({
           ))}
         </div>
       </CardContent>
-      <CardFooter>
+      {/* <CardFooter>
         <KPButton className={kpButtonVariants({ variant: "subtle" })}>
           Read more
         </KPButton>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   );
 }

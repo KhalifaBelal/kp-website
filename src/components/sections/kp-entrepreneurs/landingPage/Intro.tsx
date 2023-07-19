@@ -1,9 +1,12 @@
+"use client"
+
 import Image from "next/image";
 import KPHeading from "@/ui/KPHeading";
 import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";
 import { FC } from "react";
 import { KPButton, kpButtonVariants } from "@/components/ui/KPButton";
+import Link from "next/link";
 
 interface IntroProps {
   investors: boolean;
@@ -34,9 +37,6 @@ const Intro: FC<IntroProps> = ({ investors }) => {
             <KPHeading className="text-black" size="lg">
               Unite for Success: Building Businesses, Sharing Rewards.
             </KPHeading>
-            <KPButton className={kpButtonVariants({ variant: "default" })}>
-              Our Method
-            </KPButton>
           </KPRow>
         ) : (
           <KPHeading className="text-white" size="lg">
