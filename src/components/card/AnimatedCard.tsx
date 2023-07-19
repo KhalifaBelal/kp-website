@@ -130,9 +130,13 @@ const AnimatedCard: FC<AnimatedCardProps> = ({
           </div>
 
           <KPParagraph className="text-black z-50">
-            Investment Target:{" "}
-            <span className="font-semibold">{investmentTarget}</span>
-            <br />
+            {investmentTarget != null ? (
+              <span>
+                Investment Target:{" "}
+                <span className="font-semibold">{investmentTarget}</span>
+                <br />
+              </span>
+            ) : null}
             Minimum Investment:{" "}
             <span className="font-semibold">{minimumInvestment}</span>
             <br />
@@ -141,8 +145,12 @@ const AnimatedCard: FC<AnimatedCardProps> = ({
             <br />
             Return: <span className="font-semibold">{investmentReturn}</span>
             <br />
-            Duration: <span className="font-semibold">{duration}</span>
-            <br />
+            {duration != null ? (
+              <span>
+                Duration: <span className="font-semibold">{duration}</span>
+                <br />
+              </span>
+            ) : null}
             Payout: <span className="font-semibold">{payout}</span>
           </KPParagraph>
 
@@ -200,14 +208,6 @@ const AnimatedCard: FC<AnimatedCardProps> = ({
                     {`${result}` + "€"}
                   </KPHeading>
                 )}
-                <KPHeading fontWeight="normal" size="sm" className="text-black">
-                  Your Monthly Payout:
-                </KPHeading>
-                {monthlyResult !== null && (
-                  <KPHeading size="sm" className="text-black">
-                    {`${monthlyResult}` + "€"}
-                  </KPHeading>
-                )}
               </div>
               <form onSubmit={handleSubmitActiveIcome}>
                 <label htmlFor="numberInput">Investment: </label>
@@ -241,14 +241,6 @@ const AnimatedCard: FC<AnimatedCardProps> = ({
                 {result !== null && (
                   <KPHeading size="sm" className="text-black">
                     {`${result}` + "€"}
-                  </KPHeading>
-                )}
-                <KPHeading fontWeight="normal" size="sm" className="text-black">
-                  Your Monthly Payout:
-                </KPHeading>
-                {monthlyResult !== null && (
-                  <KPHeading size="sm" className="text-black">
-                    {`${monthlyResult}` + "€"}
                   </KPHeading>
                 )}
               </div>

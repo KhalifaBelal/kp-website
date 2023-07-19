@@ -58,7 +58,8 @@ const highROIInfo = [
   },
   {
     title: "Secure Your Future: Invest with Confidence",
-    description: "Invest with confidence in Khalifa Partners' carefully selected ventures. Our transparent approach guarantees profits beforehand, reducing uncertainty. Build a prosperous future with our innovative marketplace and trusted investment opportunities.",
+    description:
+      "Invest with confidence in Khalifa Partners' carefully selected ventures. Our transparent approach guarantees profits beforehand, reducing uncertainty. Build a prosperous future with our innovative marketplace and trusted investment opportunities.",
   },
 ];
 
@@ -91,11 +92,13 @@ function OurProducts() {
             cardTitle={"Passive Income"}
             cardDescription={"Discover our Passive Income Models"}
             productsInfo={passiveIncomeInfo}
+            className="min-h-full"
           />
           <ProductCards
             cardTitle={"High ROI"}
             cardDescription={"Discover our High ROI Models"}
             productsInfo={highROIInfo}
+            className="min-h-full"
           />
         </KPRow>
       </KPRow>

@@ -18,12 +18,12 @@ export default function Home() {
       <OurMethod />
       <OurProducts />
       <Marketplace />
-      <LatestInvestments />
+      {/* <LatestInvestments /> */}
       <OurPortfolio />
       <SecurityFund />
       <HowToInvest />
       <InvestorsPortalTeaser />
-      <InvestorResources />
+      {/* <InvestorResources /> */}
       <FAQ />
       <Footer />
     </div>
