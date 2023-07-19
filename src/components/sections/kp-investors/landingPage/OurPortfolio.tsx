@@ -12,7 +12,10 @@ import { portfolioData as Data } from "@/lib/portfolioData";
 
 function OurPortfolio() {
   return (
-    <div className="bg-gradient-to-br from-zinc-700 via-black to-zinc-700">
+    <div
+      className="bg-gradient-to-br from-zinc-700 via-black to-zinc-700"
+      id="portfolio"
+    >
       <PortfolioIntro />
       {Data.map((section, index) => (
         <PortfolioSection
@@ -24,7 +27,7 @@ function OurPortfolio() {
           websiteUrl={section.websiteUrl}
         />
       ))}
-      <ContactApproach>
+      {/* <ContactApproach>
         <KPParagraph>
           As you dive into our portfolio, you&apos;ll discover the remarkable
           innovations and groundbreaking solutions that these companies bring to
@@ -38,7 +41,7 @@ function OurPortfolio() {
             Welcome to the world of Khalifa Partners.
           </span>
         </KPParagraph>
-      </ContactApproach>
+      </ContactApproach> */}
     </div>
   );
 }

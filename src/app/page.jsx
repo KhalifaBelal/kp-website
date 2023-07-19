@@ -97,12 +97,7 @@ export default function Home() {
         </svg>
 
         <KPRow flexDirection="col" id="glassDarkMorph">
-          <KPHeading textColor="black">Investors</KPHeading>
-          <KPParagraph textColor="black">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </KPParagraph>
+          <KPHeading textColor="black">For Investors</KPHeading>
           <Link
             href="/kp-investors"
             className={kpButtonVariants({ variant: "outline" })}
@@ -271,12 +266,7 @@ export default function Home() {
           />
         </svg>
         <KPRow flexDirection="col" id="glassLightMorph">
-          <KPHeading>Entrepreneurs</KPHeading>
-          <KPParagraph>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </KPParagraph>
+          <KPHeading>For Entrepreneurs</KPHeading>
           <Link
             href="/kp-entrepreneurs"
             className={kpButtonVariants({ variant: "outline" })}
