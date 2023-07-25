@@ -106,7 +106,7 @@ const AnimatedCard: FC<AnimatedCardProps> = ({
 
   return (
     <motion.div
-      className="h-full w-full"
+      className="h-full w-full max-w-[25rem]"
       onMouseMove={handleMouse}
       onMouseLeave={handleMouseLeave}
       style={{

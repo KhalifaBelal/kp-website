@@ -8,29 +8,21 @@ import KPRow from "@/ui/KPRow";
 import Link from "next/link";
 
 const investmentSteps = [
-  { title: "Step 1: Sign Contract" },
-  { title: "Step 2: Transfer Funds" },
-  { title: "Step 3: Receive Profits" },
+  { title: "Sign the Contract: Get started with a straightforward contract signing, outlining your investment terms and expectations." },
+  { title: "Transfer Funds: Seamlessly transfer your funds to fuel the growth and success of the chosen project." },
+  { title: "Receive Profits: Reap the rewards of your investment as profits are shared upon project completion." },
 ];
 
 function HowToInvest() {
   return (
-    <div className="w-full py-10">
+    <div className="w-full pb-32 flex items-center justify-center">
       <KPRow>
-        <KPHeading size="lg" fontWeight="normal" className="text-black">
-          Take the first step!
-        </KPHeading>
-        <KPRow
-          flexDirection="col"
-          alignItems="start"
-          wrapperContainer="disable"
-        >
-          <ProductCards
-            cardTitle={"How to Invest after choosing your project?"}
-            cardDescription={""}
-            productsInfo={investmentSteps}
-          />
-        </KPRow>
+        <ProductCards
+          cardTitle={"How to Invest after choosing your project?"}
+          cardDescription={"Join Khalifa Group today and unlock a world of investment opportunities!"}
+          productsInfo={investmentSteps}
+          children={null}
+        />
       </KPRow>
     </div>
   );

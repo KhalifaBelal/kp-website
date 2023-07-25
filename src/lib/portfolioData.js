@@ -23,5 +23,6 @@ export const portfolioData = [
     text: "Timeless Management, a reputable property management company, ensures your apartment receives exceptional care. Their team of multilingual professionals, fluent in German, French, English, and Arabic, maintains the highest standards. From tenant acquisition to maintenance, they handle every aspect with precision. Enjoy passive income and a worry-free experience as Timeless Management professionally manages your property. Invest confidently in their trusted services.",
     logoPath: "/logos/timeless-logo.png",
     logoName: "timeless-logo",
+    websiteUrl: "https://timelessmanagement.ae/",
   },
 ];

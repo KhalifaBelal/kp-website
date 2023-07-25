@@ -13,7 +13,6 @@ import { portfolioData as Data } from "@/lib/portfolioData";
 function OurPortfolio() {
   return (
     <div
-      className="bg-gradient-to-br from-zinc-700 via-black to-zinc-700"
       id="portfolio"
     >
       <PortfolioIntro />

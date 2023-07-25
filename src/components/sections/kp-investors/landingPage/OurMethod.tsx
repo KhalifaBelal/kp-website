@@ -12,28 +12,24 @@ function OurMethod() {
           flexDirection="col"
           alignItems="start"
         >
-          <KPHeading>Our Method</KPHeading>
-          <KPHeading size="sm" fontWeight="normal">
-            Welcome to Khalifa Partners - Where Innovation Meets Investment!
+          <KPHeading>
+            Our Unique Concept <br /> - Power of Shared Prosperity
           </KPHeading>
           <KPParagraph>
-            At Khalifa Partners, we redefine the investment landscape by pooling
-            resources and funding opportunities collectively. Our unique selling
-            proposition (USP) lies in empowering small investors to join forces,
-            making it easier to gather substantial funds for exceptional
-            ventures.
+            At the heart of Khalifa Group's business model lies the concept of
+            shared prosperity. We firmly believe that by fostering a strong
+            network of investors who fund our companies, we can magnify the
+            success of individual projects within the organization. This
+            approach ensures that as the company flourishes, so do the investors
+            who contribute to its growth.
             <br />
             <br />
-            With us, you have the chance to invest alongside others, leveling
-            the playing field. No longer limited by individual financial
-            capacity, you can now access the same profitable opportunities as
-            larger investors.
-            <br />
-            <br />
-            Our marketplace showcases carefully studied and validated ventures,
-            providing a secure path to remarkable returns. Calculate your
-            profits beforehand, choose the investment product that suits you
-            best, and join forces with like-minded investors.
+            Our team works tirelessly to identify lucrative investment
+            opportunities across various industries. We diligently allocate the
+            funds received from our valued investors to these projects, allowing
+            them to flourish and yield handsome returns. By sharing the profits
+            with our investors, we forge a symbiotic relationship, where the
+            success of one leads to the triumph of all.
           </KPParagraph>
         </KPRow>
         <div className="relative w-full aspect-square">

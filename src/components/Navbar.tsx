@@ -15,7 +15,7 @@ interface NavbarProps {
 const Navbar: FC<NavbarProps> = ({ investors }) => {
   const router = usePathname();
   const hideNavbar = !router.includes("weWorkWith" || "portfolio"); // Adjust the condition based on your specific routes
-  const _href = investors ? "kp-investors" : "kp-entrepreneurs";
+  const _href = investors ? "" : "kp-entrepreneurs";
   const hideInvestors = investors ? "text-zinc-900" : "hidden";
   const hideEntrepreneurs = investors ? "hidden" : "";
 
@@ -54,7 +54,7 @@ const Navbar: FC<NavbarProps> = ({ investors }) => {
 
         <div className="hidden md:flex gap-4">
           <Link
-            href="/kp-investors"
+            href="/"
             replace
             className={`${kpButtonVariants({
               variant: "link",
@@ -62,24 +62,24 @@ const Navbar: FC<NavbarProps> = ({ investors }) => {
             onClick={() =>
               document
                 .getElementById("our-method")
-                ?.scrollIntoView({ behavior: "smooth" })
+                ?.scrollIntoView({ behavior: "smooth", block: "center" })
             }
           >
-            Our Method
+            Concept
           </Link>
           <Link
-            href="/kp-investors"
+            href="/"
             replace
             className={`${kpButtonVariants({
               variant: "link",
             })} ${hideInvestors}`}
             onClick={() =>
               document
-                .getElementById("marketplace")
+                .getElementById("products")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            Marketplace
+            Products
           </Link>
           <Link
             href="/kp-entrepreneurs"
@@ -124,11 +124,11 @@ const Navbar: FC<NavbarProps> = ({ investors }) => {
             Portfolio
           </Link>
           <Link
-            href="/kp-entrepreneurs"
+            href={`/${_href}`}
             replace
-            className={`${kpButtonVariants({
-              variant: "link",
-            })} ${hideEntrepreneurs}`}
+            className={`${kpButtonVariants({ variant: "link" })} ${
+              investors ? "text-zinc-900" : ""
+            }`}
             onClick={() =>
               document
                 .getElementById("philosophy")

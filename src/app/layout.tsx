@@ -41,6 +41,7 @@ export default function RootLayout({
         />
       </Head>
       <body className="min-h-screen antialiased">
+        <Navbar investors={true} />
         <CookieBanner />
         {children}
       </body>

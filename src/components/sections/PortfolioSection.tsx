@@ -29,10 +29,10 @@ function PortfolioSection({
           flexDirection="col"
           alignItems="start"
         >
-          <KPHeading size="default" className="text-white">
+          <KPHeading size="default" className="text-black">
             {title}
           </KPHeading>
-          <KPParagraph>{text}</KPParagraph>
+          <KPParagraph className="text-zinc-700">{text}</KPParagraph>
           <div className={websiteUrl ? "" : "hidden"}>
             <Link
               href={websiteUrl ? websiteUrl : ""}

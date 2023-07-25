@@ -2,22 +2,7 @@ import Icons from "@/components/Icons";
 
 export const marketplaceData = [
   {
-    title: "Supermarket Chain",
-    minimumInvestment: "20.000€",
-    investmentType: "Passive Income",
-    return: "33% ROI (per year)",
-    payout: "Monthly",
-    duration: "6 years",
-    icon: (
-      <Icons.BrainIcon
-        className="bg-kp-red p-2 rounded-lg z-50"
-        size={40}
-        color="white"
-      />
-    ),
-  },
-  {
-    title: "Restaurant Chain",
+    title: "Passive Income Fund",
     minimumInvestment: "20.000€",
     investmentType: "Passive Income",
     return: "33% ROI (per year)",
@@ -32,8 +17,7 @@ export const marketplaceData = [
     ),
   },
   {
-    title: "Real Estate Flipping",
-    investmentTarget: "160.000€",
+    title: "High ROI fund",
     minimumInvestment: "10.000€",
     investmentType: "Yearly Payout",
     return: "40% ROI (per year)",
@@ -47,8 +31,7 @@ export const marketplaceData = [
     ),
   },
   {
-    title: "E-Commerce Business",
-    investmentTarget: "225.000€",
+    title: "Venture Fund",
     minimumInvestment: "10.000€",
     investmentType: "Active",
     return: "90%",

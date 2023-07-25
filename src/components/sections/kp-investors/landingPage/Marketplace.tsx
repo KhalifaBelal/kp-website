@@ -26,7 +26,7 @@ function Marketplace() {
   const dataSliceOne = Data.slice(0, 2);
   const dataSliceTwo = Data.slice(2, 4);
 
-  return (
+  return ( 
     <KPSection
       className="w-full bg-gradient-to-b from-zinc-100 via-zinc-200 to-zinc-100"
       id="marketplace"
@@ -43,7 +43,6 @@ function Marketplace() {
               key={index}
               icon={card.icon}
               title={card.title}
-              investmentTarget={card.investmentTarget}
               minimumInvestment={card.minimumInvestment}
               investmentType={card.investmentType}
               investmentReturn={card.return}
@@ -61,23 +60,11 @@ function Marketplace() {
           <AnimatedCard
             icon={Data[2].icon}
             title={Data[2].title}
-            investmentTarget={Data[2].investmentTarget}
             minimumInvestment={Data[2].minimumInvestment}
             investmentType={Data[2].investmentType}
             investmentReturn={Data[2].return}
             duration={Data[2].duration}
             payout={Data[2].payout}
-            showYearlyPayoutCalc={true}
-          />
-          <AnimatedCard
-            icon={Data[3].icon}
-            title={Data[3].title}
-            investmentTarget={Data[3].investmentTarget}
-            minimumInvestment={Data[3].minimumInvestment}
-            investmentType={Data[3].investmentType}
-            investmentReturn={Data[3].return}
-            duration={Data[3].duration}
-            payout={Data[3].payout}
             showActiveIncomeCalc={true}
           />
         </KPRow>

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Philosophy() {
   return (
-    <KPSection id="philosophy" className="gap-5 p-0">
+    <KPSection id="philosophy" className="gap-5 p-0 bg-black">
       <KPRow flexDirection="col" alignItems="start" className="flex-1 lg:p-16">
         <KPHeading>Our Philosophy</KPHeading>
         <KPParagraph>
