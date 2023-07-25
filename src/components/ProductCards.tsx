@@ -21,7 +21,7 @@ interface CardCustomProps extends CardProps, HTMLAttributes<HTMLDivElement> {
   cardTitle: string;
   cardDescription: string;
   productsInfo: Array<{ title: string; description?: string }>;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export function ProductCards({

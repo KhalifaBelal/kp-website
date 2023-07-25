@@ -21,7 +21,6 @@ function HowToInvest() {
           cardTitle={"How to Invest after choosing your project?"}
           cardDescription={"Join Khalifa Group today and unlock a world of investment opportunities!"}
           productsInfo={investmentSteps}
-          children={null}
         />
       </KPRow>
     </div>
