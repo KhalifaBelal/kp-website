@@ -19,7 +19,7 @@ function HowToInvest() {
       <KPRow>
         <ProductCards
           cardTitle={"How to Invest after choosing your project?"}
-          cardDescription={"Join Khalifa Group today and unlock a world of investment opportunities!"}
+          cardDescription={"Join Khalifa Partners today and unlock a world of investment opportunities!"}
           productsInfo={investmentSteps}
         />
       </KPRow>
