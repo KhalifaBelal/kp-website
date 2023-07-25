@@ -16,7 +16,7 @@ function OurMethod() {
             Our Unique Concept <br /> - Power of Shared Prosperity
           </KPHeading>
           <KPParagraph>
-            At the heart of Khalifa Group's business model lies the concept of
+            At the heart of Khalifa Group&apos;s business model lies the concept of
             shared prosperity. We firmly believe that by fostering a strong
             network of investors who fund our companies, we can magnify the
             success of individual projects within the organization. This
