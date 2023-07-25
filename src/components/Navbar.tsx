@@ -32,7 +32,7 @@ const Navbar: FC<NavbarProps> = ({ investors }) => {
       } shadow-sm flex items-center justify-between`}
     >
       <div className="container max-w-6xl mx-auto w-full flex justify-between items-center">
-        <Link href={`/${_href}`} replace>
+        <Link href="/" replace>
           <Image
             typeof="image"
             rel="preload"

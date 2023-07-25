@@ -122,29 +122,28 @@ function OurProducts() {
             cardDescription={"Discover our Passive Income Models"}
             productsInfo={passiveIncomeInfo}
             className="max-w-full w-max"
-            children={
-              <div className="flex-1">
-                <AnimatedCard
-                  icon={Data[0].icon}
-                  title={Data[0].title}
-                  minimumInvestment={Data[0].minimumInvestment}
-                  investmentType={Data[0].investmentType}
-                  investmentReturn={Data[0].return}
-                  duration={Data[0].duration}
-                  payout={Data[0].payout}
-                  showPassiveIncomeCalc={true}
-                />
-              </div>
-            }
-          />
+          >
+            <div className="flex-1">
+              <AnimatedCard
+                icon={Data[0].icon}
+                title={Data[0].title}
+                minimumInvestment={Data[0].minimumInvestment}
+                investmentType={Data[0].investmentType}
+                investmentReturn={Data[0].return}
+                duration={Data[0].duration}
+                payout={Data[0].payout}
+                showPassiveIncomeCalc={true}
+              />
+            </div>
+          </ProductCards>
           <ProductCards
             cardTitle={"High ROI"}
             cardDescription={"Discover our High ROI Models"}
             productsInfo={highROIInfo}
             className="max-w-full w-max"
-            children={
-              <div className="flex-1">
-                <AnimatedCard
+          >
+            <div className="flex-1">
+              <AnimatedCard
                 icon={Data[1].icon}
                 title={Data[1].title}
                 minimumInvestment={Data[1].minimumInvestment}
@@ -154,17 +153,16 @@ function OurProducts() {
                 payout={Data[1].payout}
                 showPassiveIncomeCalc={true}
               />
-              </div>
-            }
-          />
+            </div>
+          </ProductCards>
           <ProductCards
             cardTitle={"Venture Fund"}
             cardDescription={"Discover our Venture Fund"}
             productsInfo={ventureFundInfo}
             className="max-w-full w-max"
-            children={
-              <div className="flex-1">
-                <AnimatedCard
+          >
+            <div className="flex-1">
+              <AnimatedCard
                 icon={Data[2].icon}
                 title={Data[2].title}
                 minimumInvestment={Data[2].minimumInvestment}
@@ -174,9 +172,8 @@ function OurProducts() {
                 payout={Data[2].payout}
                 showActiveIncomeCalc={true}
               />
-              </div>
-            }
-          />
+            </div>
+          </ProductCards>
         </KPRow>
       </KPRow>
     </div>
