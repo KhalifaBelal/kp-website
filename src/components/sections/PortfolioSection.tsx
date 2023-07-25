@@ -29,10 +29,10 @@ function PortfolioSection({
           flexDirection="col"
           alignItems="start"
         >
-          <KPHeading size="default" className="text-white">
+          <KPHeading size="default" className="text-black">
             {title}
           </KPHeading>
-          <KPParagraph>{text}</KPParagraph>
+          <KPParagraph className="text-zinc-700">{text}</KPParagraph>
           <div className={websiteUrl ? "" : "hidden"}>
             <Link
               href={websiteUrl ? websiteUrl : ""}
@@ -51,7 +51,7 @@ function PortfolioSection({
           unoptimized={false}
           width={500}
           height={500}
-          className="aspect-square"
+          className="aspect-square border-2 border-white shadow-lg shadow-zinc-700 rounded-lg"
           src={logoPath}
           alt={logoName}
         />

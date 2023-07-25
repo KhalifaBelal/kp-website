@@ -10,24 +10,19 @@ import KPHeading from "@/ui/KPHeading";
 import KPParagraph from "@/ui/KPParagraph";
 import KPRow from "@/ui/KPRow";
 import { FC } from "react";
-import { skillsLeadersData as LeadersData } from "@/lib/solutions/leadersPage/skillsLeadersData";
-import { conceptPageData as ConceptData } from "@/lib/conceptPage/conceptPageData";
 import { conceptPageData } from "@/lib/conceptPage/conceptPageData";
+import { faqData } from "@/lib/kp-invest/faqData";
 
 interface DataAccordionProps {
   item: number;
 }
 
 const DataAccordion: FC<DataAccordionProps> = ({ item }) => {
-  const IntroConceptData = ConceptData.introAccordion;
-  const Data = [
-    LeadersData,
-    LeadersData,
-    IntroConceptData,
-    conceptPageData.phase.strategy,
-    conceptPageData.phase.execution,
-    conceptPageData.phase.partnership,
-    conceptPageData.phase.partnership,
+  const dataObjects = [
+    conceptPageData.strategy,
+    conceptPageData.execution,
+    conceptPageData.partnership,
+    faqData,
   ];
 
   return (
@@ -38,7 +33,7 @@ const DataAccordion: FC<DataAccordionProps> = ({ item }) => {
         defaultValue="item-1"
         className="w-full"
       >
-        {Data[item].map((_item, index) => (
+        {dataObjects[item].map((_item, index) => (
           <AccordionItem key={index} value={`item-${index + 1}`}>
             <KPRow
               key={index}

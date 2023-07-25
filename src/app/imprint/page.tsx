@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <KPSection>
-      <KPRow flexDirection="col" alignItems="start">
-        <KPHeading>Impressum</KPHeading>
+    <KPSection className="text-black">
+      <KPRow flexDirection="col" alignItems="start" className="text-black">
+        <KPHeading className="text-black">Impressum</KPHeading>
 
-        <KPHeading size="sm">Angaben gem&auml;&szlig; &sect; 5 TMG</KPHeading>
-        <KPParagraph>
+        <KPHeading className="text-black" size="sm">Angaben gem&auml;&szlig; &sect; 5 TMG</KPHeading>
+        <KPParagraph className="text-black">
           Basel Khalifa
           <br />
           Basel Khalifa e.K.
@@ -26,39 +26,40 @@ export default function page() {
           33613 Bielefeld
         </KPParagraph>
 
-        <KPHeading size="sm">Kontakt</KPHeading>
-        <KPParagraph>
+        <KPHeading className="text-black" size="sm">Kontakt</KPHeading>
+        <KPParagraph className="text-black">
           Telefon: 017631173539
           <br />
           E-Mail: kontakt@khalifapartners.com
         </KPParagraph>
 
-        <KPHeading size="sm">Umsatzsteuer-ID</KPHeading>
-        <KPParagraph>
+        <KPHeading className="text-black" size="sm">Umsatzsteuer-ID</KPHeading>
+        <KPParagraph className="text-black">
           Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a
           Umsatzsteuergesetz:
           <br />
           DE356114248
         </KPParagraph>
 
-        <KPHeading size="sm">EU-Streitschlichtung</KPHeading>
-        <KPParagraph>
+        <KPHeading className="text-black" size="sm">EU-Streitschlichtung</KPHeading>
+        <KPParagraph className="text-black">
           Die Europ&auml;ische Kommission stellt eine Plattform zur
           Online-Streitbeilegung (OS) bereit:{" "}
           <Link
             href="https://ec.europa.eu/consumers/odr/"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-kp-red"
           >
             https://ec.europa.eu/consumers/odr/
           </Link>
           .<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.
         </KPParagraph>
 
-        <KPHeading size="sm">
+        <KPHeading size="sm" className="text-black">
           Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
         </KPHeading>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
           vor einer Verbraucherschlichtungsstelle teilzunehmen.
         </KPParagraph>

@@ -54,5 +54,5 @@ export const skillsData = [
     icon: Data[8].Branging,
     description:
       "Establish a strong and memorable brand identity with our branding specialists. We'll work closely with you to develop a unique brand strategy, ensuring consistent messaging and visual representation across all channels.",
-  }, // Corrected property name
+  },
 ];

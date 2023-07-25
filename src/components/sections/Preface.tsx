@@ -3,14 +3,13 @@ import KPRow from "@/ui/KPRow";
 import KPSection from "@/ui/KPSection";
 import { kpButtonVariants } from "@/ui/KPButton";
 import Link from "next/link";
-import KPParagraph from "../ui/KPParagraph";
 import DataAccordion from "../DataAccordion";
 
 interface PrefaceProps {
-  title: string;
-  introText: string;
-  withCta?: boolean;
-  ctaText?: string;
+  title: String;
+  introText: String;
+  withCta?: Boolean;
+  ctaText?: String;
   phase: number;
 }
 
@@ -31,7 +30,7 @@ function Preface({
         <DataAccordion item={phase} />
         {withCta ? (
           <Link
-            href="/portfolio"
+            href="/kp-entrepreneurs/portfolio"
             className={kpButtonVariants({ variant: "outline" })}
           >
             {ctaText}

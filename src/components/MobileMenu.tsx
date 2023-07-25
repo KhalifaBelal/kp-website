@@ -46,11 +46,11 @@ export default function MobileMenu() {
               href="/"
               replace
               onClick={() =>
-                document.getElementById("solutions")?.scrollIntoView()
+                document.getElementById("products")?.scrollIntoView()
               }
             >
               <Icons.KeyIcon className="mr-2 h-5 w-5" />
-              <span>Solutions</span>
+              <span>Products</span>
             </Link>
           </DropdownMenuItem>
           <DropdownMenuSeparator />

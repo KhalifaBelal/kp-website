@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import { FC, HTMLAttributes } from "react";
 
-export const kpRowVariants = cva("relative flex max-w-6xl w-full", {
+export const kpRowVariants = cva("relative flex w-full gap-5", {
   variants: {
-    variant: { default: "gap-5", intro: "gap-10 text-center" },
+    variant: { default: "max-w-6xl", fullWidth: "max-w-screen" },
     flexDirection: {
       default: "flex-col lg:flex-row",
       col: "flex-col",

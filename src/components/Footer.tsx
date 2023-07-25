@@ -48,12 +48,6 @@ export default function Footer() {
           >
             Contact
           </Link>
-          <Link
-            className={kpButtonVariants({ variant: "link" })}
-            href="/portfolio"
-          >
-            Portfolio
-          </Link>
         </div>
       </div>
     </div>
