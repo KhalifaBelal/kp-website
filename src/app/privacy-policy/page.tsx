@@ -12,12 +12,14 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <KPSection className="text-white">
-      <KPRow flexDirection="col" alignItems="start">
-        <KPHeading>Datenschutzerklärung</KPHeading>
-        <KPParagraph>Stand: 16. Mai 2023</KPParagraph>
-        <KPHeading size="sm">Inhaltsübersicht</KPHeading>
-        <ul className="index">
+    <KPSection className="text-black">
+      <KPRow className="text-black" flexDirection="col" alignItems="start">
+        <KPHeading className="text-black">Datenschutzerklärung</KPHeading>
+        <KPParagraph className="text-black">Stand: 16. Mai 2023</KPParagraph>
+        <KPHeading className="text-black" size="sm">
+          Inhaltsübersicht
+        </KPHeading>
+        <ul className="index text-black">
           <li>
             <a className="index-link" href="#m3">
               Verantwortlicher
@@ -64,18 +66,18 @@ export default function page() {
             </a>
           </li>
         </ul>
-        <KPHeading size="sm" id="m3">
+        <KPHeading className="text-black" size="sm" id="m3">
           Verantwortlicher
         </KPHeading>
-        <KPHeading size="sm" id="mOverview">
+        <KPHeading className="text-black" size="sm" id="mOverview">
           Übersicht der Verarbeitungen
         </KPHeading>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und
           die Zwecke ihrer Verarbeitung zusammen und verweist auf die
           betroffenen Personen.
         </KPParagraph>
-        <h3>Arten der verarbeiteten Daten</h3>
+        <h3 className="text-black">Arten der verarbeiteten Daten</h3>
         <ul>
           <li>Kontaktdaten.</li>
           <li>Inhaltsdaten.</li>
@@ -101,7 +103,7 @@ export default function page() {
           <li>Informationstechnische Infrastruktur.</li>
         </ul>
         <h3 id="m13">Maßgebliche Rechtsgrundlagen</h3>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Im Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der
           DSGVO, auf deren Basis wir personenbezogene Daten verarbeiten. Bitte
           nehmen Sie zur Kenntnis, dass neben den Regelungen der DSGVO nationale
@@ -128,7 +130,7 @@ export default function page() {
             überwiegen.
           </li>
         </ul>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale
           Regelungen zum Datenschutz in Deutschland. Hierzu gehört insbesondere
           das Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der
@@ -144,10 +146,10 @@ export default function page() {
           Beschäftigten. Ferner können Landesdatenschutzgesetze der einzelnen
           Bundesländer zur Anwendung gelangen.
         </KPParagraph>
-        <KPHeading size="sm" id="m27">
+        <KPHeading className="text-black" size="sm" id="m27">
           Sicherheitsmaßnahmen
         </KPHeading>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter
           Berücksichtigung des Stands der Technik, der Implementierungskosten
           und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung
@@ -156,7 +158,7 @@ export default function page() {
           geeignete technische und organisatorische Maßnahmen, um ein dem Risiko
           angemessenes Schutzniveau zu gewährleisten.
         </KPParagraph>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Zu den Maßnahmen gehören insbesondere die Sicherung der
           Vertraulichkeit, Integrität und Verfügbarkeit von Daten durch
           Kontrolle des physischen und elektronischen Zugangs zu den Daten als
@@ -169,16 +171,16 @@ export default function page() {
           sowie Verfahren entsprechend dem Prinzip des Datenschutzes, durch
           Technikgestaltung und durch datenschutzfreundliche Voreinstellungen.
         </KPParagraph>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           TLS-Verschlüsselung (https): Um Ihre via unserem Online-Angebot
           übermittelten Daten zu schützen, nutzen wir eine TLS-Verschlüsselung.
           Sie erkennen derart verschlüsselte Verbindungen an dem Präfix https://
           in der Adresszeile Ihres Browsers.
         </KPParagraph>
-        <KPHeading size="sm" id="m134">
+        <KPHeading className="text-black" size="sm" id="m134">
           Einsatz von Cookies
         </KPHeading>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Cookies sind kleine Textdateien, bzw. sonstige Speichervermerke, die
           Informationen auf Endgeräten speichern und Informationen aus den
           Endgeräten auslesen. Z.B. um den Login-Status in einem Nutzerkonto,
@@ -188,7 +190,7 @@ export default function page() {
           der Funktionsfähigkeit, Sicherheit und Komfort von Onlineangeboten
           sowie der Erstellung von Analysen der Besucherströme.{" "}
         </KPParagraph>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           <strong>Hinweise zur Einwilligung: </strong>Wir setzen Cookies im
           Einklang mit den gesetzlichen Vorschriften ein. Daher holen wir von
           den Nutzern eine vorhergehende Einwilligung ein, außer wenn diese
@@ -207,7 +209,7 @@ export default function page() {
           kommuniziert und enthält die Informationen zu der jeweiligen
           Cookie-Nutzung.
         </KPParagraph>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           <strong>Hinweise zu datenschutzrechtlichen Rechtsgrundlagen: </strong>
           Auf welcher datenschutzrechtlichen Rechtsgrundlage wir die
           personenbezogenen Daten der Nutzer mit Hilfe von Cookies verarbeiten,
@@ -224,7 +226,7 @@ export default function page() {
           Datenschutzerklärung oder im Rahmen von unseren Einwilligungs- und
           Verarbeitungsprozessen auf.
         </KPParagraph>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           <strong>Speicherdauer: </strong>Im Hinblick auf die Speicherdauer
           werden die folgenden Arten von Cookies unterschieden:
         </KPParagraph>
@@ -250,7 +252,7 @@ export default function page() {
             Speicherdauer bis zu zwei Jahre betragen kann.
           </li>
         </ul>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           <strong>
             Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-Out):{" "}
           </strong>
@@ -278,7 +280,7 @@ export default function page() {
             DSGVO).
           </li>
         </ul>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           <strong>
             Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
           </strong>
@@ -311,10 +313,10 @@ export default function page() {
             Abs. 1 S. 1 lit. a) DSGVO).
           </li>
         </ul>
-        <KPHeading size="sm" id="m225">
+        <KPHeading className="text-black" size="sm" id="m225">
           Bereitstellung des Onlineangebotes und Webhosting
         </KPHeading>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste
           zur Verfügung stellen zu können. Zu diesem Zweck verarbeiten wir die
           IP-Adresse des Nutzers, die notwendig ist, um die Inhalte und
@@ -343,10 +345,10 @@ export default function page() {
             Abs. 1 S. 1 lit. f) DSGVO).
           </li>
         </ul>
-        <KPHeading size="sm" id="m182">
+        <KPHeading className="text-black" size="sm" id="m182">
           Kontakt- und Anfragenverwaltung
         </KPHeading>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Bei der Kontaktaufnahme mit uns (z.B. per Post, Kontaktformular,
           E-Mail, Telefon oder via soziale Medien) sowie im Rahmen bestehender
           Nutzer- und Geschäftsbeziehungen werden die Angaben der anfragenden
@@ -376,10 +378,10 @@ export default function page() {
             Abs. 1 S. 1 lit. f) DSGVO).
           </li>
         </ul>
-        <KPHeading size="sm" id="m263">
+        <KPHeading className="text-black" size="sm" id="m263">
           Webanalyse, Monitoring und Optimierung
         </KPHeading>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Die Webanalyse (auch als &quot;Reichweitenmessung&quot; bezeichnet)
           dient der Auswertung der Besucherströme unseres Onlineangebotes und
           kann Verhalten, Interessen oder demographische Informationen zu den
@@ -390,12 +392,12 @@ export default function page() {
           einladen. Ebenso können wir nachvollziehen, welche Bereiche der
           Optimierung bedürfen.{" "}
         </KPParagraph>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Neben der Webanalyse können wir auch Testverfahren einsetzen, um z.B.
           unterschiedliche Versionen unseres Onlineangebotes oder seiner
           Bestandteile zu testen und optimieren.
         </KPParagraph>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Sofern nachfolgend nicht anders angegeben, können zu diesen Zwecken
           Profile, d.h. zu einem Nutzungsvorgang zusammengefasste Daten angelegt
           und Informationen in einem Browser, bzw. in einem Endgerät gespeichert
@@ -407,7 +409,7 @@ export default function page() {
           Anbietern der von uns eingesetzten Dienste einverstanden erklärt
           haben, können auch Standortdaten verarbeitet werden.
         </KPParagraph>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Es werden ebenfalls die IP-Adressen der Nutzer gespeichert. Jedoch
           nutzen wir ein IP-Masking-Verfahren (d.h., Pseudonymisierung durch
           Kürzung der IP-Adresse) zum Schutz der Nutzer. Generell werden die im
@@ -446,7 +448,7 @@ export default function page() {
             lit. a) DSGVO).
           </li>
         </ul>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           <strong>
             Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
           </strong>
@@ -511,10 +513,10 @@ export default function page() {
             (Arten der Verarbeitung sowie der verarbeiteten Daten).
           </li>
         </ul>
-        <KPHeading size="sm" id="m15">
+        <KPHeading className="text-black" size="sm" id="m15">
           Änderung und Aktualisierung der Datenschutzerklärung
         </KPHeading>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Wir bitten Sie, sich regelmäßig über den Inhalt unserer
           Datenschutzerklärung zu informieren. Wir passen die
           Datenschutzerklärung an, sobald die Änderungen der von uns
@@ -523,21 +525,11 @@ export default function page() {
           Ihrerseits (z.B. Einwilligung) oder eine sonstige individuelle
           Benachrichtigung erforderlich wird.
         </KPParagraph>
-        <KPParagraph>
+        <KPParagraph className="text-black">
           Sofern wir in dieser Datenschutzerklärung Adressen und
           Kontaktinformationen von Unternehmen und Organisationen angeben,
           bitten wir zu beachten, dass die Adressen sich über die Zeit ändern
           können und bitten die Angaben vor Kontaktaufnahme zu prüfen.
-        </KPParagraph>
-        <KPParagraph className="seal">
-          <a
-            href="https://datenschutz-generator.de/"
-            title="Für weitere Informationen bitte anklicken."
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            Erstellt mit Datenschutz-Generator.de.
-          </a>
         </KPParagraph>
       </KPRow>
     </KPSection>
