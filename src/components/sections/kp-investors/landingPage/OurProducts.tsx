@@ -151,7 +151,7 @@ function OurProducts() {
                 investmentReturn={Data[1].return}
                 duration={Data[1].duration}
                 payout={Data[1].payout}
-                showPassiveIncomeCalc={true}
+                showYearlyPayoutCalc={true}
               />
             </div>
           </ProductCards>
