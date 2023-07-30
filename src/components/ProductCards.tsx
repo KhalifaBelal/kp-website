@@ -20,7 +20,7 @@ type CardProps = React.ComponentProps<typeof Card>;
 interface CardCustomProps extends CardProps, HTMLAttributes<HTMLDivElement> {
   cardTitle: string;
   cardDescription: string;
-  productsInfo: Array<{ title: string; description?: string }>;
+  productsInfo: Array<{ title?: string }>;
   children?: ReactNode;
 }
 
@@ -48,11 +48,8 @@ export function ProductCards({
               >
                 <span className="flex h-2 w-2 translate-y-1 rounded-full bg-kp-red" />
                 <div className="space-y-1">
-                  <p className="text-sm font-medium leading-none">
-                    {info.title}
-                  </p>
                   <p className="text-sm text-muted-foreground">
-                    {info.description}
+                    {info.title}
                   </p>
                 </div>
               </div>

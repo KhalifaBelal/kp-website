@@ -22,7 +22,7 @@ export default function Home() {
       <OurPortfolio />
       <SecurityFund />
       <HowToInvest />
-      <InvestorsPortalTeaser />
+      {/* <InvestorsPortalTeaser /> */}
       {/* <InvestorResources /> */}
       <FAQ />
       <Philosophy />
