@@ -8,7 +8,7 @@ import Link from "next/link";
 
 function BusinessIdea() {
   return (
-    <KPSection id="concept">
+    <KPSection id="concept" height={"padding"}>
       <KPRow>
         <KPRow
           wrapperContainer="disable"

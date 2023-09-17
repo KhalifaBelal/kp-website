@@ -10,6 +10,8 @@ import KPHeading from "../ui/KPHeading";
 import { KPButton, kpButtonVariants } from "../ui/KPButton";
 import Calculator from "../sections/kp-investors/landingPage/Calculator";
 import { KPInput } from "../ui/KPInput";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
+import { Info } from "lucide-react";
 
 interface AnimatedCardProps {
   title: String;
@@ -23,6 +25,7 @@ interface AnimatedCardProps {
   showPassiveIncomeCalc?: boolean;
   showYearlyPayoutCalc?: boolean;
   showActiveIncomeCalc?: boolean;
+  infoText: string;
 }
 
 const AnimatedCard: FC<AnimatedCardProps> = ({
@@ -37,6 +40,7 @@ const AnimatedCard: FC<AnimatedCardProps> = ({
   showPassiveIncomeCalc,
   showYearlyPayoutCalc,
   showActiveIncomeCalc,
+  infoText,
 }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -74,12 +78,12 @@ const AnimatedCard: FC<AnimatedCardProps> = ({
 
     // Perform the calculation
     const calculatedResult = (
-      number * (33 / 100) * 6 +
+      number * (33 / 100) * 3 +
       number
     ).toLocaleString();
     setResult(calculatedResult);
     const calculatedMonthlyResult = (
-      (number * (33 / 100) * 6 + number) /
+      (number * (33 / 100) * 3 + number) /
       72
     ).toLocaleString();
     setMonthlyResult(calculatedMonthlyResult);
@@ -106,9 +110,7 @@ const AnimatedCard: FC<AnimatedCardProps> = ({
 
   return (
     <motion.div
-      className="h-full w-full max-w-[25rem]"
-      onMouseMove={handleMouse}
-      onMouseLeave={handleMouseLeave}
+      className="min-h-max min-w-max max-w-[25rem] bg-zinc-100"
       style={{
         perspective: 14000,
       }}
@@ -123,10 +125,17 @@ const AnimatedCard: FC<AnimatedCardProps> = ({
         <KPRow flexDirection="col" alignItems="start">
           <div className="flex items-center gap-2">
             {icon}
-
-            <KPHeading size="sm" className="text-black z-50">
+            <KPHeading size="sm" className="text-black">
               {title}
-            </KPHeading>
+            </KPHeading>{" "}
+            <div className="relative z-[100]">
+              <Popover>
+                <PopoverTrigger className="bg-black rounded-md p-1">
+                  <Info color="white" />
+                </PopoverTrigger>
+                <PopoverContent className="bg-white">{infoText}</PopoverContent>
+              </Popover>
+            </div>
           </div>
 
           <KPParagraph className="text-black z-50">

@@ -22,7 +22,7 @@ function PortfolioSection({
   websiteUrl,
 }: PortfolioSectionProps) {
   return (
-    <KPSection>
+    <KPSection height={"padding"}>
       <KPRow className="lg:gap-32">
         <KPRow
           wrapperContainer="disable"

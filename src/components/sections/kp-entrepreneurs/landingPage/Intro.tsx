@@ -14,7 +14,7 @@ interface IntroProps {
 
 const Intro: FC<IntroProps> = ({ investors }) => {
   return (
-    <KPSection>
+    <KPSection className="">
       <KPRow flexDirection="col" alignItems="end">
         <Image
           priority
