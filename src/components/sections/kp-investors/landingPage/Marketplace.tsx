@@ -46,10 +46,9 @@ function Marketplace() {
               minimumInvestment={card.minimumInvestment}
               investmentType={card.investmentType}
               investmentReturn={card.return}
-              duration={card.duration}
               payout={card.payout}
-              showPassiveIncomeCalc={true}
-            />
+              showPassiveIncomeCalc={true} 
+              infoText={""}            />
           ))}
         </KPRow>
         <KPRow
@@ -63,10 +62,9 @@ function Marketplace() {
             minimumInvestment={Data[2].minimumInvestment}
             investmentType={Data[2].investmentType}
             investmentReturn={Data[2].return}
-            duration={Data[2].duration}
             payout={Data[2].payout}
-            showActiveIncomeCalc={true}
-          />
+            showActiveIncomeCalc={true} 
+            infoText={""}          />
         </KPRow>
       </KPRow>
 
