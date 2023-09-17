@@ -6,7 +6,7 @@ import KPSection from "@/ui/KPSection";
 
 function Concept() {
   return (
-    <KPSection id="concept">
+    <KPSection id="concept" height={"auto"}>
       <KPRow>
         <KPRow
           wrapperContainer="disable"

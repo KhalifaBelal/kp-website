@@ -40,8 +40,8 @@ export default function RootLayout({
           data-next-font="size-adjust"
         />
       </Head>
-      <body className="min-h-screen antialiased">
-        <Navbar investors={true} />
+      <body className="min-h-screen antialiased bg-zinc-900">
+        <Navbar investors={false} />
         <CookieBanner />
         {children}
       </body>

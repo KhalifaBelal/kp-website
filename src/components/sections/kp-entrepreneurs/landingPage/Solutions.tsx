@@ -19,8 +19,8 @@ function Solutions() {
   };
 
   return (
-    <KPSection id="solutions">
-      <KPRow flexDirection="col" alignItems="start">
+    <KPSection id="solutions" height={"padding"}>
+      <KPRow flexDirection="col">
         <KPHeading>
           Our Digital <span className="text-kp-red">Solutions</span>
         </KPHeading>

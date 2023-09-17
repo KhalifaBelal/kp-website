@@ -7,7 +7,7 @@ import PortfolioIntro from "@/components/sections/portfolioPage/PortfolioIntro";
 
 export default function page() {
   return (
-    <div className="bg-zinc-900">
+    <div className="bg-zinc-100">
       <PortfolioIntro />
       {Data.map((section, index) => (
         <PortfolioSection

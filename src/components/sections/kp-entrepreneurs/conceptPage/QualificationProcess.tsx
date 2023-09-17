@@ -20,7 +20,7 @@ import StrategyModel from "@/components/glb-models/StrategyModel";
 function QualificationProcess() {
   return (
     <>
-      <KPSection flexDirection="col">
+      <KPSection flexDirection="col" height={"padding"}>
         <KPRow flexDirection="col" alignItems="start" className="py-20">
           <KPHeading>Our Qualification Process</KPHeading>
           <KPParagraph>
