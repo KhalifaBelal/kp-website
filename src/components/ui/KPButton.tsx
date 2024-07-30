@@ -3,7 +3,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { ButtonHTMLAttributes, forwardRef, MouseEventHandler } from "react";
 
 const kpButtonVariants = cva(
-  "active:scale-95 inline-flex items-center justify-center rounded-sm text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 focus:ring-zinc-400 disabled:pointer-events-none focus:ring-offset-zinc-900",
+  "active:scale-95 inline-flex items-center justify-center gap-1 rounded-sm text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 focus:ring-zinc-400 disabled:pointer-events-none focus:ring-offset-zinc-900",
   {
     variants: {
       variant: {

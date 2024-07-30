@@ -23,9 +23,6 @@ export default function Footer() {
           <br />We diversify our Portfolio by building companies with outstanding personalities.
         </KPParagraph>
         <div className="flex flex-col md:flex-row items-center gap-2 flex-1">
-          <Link className={kpButtonVariants({ variant: "link" })} href="https://staging.khalifapartners.com/">
-            Home
-          </Link>
           <Link
             className={kpButtonVariants({ variant: "link" })}
             href="/privacy-policy"
@@ -37,14 +34,6 @@ export default function Footer() {
             href="/imprint"
           >
             Imprint
-          </Link>
-          <Link
-            className={kpButtonVariants({ variant: "link" })}
-            href="https://linktr.ee/baselkhalifa"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Contact
           </Link>
         </div>
       </div>

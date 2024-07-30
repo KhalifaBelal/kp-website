@@ -13,16 +13,11 @@ function Concept() {
           flexDirection="col"
           alignItems="start"
         >
-          <KPHeading className="text-white">Concept</KPHeading>
+          <KPHeading className="text-white">About Khalifa Partners</KPHeading>
           <KPParagraph>
-            At Khalifa Partners, our unique business model revolves around
-            identifying and partnering with exceptional individuals who possess
-            the drive, vision, and leadership to create successful companies. We
-            believe that outstanding personalities are the driving force behind
-            transformative ventures. By providing these individuals with the
-            necessary financial support, resources and mentorship in exchange
-            for equity, we empower them to turn their ideas into thriving
-            businesses.
+            Khalifa Partners is an international business incubator dedicated to building successful businesses around the globe. By focusing on the top 1% of talent, we foster a culture of excellence to create enduring companies that make a lasting impact.
+            <br /><br />
+            Inspired by our Egyptian heritage, driven by German precision, and motivated by the UAE's economic vision, we merge diverse strengths to build a robust portfolio of ventures with passionate, talented individuals.
           </KPParagraph>
         </KPRow>
         <div className="relative w-full aspect-square">

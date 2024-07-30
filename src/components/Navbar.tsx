@@ -32,7 +32,7 @@ const Navbar: FC<NavbarProps> = ({ investors }) => {
       } shadow-sm flex items-center justify-between`}
     >
       <div className="container max-w-6xl mx-auto w-full flex justify-between items-center">
-        <Link href="/" replace>
+        <Link href="/" replace className='mx-auto'>
           <Image
             typeof="image"
             rel="preload"
@@ -47,105 +47,6 @@ const Navbar: FC<NavbarProps> = ({ investors }) => {
             className="aspect-square"
           />
         </Link>
-
-        <div className="md:hidden flex items-center gap-3">
-          <MobileMenu />
-        </div>
-
-        <div className="hidden md:flex gap-4">
-          <Link
-            href="/"
-            replace
-            className={`${kpButtonVariants({
-              variant: "link",
-            })} ${hideInvestors}`}
-            onClick={() =>
-              document
-                .getElementById("our-method")
-                ?.scrollIntoView({ behavior: "smooth", block: "center" })
-            }
-          >
-            Concept
-          </Link>
-          <Link
-            href="/"
-            replace
-            className={`${kpButtonVariants({
-              variant: "link",
-            })} ${hideInvestors}`}
-            onClick={() =>
-              document
-                .getElementById("products")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            Products
-          </Link>
-          <Link
-            href="/kp-entrepreneurs"
-            replace
-            className={`${kpButtonVariants({
-              variant: "link",
-            })} ${hideEntrepreneurs}`}
-            onClick={() =>
-              document
-                .getElementById("concept")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            Concept
-          </Link>
-          <Link
-            href="/kp-entrepreneurs"
-            replace
-            className={`${kpButtonVariants({
-              variant: "link",
-            })} ${hideEntrepreneurs}`}
-            onClick={() =>
-              document
-                .getElementById("solutions")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            Solutions
-          </Link>
-          <Link
-            href={`/${_href}`}
-            replace
-            className={`${kpButtonVariants({ variant: "link" })} ${
-              investors ? "text-zinc-900" : ""
-            }`}
-            onClick={() =>
-              document
-                .getElementById("portfolio")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            Portfolio
-          </Link>
-          <Link
-            href={`/${_href}`}
-            replace
-            className={`${kpButtonVariants({ variant: "link" })} ${
-              investors ? "text-zinc-900" : ""
-            }`}
-            onClick={() =>
-              document
-                .getElementById("philosophy")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            Philosophy
-          </Link>
-          <Link
-            className={kpButtonVariants({ variant: "outline" })}
-            href="https://linktr.ee/baselkhalifa"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Get in touch
-          </Link>
-        </div>
       </div>
     </div>
   );

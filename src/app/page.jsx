@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
-const Solutions = dynamic(
-  () => import("@/components/sections/kp-entrepreneurs/landingPage/Solutions")
+const Partnership = dynamic(
+  () => import("@/components/sections/kp-entrepreneurs/landingPage/Partnership")
 );
 const Concept = dynamic(
   () => import("@/components/sections/kp-entrepreneurs/landingPage/Concept")
@@ -8,10 +8,11 @@ const Concept = dynamic(
 import Intro from "@/components/sections/kp-entrepreneurs/landingPage/Intro";
 import OurPortfolio from "@/components/sections/kp-entrepreneurs/landingPage/OurPortfolio";
 import QualificationProcess from "@/components/sections/kp-entrepreneurs/conceptPage/QualificationProcess";
-import BusinessIdea from "@/components/sections/kp-entrepreneurs/landingPage/BusinessIdea";
+import WhoWeWorkWith from "@/components/sections/kp-entrepreneurs/landingPage/WhoWeWorkWith";
 import Footer from "@/components/Footer";
 import Philosophy from "@/components/sections/kp-entrepreneurs/landingPage/Philosophy";
 import Navbar from "@/components/Navbar";
+import Founders from '@/components/sections/kp-entrepreneurs/landingPage/Founders';
 
 export default function Home() {
   return (
@@ -19,10 +20,10 @@ export default function Home() {
       <Navbar investors={false} />
       <Intro investors={false} />
       <Concept />
-      <Solutions />
-      <BusinessIdea />
-      <QualificationProcess />
+      <Partnership />
+      <WhoWeWorkWith />
       <OurPortfolio />
+      <Founders />
       <Philosophy />
       <Footer />
     </div>
