@@ -17,6 +17,7 @@ function WhoWeWorkWith() {
             wrapperContainer="disable"
             flexDirection="col"
             alignItems="start"
+            justifyContent={"start"}
             className='bg-zinc-800 p-6 rounded-md'
           >
             <KPHeading className="text-white">
@@ -38,6 +39,7 @@ function WhoWeWorkWith() {
             wrapperContainer="disable"
             flexDirection="col"
             alignItems="start"
+            justifyContent={"start"}
             className='bg-zinc-800 p-6 rounded-md'
           >
             <KPHeading className="text-white">
