@@ -52,7 +52,7 @@ const PORTFOLIO_DATA: {
 }[] = [
     {
       name: "Salespects",
-      description: "  Salespects is a SaaS solution and the first CRM system exclusively for financial advisors in Germany. Targeting a market of over 300,000 potential clients, Salespects has been in development for over two years and is set to launch in Q4 of 2024.",
+      description: "Salespects is a SaaS solution and the first CRM system exclusively for financial advisors in Germany. Targeting a market of over 300,000 potential clients, Salespects has been in development for over two years and is set to launch in Q4 of 2024.",
       twColor: "",
       companyState: "Currently Building",
       image: {
@@ -62,12 +62,12 @@ const PORTFOLIO_DATA: {
     },
     {
       name: "MyPerfectStay",
-      description: "  MyPerfectStay is an AI-based mobile application designed to tailor the perfect vacation for tourists around the world. Featuring over 300,000 activities and a unique AI algorithm, this innovative app allows tourists to not only plan but also book their activities at their preferred destination. MyPerfectStay will launch in Q4 of 2024.",
+      description: "MyPerfectStay is an AI-based mobile application designed to tailor the perfect vacation for tourists around the world. Featuring over 300,000 activities and a unique AI algorithm, this innovative app allows tourists to not only plan but also book their activities at their preferred destination. MyPerfectStay will launch in Q4 of 2024.",
       twColor: "",
       companyState: "Currently Building",
       image: {
-        src: "/logos/salespects-logo.png",
-        alt: "salespects-logo"
+        src: "/logos/myperfectstay-logo.png",
+        alt: "myperfectstay-logo"
       }
     },
     {
@@ -78,8 +78,8 @@ const PORTFOLIO_DATA: {
       website: "http://clartus.com",
       cta: "clartus.com",
       image: {
-        src: "/logos/salespects-logo.png",
-        alt: "salespects-logo"
+        src: "/logos/clartus-logo.png",
+        alt: "clartus-logo"
       }
     },
     {
@@ -90,8 +90,8 @@ const PORTFOLIO_DATA: {
       website: "http://cloudcops.de",
       cta: "cloudcops.de",
       image: {
-        src: "/logos/salespects-logo.png",
-        alt: "salespects-logo"
+        src: "/logos/cloudcops-logo.png",
+        alt: "cloudcops-logo"
       }
     },
     {
@@ -99,23 +99,23 @@ const PORTFOLIO_DATA: {
       description: "SmartinCulture helps 8-figure entrepreneurs and established companies from the DACH Region (Germany, Austria, and Switzerland) expand into the UAE and Saudi markets. We open doors to new customers and partners, set up the local business with the right legal foundation, and assist with operational tasks such as Sales, Marketing, and HR.",
       twColor: "",
       companyState: "Launched",
-      website: "http://smartinculture.com",
+      // website: "http://smartinculture.com",
       cta: "smartinculture.com",
       image: {
-        src: "/logos/salespects-logo.png",
-        alt: "salespects-logo"
+        src: "/logos/lock.png",
+        alt: "smartinculture-logo"
       }
     },
     {
       name: "EmergingExperts",
-      description: "  EmergingExperts is our recruiting company based in Egypt, dedicated to attracting the top 1% of talent in the fields of Software Development and Graphic Design. We connect this elite talent with work opportunities that are not available in the national market.",
+      description: "EmergingExperts is our recruiting company based in Egypt, dedicated to attracting the top 1% of talent in the fields of Software Development and Graphic Design. We connect this elite talent with work opportunities that are not available in the national market.",
       twColor: "",
       companyState: "Launched",
-      website: "http://emergingexperts.com",
+      // website: "http://emergingexperts.com",
       cta: "emergingexperts.com",
       image: {
-        src: "/logos/salespects-logo.png",
-        alt: "salespects-logo"
+        src: "/logos/emergingexperts-logo.png",
+        alt: "emergingexperts-logo"
       }
     },
     {
@@ -123,11 +123,11 @@ const PORTFOLIO_DATA: {
       description: "CodeNatura is an international e-commerce brand focusing on natural supplements like Himalayan Shilajit. With thousands of loyal customers, we are committed to providing the best product quality on the market.",
       twColor: "",
       companyState: "Launched",
-      website: "http://codenatura.com",
+      // website: "http://codenatura.com",
       cta: "http://codenatura.com",
       image: {
-        src: "/logos/salespects-logo.png",
-        alt: "salespects-logo"
+        src: "/logos/lock.png",
+        alt: "codenatura-logo"
       }
     }
   ]
