@@ -20,7 +20,7 @@ function OurPortfolio() {
           {PORTFOLIO_DATA.map((i, key) =>
             <div key={key} className='relative flex flex-col items-start gap-6 p-4 rounded-lg bg-zinc-800 hover:bg-zinc-700 transition-all duration-200'>
               <Badge variant={"default"}>{i.companyState === "Currently Building" ? <TimerIcon size={14} className='mr-1' /> : <RocketIcon size={14} className='mr-1' />} {i.companyState}</Badge>
-              <Image src={i.image.src} alt={i.image.alt} width={320} height={320} className='rounded-md' />
+              <Image src={i.image.src} alt={i.image.alt} width={320} height={320} className='rounded-md w-full' />
               <div className='flex flex-col gap-3 p-2'>
                 <KPHeading size={"sm"} className="text-white text-left">{i.name}</KPHeading>
                 <KPParagraph className='text-left' size={"sm"}>
