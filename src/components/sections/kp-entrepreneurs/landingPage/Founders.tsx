@@ -12,7 +12,7 @@ function Founders() {
     <KPSection id="concept" height={"padding"}>
       <div className='flex flex-col items-center justify-center gap-8'>
         <KPHeading className="text-white">
-          Meet the founders
+          Meet the Founders
         </KPHeading>
         <KPRow className='items-stretch'>
           <KPRow
