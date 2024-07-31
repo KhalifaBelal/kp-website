@@ -53,7 +53,7 @@ function Founders() {
               <span className='text-sm text-kp-red font-medium italic'>let&apos;s connect</span>
               <div className='flex items-center justify-center gap-2'>
                 <Link href={"https://www.linkedin.com/in/belal-khalifa-b22553307/"} className={cn(kpButtonVariants(), 'aspect-square w-auto h-auto p-1 bg-zinc-700')}><Image src={"/linkedin-icon.png"} alt='linkedin-icon' width={48} height={48} /></Link>
-                <Link href={"https://www.instagram.com/belal.emad.khalifa/"} className={cn(kpButtonVariants(), 'aspect-square w-auto h-auto p-1 bg-zinc-700')}><Image src={"/instagram-icon.png"} alt='instagram-icon' width={48} height={48} /></Link>
+                <Link href={"https://www.instagram.com/thebelalkhalifa/"} className={cn(kpButtonVariants(), 'aspect-square w-auto h-auto p-1 bg-zinc-700')}><Image src={"/instagram-icon.png"} alt='instagram-icon' width={48} height={48} /></Link>
               </div>
             </div>
           </KPRow>
